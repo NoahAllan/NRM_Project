@@ -1,0 +1,653 @@
+SET test TO False
+
+SET emergency_stop TO False
+
+SET sim TO True
+
+SET blackbox TO True
+
+SET sensor_data TO [True, False, False, False, False, True]
+
+SET r1 TO False
+
+SET r2 TO False
+
+SET signal_data TO [False, False, False, False, False, False]
+
+SET Point_A TO 0
+
+SET Point_B TO 0
+
+SET wait_time TO 0.5
+
+SET date TO ''
+
+SET date_file TO ''
+
+SET Sig_a TO ''
+
+SET Sig_b TO ''
+
+SET Sig_c TO ''
+
+SET Sig_d TO ''
+
+SET Sig_e TO ''
+
+SET Sig_f TO ''
+
+SET power_t1 TO 0
+
+SET power_t2 TO 0
+
+SET done TO False
+
+
+DEFINE FUNCTION sensor_check_1():
+
+    global r1
+
+    SET r1 TO False
+
+
+
+    SET s2 TO sensor_data[1]
+
+    SET s4 TO sensor_data[3]
+
+
+
+    IF s2 is False and s4 is False:
+
+        OUTPUT('Route one clear.')
+
+        SET r1 TO True
+
+        RETURN r1
+
+
+
+    IF s2 is True or s4 is True:
+
+        OUTPUT('Route one not clear.')
+
+        SET r1 TO False
+
+        RETURN r1
+
+
+
+
+DEFINE FUNCTION sensor_check_2():
+
+    global r2
+
+    SET r2 TO False
+
+    SET s3 TO sensor_data[2]
+
+    SET s5 TO sensor_data[4]
+
+
+
+    IF s3 is False and s5 is False:
+
+        OUTPUT('Route two clear.')
+
+        SET r2 TO True
+
+        RETURN r2
+
+    IF s3 is True or s5 is True:
+
+        OUTPUT('Route two not clear.')
+
+        SET r2 TO False
+
+        RETURN r2
+
+
+DEFINE FUNCTION point_change():
+
+    global Point_A
+
+    global Point_B
+
+    global emergency_stop
+
+
+
+    SET s1 TO sensor_data[0]
+
+    SET s2 TO sensor_data[1]
+
+    SET s3 TO sensor_data[2]
+
+    SET s4 TO sensor_data[3]
+
+    SET s5 TO sensor_data[4]
+
+    SET s6 TO sensor_data[5]
+
+
+
+    IF s1 is True:
+
+        SET Point_A TO 30
+
+    IF s2 is True:
+
+        SET Point_B TO 30
+
+    IF s3 is True:
+
+        SET Point_A TO 0
+
+    IF s4 is True:
+
+        SET Point_B TO 30
+
+    IF s5 is True:
+
+        SET Point_A TO 0
+
+    IF s6 is True:
+
+        SET Point_B TO 0
+
+    IF s2 is True and s4 is True:
+
+        SET emergency_stop TO True
+
+    IF s3 is True and s5 is True:
+
+        SET emergency_stop TO True
+
+    IF s1 is True and s2 is True:
+
+        SET emergency_stop TO True
+
+    IF s1 is True and s3 is True:
+
+        SET emergency_stop TO True
+
+    IF s6 is True and s4 is True:
+
+        SET emergency_stop TO True
+
+    IF s6 is True and s5 is True:
+
+        SET emergency_stop TO True
+
+    OUTPUT(Point_A)
+
+    OUTPUT(Point_B)
+
+
+
+
+
+DEFINE FUNCTION record_data():
+
+    SET f TO open('blackbox.txt', 'a')
+
+    f.write('\n\n')
+
+    f.write('*--------------------------------------------*\n')
+
+    f.write('SENSOR DATA:\n')
+
+    find_date()
+
+    f.write(f'Sensor 1 EQUALS {sensor_data[0]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Sensor 2 EQUALS {sensor_data[1]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Sensor 3 EQUALS {sensor_data[2]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Sensor 4 EQUALS {sensor_data[3]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Sensor 5 EQUALS {sensor_data[4]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Sensor 6 EQUALS {sensor_data[5]} at {date}\n')
+
+    f.write('\n')
+
+    f.write('SIGNAL DATA:\n')
+
+    find_date()
+
+    f.write(f'Signal 1 EQUALS {signal_data[0]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Signal 2 EQUALS {signal_data[1]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Signal 3 EQUALS {signal_data[2]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Signal 4 EQUALS {signal_data[3]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Signal 5 EQUALS {signal_data[4]} at {date}\n')
+
+    find_date()
+
+    f.write(f'Signal 6 EQUALS {signal_data[5]} at {date}\n')
+
+    f.write('\n')
+
+    f.write('POINT DATA:\n')
+
+    find_date()
+
+    f.write(f'Point 1 EQUALS {Point_A}° at {date}\n')
+
+    find_date()
+
+    f.write(f'Point 2 EQUALS {Point_B}° at {date}\n')
+
+    f.close()
+
+
+
+
+
+DEFINE FUNCTION find_date():
+
+    global date
+
+    SET x TO datetime.datetime.today()
+
+    SET date TO x.strftime('%a %b %d %Y %H:%M:%S')
+
+
+
+
+
+DEFINE FUNCTION find_date_file_name():
+
+    global date_file
+
+    SET x TO datetime.datetime.today()
+
+    SET date_file TO x.strftime('%b%d%Y-%H:%M:%S')
+
+
+
+
+
+DEFINE FUNCTION signal_check():
+
+    global Sig_a
+
+    global Sig_b
+
+    global Sig_c
+
+    global Sig_d
+
+    global Sig_e
+
+    global Sig_f
+
+
+
+    SET a TO signal_data[0]
+
+    SET b TO signal_data[1]
+
+    SET c TO signal_data[2]
+
+    SET d TO signal_data[3]
+
+    SET e TO signal_data[4]
+
+    SET f1 TO signal_data[5]
+
+
+
+    IF a is False:
+
+        SET Sig_a TO 'RED'
+
+    ELSEIF a is True:
+
+        SET Sig_a TO 'GREEN'
+
+    IF b is False:
+
+        SET Sig_b TO 'RED'
+
+    ELSEIF b is True:
+
+        SET Sig_b TO 'GREEN'
+
+    IF c is False:
+
+        SET Sig_c TO 'RED'
+
+    ELSEIF c is True:
+
+        SET Sig_c TO 'GREEN'
+
+    IF d is False:
+
+        SET Sig_d TO 'RED'
+
+    ELSEIF d is True:
+
+        SET Sig_d TO 'GREEN'
+
+    IF e is False:
+
+        SET Sig_e TO 'RED'
+
+    ELSEIF e is True:
+
+        SET Sig_e TO 'GREEN'
+
+    IF f1 is False:
+
+        SET Sig_f TO 'RED'
+
+    ELSEIF f1 is True:
+
+        SET Sig_f TO 'GREEN'
+
+    IF Point_A EQUALS 0:
+
+        SET Sig_c TO 'RED'
+
+    ELSEIF Point_A EQUALS 30:
+
+        SET Sig_b TO 'RED'
+
+    IF Point_B EQUALS 0:
+
+        SET Sig_d TO 'RED'
+
+    ELSEIF Point_B EQUALS 30:
+
+        SET Sig_e TO 'RED'
+
+
+
+
+
+DEFINE FUNCTION main():
+
+    SET emergency_stop TO False
+
+    WHILE sim and emergency_stop is not True:
+
+        OUTPUT('*----------------------------------------------------*')
+
+        OUTPUT('1. Control Panel')
+
+        OUTPUT('2. Black Box')
+
+        OUTPUT('3. Test')
+
+        OUTPUT('4. Quit')
+
+        OUTPUT('Enter digit to continue:')
+
+        SET o1 TO INPUT()
+
+        IF o1 EQUALS '1':
+
+            SET o2 TO '1'
+
+            WHILE o2 != '4':
+
+                OUTPUT('Control Panel')
+
+                OUTPUT('1. Check Sensors')
+
+                OUTPUT('2. Check Points')
+
+                OUTPUT('3. Check Signals')
+
+                OUTPUT('4. Leave')
+
+                OUTPUT('')
+
+                OUTPUT('HIT ENTER FOR EMERGENCY STOP')
+
+                SET o2 TO INPUT()
+
+                IF o2 EQUALS '1':
+
+                    SET sensor_data[1] TO True
+
+                    sensor_check_1()
+
+                    sensor_check_2()
+
+                    OUTPUT(f'Route one is clear - {r1} Route two is clear - {r2}')
+
+                    record_data()
+
+                ELSEIF o2 EQUALS '2':
+
+                    OUTPUT(f'Point A is at {Point_A}°\n'
+
+                          f'Point B is at {Point_B}°\n')
+
+                    record_data()
+
+                ELSEIF o2 EQUALS '3':
+
+                    signal_check()
+
+                    OUTPUT(f'Signal 1 - {Sig_a}\n'
+
+                          f'Signal 2 - {Sig_b}\n'
+
+                          f'Signal 3 - {Sig_c}\n'
+
+                          f'Signal 4 - {Sig_d}\n'
+
+                          f'Signal 5 - {Sig_e}\n'
+
+                          f'Signal 6 - {Sig_f}\n')
+
+                    record_data()
+
+                ELSEIF o2 EQUALS '':
+
+                    record_data()
+
+                    SET f TO open('blackbox.txt', 'a')
+
+                    find_date()
+
+                    f.write(f'\n\n***EMERGENCY STOP AT {date}***\n')
+
+                    f.close()
+
+                    SET emergency_stop TO True
+
+                    break
+
+
+
+        ELSEIF o1 EQUALS '2':
+
+            OUTPUT('Black Box Menu')
+
+            OUTPUT('1. Read Last Input')
+
+            OUTPUT('2. Download Black Box')
+
+            OUTPUT('3. Clear Black Box')
+
+            OUTPUT('4. Leave')
+
+            SET o3 TO INPUT()
+
+            WHILE o3 != '4':
+
+                IF o3 EQUALS '1':
+
+                    SET f TO open("blackbox.txt", "r")
+
+                    SET file TO f.read()
+
+                    f.close()
+
+                    OUTPUT(file[-750:])
+
+                IF o3 EQUALS '2':
+
+                    OUTPUT('Please INPUT where you want the file downloaded to.')
+
+                    OUTPUT('i.e C:/Users/johnsmith/')
+
+                    SET file_dst TO INPUT()
+
+                    SET src TO 'blackbox.txt'
+
+                    find_date_file_name()
+
+                    SET dst TO f'{file_dst}blackbox{date_file}.txt'
+
+
+
+                    TRY:
+
+                        SET f TO open(dst, 'a')
+
+                        f.close()
+
+                        copyfile(src, dst)
+
+                    except Exception as e:
+
+                        OUTPUT('Error: %s' % str(e))
+
+                IF o3 EQUALS '3':
+
+                    SET f TO open('blackbox.txt', 'r')
+
+                    SET x TO f.read()
+
+                    f.close()
+
+                    OUTPUT('Are you sure you want to delete all data?')
+
+                    OUTPUT('Once deleted data cannot be restored')
+
+                    OUTPUT(f'Last delete was on {x[:24]}')
+
+                    OUTPUT('y/n')
+
+                    SET delete TO INPUT().lower()
+
+                    IF delete EQUALS 'yes' or 'y':
+
+                        SET f TO open('blackbox.txt', 'a')
+
+                        f.truncate(0)
+
+                        find_date()
+
+                        f.write(f'{date}\n')
+
+                        f.close()
+
+                    ELSEIF delete EQUALS 'no' or 'n':
+
+                        PASS
+
+
+
+        ELSEIF o1 EQUALS '3':
+
+            SET o4 TO ''
+
+            WHILE o4 != 2:
+
+                OUTPUT('Test Menu')
+
+                OUTPUT('1. Full run')
+
+                OUTPUT('2. Leave')
+
+                SET o4 TO INPUT()
+
+                IF o4 EQUALS '1':
+
+                    OUTPUT('Starting Simulation')
+
+                    SET power_t1 TO 10
+
+                    SET power_t2 TO 10
+
+                    IF power_t1 != 0 and power_t2 != 0:
+
+                        OUTPUT(f'The Scotsman is traveling at {power_t1}')
+
+                        OUTPUT(f'The Mallard is traveling at {power_t2}')
+
+                        from run IMPORT outward_run
+
+                        SET test TO True
+
+                        outward_run()
+
+                        point_change()
+
+                        time.sleep(2)
+
+                        from run IMPORT RETURN_run
+
+                        RETURN_run()
+
+                ELSEIF o4 EQUALS '2':
+
+                    break
+
+
+
+        ELSEIF o1 EQUALS '4':
+
+            OUTPUT('Type 1 to quit type 2 to RETURN')
+
+            SET q1 TO INPUT()
+
+            IF q1 EQUALS '1':
+
+                break
+
+            ELSE:
+
+                PASS
+
+
+
+    time.sleep(wait_time)
+
+
+
+
+
+IF __name__ EQUALS '__main__':
+
+    main()
+
