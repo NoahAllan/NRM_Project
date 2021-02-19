@@ -2,6 +2,7 @@
 # This file is only to test small parts of the program
 # This will have no impact on the final program
 
+# imports
 from shutil import copyfile
 from tkinter import *
 from PIL import Image, ImageTk
