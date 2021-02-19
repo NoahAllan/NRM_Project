@@ -2,7 +2,6 @@
 import time
 import itertools
 import threading
-import sys
 from track import *
 from main import sensor_data
 from main import point_change
