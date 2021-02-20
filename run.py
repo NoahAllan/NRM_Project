@@ -2,6 +2,7 @@
 import time
 import itertools
 import threading
+import sys
 from track import *
 from main import sensor_data
 from main import point_change
@@ -51,9 +52,9 @@ def outward_run():
         mallard_current_position = route_2[x]
         if scotsman_current_position == '3':
             sensor_data[0] = not sensor_data[0]
-        elif scotsman_current_position == '7b':
+        elif scotsman_current_position == '9b':
             sensor_data[1] = True
-        elif scotsman_current_position == '7c':
+        elif scotsman_current_position == '9c':
             sensor_data[2] = True
         elif scotsman_current_position == '22b':
             sensor_data[3] = True
@@ -63,9 +64,9 @@ def outward_run():
             sensor_data[5] = not sensor_data[5]
         if mallard_current_position == '3':
             sensor_data[0] = not sensor_data[0]
-        elif mallard_current_position == '7b':
+        elif mallard_current_position == '9b':
             sensor_data[1] = True
-        elif mallard_current_position == '7c':
+        elif mallard_current_position == '9c':
             sensor_data[2] = True
         elif mallard_current_position == '22b':
             sensor_data[3] = True
@@ -113,9 +114,9 @@ def return_run():
         mallard_current_position = route_1[x]
         if scotsman_current_position == '3':
             sensor_data[0] = not sensor_data[0]
-        elif scotsman_current_position == '7b':
+        elif scotsman_current_position == '9b':
             sensor_data[1] = True
-        elif scotsman_current_position == '7c':
+        elif scotsman_current_position == '9c':
             sensor_data[2] = True
         elif scotsman_current_position == '22b':
             sensor_data[3] = True
@@ -125,9 +126,9 @@ def return_run():
             sensor_data[5] = not sensor_data[5]
         if mallard_current_position == '3':
             sensor_data[0] = not sensor_data[0]
-        elif mallard_current_position == '7b':
+        elif mallard_current_position == '9b':
             sensor_data[1] = True
-        elif mallard_current_position == '7c':
+        elif mallard_current_position == '9c':
             sensor_data[2] = True
         elif mallard_current_position == '22b':
             sensor_data[3] = True
@@ -183,9 +184,9 @@ def constant_run():
             mallard_current_position = route_2[x]
             if scotsman_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
-            elif scotsman_current_position == '7b':
+            elif scotsman_current_position == '9b':
                 sensor_data[1] = True
-            elif scotsman_current_position == '7c':
+            elif scotsman_current_position == '9c':
                 sensor_data[2] = True
             elif scotsman_current_position == '22b':
                 sensor_data[3] = True
@@ -195,9 +196,9 @@ def constant_run():
                 sensor_data[5] = not sensor_data[5]
             if mallard_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
-            elif mallard_current_position == '7b':
+            elif mallard_current_position == '9b':
                 sensor_data[1] = True
-            elif mallard_current_position == '7c':
+            elif mallard_current_position == '9c':
                 sensor_data[2] = True
             elif mallard_current_position == '22b':
                 sensor_data[3] = True
@@ -238,9 +239,9 @@ def constant_run():
             mallard_current_position = route_1[y]
             if scotsman_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
-            elif scotsman_current_position == '7b':
+            elif scotsman_current_position == '9b':
                 sensor_data[1] = True
-            elif scotsman_current_position == '7c':
+            elif scotsman_current_position == '9c':
                 sensor_data[2] = True
             elif scotsman_current_position == '22b':
                 sensor_data[3] = True
@@ -250,9 +251,9 @@ def constant_run():
                 sensor_data[5] = not sensor_data[5]
             if mallard_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
-            elif mallard_current_position == '7b':
+            elif mallard_current_position == '9b':
                 sensor_data[1] = True
-            elif mallard_current_position == '7c':
+            elif mallard_current_position == '9c':
                 sensor_data[2] = True
             elif mallard_current_position == '22b':
                 sensor_data[3] = True
