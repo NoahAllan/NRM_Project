@@ -1,12 +1,13 @@
 # **NOTE**
 # This file is only to test small parts of the program
 # This will have no impact on the final program
-
+#
 # imports
 from shutil import copyfile
 from tkinter import *
 from PIL import Image, ImageTk
 from tkinter.font import Font
+
 
 root = Tk()
 w = 13
@@ -46,6 +47,37 @@ NRM_28 = 'images/NRM_P3.png'
 NRM_29 = 'images/NRM_P2.png'
 NRM_30 = 'images/NRM_P1.png'
 Error_Screen = 'images/ERROR_404.png'
+root.nrm1 = ImageTk.PhotoImage(Image.open(NRM_1))
+root.nrm2 = ImageTk.PhotoImage(Image.open(NRM_2))
+root.nrm3 = ImageTk.PhotoImage(Image.open(NRM_3))
+root.nrm4 = ImageTk.PhotoImage(Image.open(NRM_4))
+root.nrm5 = ImageTk.PhotoImage(Image.open(NRM_5))
+root.nrm6 = ImageTk.PhotoImage(Image.open(NRM_6))
+root.nrm7 = ImageTk.PhotoImage(Image.open(NRM_7))
+root.nrm8 = ImageTk.PhotoImage(Image.open(NRM_8))
+root.nrm9 = ImageTk.PhotoImage(Image.open(NRM_9))
+root.nrm10 = ImageTk.PhotoImage(Image.open(NRM_10))
+root.nrm11 = ImageTk.PhotoImage(Image.open(NRM_11))
+root.nrm12 = ImageTk.PhotoImage(Image.open(NRM_12))
+root.nrm13 = ImageTk.PhotoImage(Image.open(NRM_13))
+root.nrm14 = ImageTk.PhotoImage(Image.open(NRM_14))
+root.nrm15 = ImageTk.PhotoImage(Image.open(NRM_15))
+root.nrm16 = ImageTk.PhotoImage(Image.open(NRM_16))
+root.nrm17 = ImageTk.PhotoImage(Image.open(NRM_17))
+root.nrm18 = ImageTk.PhotoImage(Image.open(NRM_18))
+root.nrm19 = ImageTk.PhotoImage(Image.open(NRM_19))
+root.nrm20 = ImageTk.PhotoImage(Image.open(NRM_20))
+root.nrm21 = ImageTk.PhotoImage(Image.open(NRM_21))
+root.nrm22 = ImageTk.PhotoImage(Image.open(NRM_22))
+root.nrm23 = ImageTk.PhotoImage(Image.open(NRM_23))
+root.nrm24 = ImageTk.PhotoImage(Image.open(NRM_24))
+root.nrm25 = ImageTk.PhotoImage(Image.open(NRM_25))
+root.nrm26 = ImageTk.PhotoImage(Image.open(NRM_26))
+root.nrm27 = ImageTk.PhotoImage(Image.open(NRM_27))
+root.nrm28 = ImageTk.PhotoImage(Image.open(NRM_28))
+root.nrm29 = ImageTk.PhotoImage(Image.open(NRM_29))
+root.nrm30 = ImageTk.PhotoImage(Image.open(NRM_30))
+root.error = ImageTk.PhotoImage(Image.open(Error_Screen))
 
 Verdana = Font(family="Verdana", size=12)
 VerdanaL = Font(family="Verdana", size=8)
@@ -65,6 +97,10 @@ for frame in (f0, f1, f2, f3, download):
     frame.grid(row=0, column=0, sticky='news')
 
 
+def change_pic():
+    photo_.configure(image=root.nrm2)
+
+
 def close():
     root.destroy()
 
@@ -81,48 +117,41 @@ def test():
     pass
 
 
-Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w, height=h, command=lambda: raise_frame(f1), font=VerdanaL).\
+Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w, height=h, command=lambda: raise_frame(f1), font=VerdanaL). \
     grid(row=3, column=0)
-Black_Box = Button(f0, text="BLACK\nBOX", width=w, height=h, command=lambda: raise_frame(f2), font=VerdanaL).\
+Black_Box = Button(f0, text="BLACK\nBOX", width=w, height=h, command=lambda: raise_frame(f2), font=VerdanaL). \
     grid(row=3, column=1)
 Test = Button(f0, text="TEST", width=w, height=h, command=lambda: raise_frame(f3), font=VerdanaL).grid(row=3, column=2)
-Quit = Button(f0, text="QUIT", width=w, height=h, command=close, font=VerdanaL).grid(row=3, column=3)
-image1 = Image.open(NRM_1)
-image_ = ImageTk.PhotoImage(image1)
-x = Label(f0, image=image_).grid(row=0, column=0, columnspan=4)
+Quit = Button(f0, text="QUIT", width=w, height=h, command=change_pic, font=VerdanaL).grid(row=3, column=3)
+photo_ = Label(f0, image=root.nrm1)  # row=0, column=0, columnspan=4
+photo_.grid(row=0, column=0, columnspan=4)
 
-
-Check_Sensors = Button(f1, text="CHECK SENSORS", width=w, height=h, command=control_panel, font=VerdanaL).\
+Check_Sensors = Button(f1, text="CHECK SENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
     grid(row=3, column=0)
-Check_Points = Button(f1, text="CHECK POINTS", width=w, height=h, command=black_box, font=VerdanaL).\
+Check_Points = Button(f1, text="CHECK POINTS", width=w, height=h, command=black_box, font=VerdanaL). \
     grid(row=3, column=1)
 Check_Signals = Button(f1, text="CHECK SIGNALS", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
-Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL).\
+Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
-image11 = Image.open(Error_Screen)
-image_1 = ImageTk.PhotoImage(image11)
-x1 = Label(f1, image=image_1).grid(row=0, column=0, columnspan=4)
+photo_1 = Label(f1, image=root.error)
+photo_1.grid(row=0, column=0, columnspan=4)
 
-
-Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL).\
+Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL). \
     grid(row=3, column=0)
-Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL).\
+Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
     grid(row=3, column=1)
 Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
-Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL).\
+Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
-image12 = Image.open(Error_Screen)
-image_2 = ImageTk.PhotoImage(image12)
-x2 = Label(f2, image=image_2).grid(row=0, column=0, columnspan=4)
+photo_2 = Label(f2, image=root.error)
+photo_2.grid(row=0, column=0, columnspan=4)
 
-
-Run_Through = Button(f3, text="Test System", width=27, height=h, command=control_panel, font=VerdanaL).\
+Run_Through = Button(f3, text="Test System", width=27, height=h, command=control_panel, font=VerdanaL). \
     grid(row=3, column=0)
-Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL).\
+Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
-image13 = Image.open(Error_Screen)
-image_3 = ImageTk.PhotoImage(image13)
-x3 = Label(f3, image=image_3).grid(row=0, column=0, columnspan=4)
+photo_3 = Label(f3, image=root.error)
+photo_3.grid(row=0, column=0, columnspan=4)
 
 
 def download_black_box(event):
@@ -147,4 +176,3 @@ ent.bind('<Return>', download_black_box)
 
 raise_frame(f0)
 root.mainloop()
-
