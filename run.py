@@ -7,7 +7,7 @@ from track import *
 from main import sensor_data
 from main import point_change
 from main import record_data
-
+position = ''
 v = 0.2  # This number should be 17.8 for correct timings but is lower for testing purposes
 
 
@@ -50,29 +50,207 @@ def outward_run():
             break
         scotsman_current_position = route_1[x]
         mallard_current_position = route_2[x]
-        if scotsman_current_position == '3':
+        if scotsman_current_position == '1':
+            position = '1'
+            return position
+        elif scotsman_current_position == '2':
+            pass
+        elif scotsman_current_position == '3':
             sensor_data[0] = not sensor_data[0]
+        elif scotsman_current_position == '4':
+            pass
+        elif scotsman_current_position == '5':
+            pass
+        elif scotsman_current_position == '6b':
+            pass
+        elif scotsman_current_position == '6c':
+            pass
+        elif scotsman_current_position == '7b':
+            pass
+        elif scotsman_current_position == '7c':
+            pass
+        elif scotsman_current_position == '8b':
+            pass
+        elif scotsman_current_position == '8c':
+            pass
         elif scotsman_current_position == '9b':
             sensor_data[1] = True
         elif scotsman_current_position == '9c':
             sensor_data[2] = True
+        elif scotsman_current_position == '10b':
+            pass
+        elif scotsman_current_position == '10c':
+            pass
+        elif scotsman_current_position == '11b':
+            pass
+        elif scotsman_current_position == '11c':
+            pass
+        elif scotsman_current_position == '12b':
+            pass
+        elif scotsman_current_position == '12c':
+            pass
+        elif scotsman_current_position == '13b':
+            pass
+        elif scotsman_current_position == '13c':
+            pass
+        elif scotsman_current_position == '14b':
+            pass
+        elif scotsman_current_position == '14c':
+            pass
+        elif scotsman_current_position == '15b':
+            pass
+        elif scotsman_current_position == '15c':
+            pass
+        elif scotsman_current_position == '16b':
+            pass
+        elif scotsman_current_position == '16c':
+            pass
+        elif scotsman_current_position == '17b':
+            pass
+        elif scotsman_current_position == '17c':
+            pass
+        elif scotsman_current_position == '18b':
+            pass
+        elif scotsman_current_position == '18c':
+            pass
+        elif scotsman_current_position == '19b':
+            pass
+        elif scotsman_current_position == '19c':
+            pass
+        elif scotsman_current_position == '20b':
+            pass
+        elif scotsman_current_position == '20c':
+            pass
+        elif scotsman_current_position == '21b':
+            pass
+        elif scotsman_current_position == '21c':
+            pass
         elif scotsman_current_position == '22b':
             sensor_data[3] = True
         elif scotsman_current_position == '22c':
             sensor_data[4] = True
+        elif scotsman_current_position == '23b':
+            pass
+        elif scotsman_current_position == '23c':
+            pass
+        elif scotsman_current_position == '24b':
+            pass
+        elif scotsman_current_position == '24c':
+            pass
+        elif scotsman_current_position == '25b':
+            pass
+        elif scotsman_current_position == '25c':
+            pass
+        elif scotsman_current_position == '26':
+            pass
+        elif scotsman_current_position == '27':
+            pass
         elif scotsman_current_position == '28':
             sensor_data[5] = not sensor_data[5]
-        if mallard_current_position == '3':
+        elif scotsman_current_position == '29':
+            pass
+        elif scotsman_current_position == '30':
+            pass
+        if mallard_current_position == '1':
+            pass
+        elif mallard_current_position == '2':
+            pass
+        elif mallard_current_position == '3':
             sensor_data[0] = not sensor_data[0]
+        elif mallard_current_position == '4':
+            pass
+        elif mallard_current_position == '5':
+            pass
+        elif mallard_current_position == '6b':
+            pass
+        elif mallard_current_position == '6c':
+            pass
+        elif mallard_current_position == '7b':
+            pass
+        elif mallard_current_position == '7c':
+            pass
+        elif mallard_current_position == '8b':
+            pass
+        elif mallard_current_position == '8c':
+            pass
         elif mallard_current_position == '9b':
             sensor_data[1] = True
         elif mallard_current_position == '9c':
             sensor_data[2] = True
+        elif mallard_current_position == '10b':
+            pass
+        elif mallard_current_position == '10c':
+            pass
+        elif mallard_current_position == '11b':
+            pass
+        elif mallard_current_position == '11c':
+            pass
+        elif mallard_current_position == '12b':
+            pass
+        elif mallard_current_position == '12c':
+            pass
+        elif mallard_current_position == '13b':
+            pass
+        elif mallard_current_position == '13c':
+            pass
+        elif mallard_current_position == '14b':
+            pass
+        elif mallard_current_position == '14c':
+            pass
+        elif mallard_current_position == '15b':
+            pass
+        elif mallard_current_position == '15c':
+            pass
+        elif mallard_current_position == '16b':
+            pass
+        elif mallard_current_position == '16c':
+            pass
+        elif mallard_current_position == '17b':
+            pass
+        elif mallard_current_position == '17c':
+            pass
+        elif mallard_current_position == '18b':
+            pass
+        elif mallard_current_position == '18c':
+            pass
+        elif mallard_current_position == '19b':
+            pass
+        elif mallard_current_position == '19c':
+            pass
+        elif mallard_current_position == '20b':
+            pass
+        elif mallard_current_position == '20c':
+            pass
+        elif mallard_current_position == '21b':
+            pass
+        elif mallard_current_position == '21c':
+            pass
         elif mallard_current_position == '22b':
             sensor_data[3] = True
         elif mallard_current_position == '22c':
             sensor_data[4] = True
+        elif mallard_current_position == '23b':
+            pass
+        elif mallard_current_position == '23c':
+            pass
+        elif mallard_current_position == '24b':
+            pass
+        elif mallard_current_position == '24c':
+            pass
+        elif mallard_current_position == '25b':
+            pass
+        elif mallard_current_position == '25c':
+            pass
+        elif mallard_current_position == '26':
+            pass
+        elif mallard_current_position == '27':
+            pass
         elif mallard_current_position == '28':
+            sensor_data[5] = not sensor_data[5]
+        elif mallard_current_position == '29':
+            pass
+        elif mallard_current_position == '30':
+            pass
             sensor_data[5] = not sensor_data[5]
         print(sensor_data)
         point_change()
@@ -112,30 +290,207 @@ def return_run():
             break
         scotsman_current_position = route_2[x]
         mallard_current_position = route_1[x]
-        if scotsman_current_position == '3':
+        if scotsman_current_position == '1':
+            position = '1'
+            return position
+        elif scotsman_current_position == '2':
+            pass
+        elif scotsman_current_position == '3':
             sensor_data[0] = not sensor_data[0]
+        elif scotsman_current_position == '4':
+            pass
+        elif scotsman_current_position == '5':
+            pass
+        elif scotsman_current_position == '6b':
+            pass
+        elif scotsman_current_position == '6c':
+            pass
+        elif scotsman_current_position == '7b':
+            pass
+        elif scotsman_current_position == '7c':
+            pass
+        elif scotsman_current_position == '8b':
+            pass
+        elif scotsman_current_position == '8c':
+            pass
         elif scotsman_current_position == '9b':
             sensor_data[1] = True
         elif scotsman_current_position == '9c':
             sensor_data[2] = True
+        elif scotsman_current_position == '10b':
+            pass
+        elif scotsman_current_position == '10c':
+            pass
+        elif scotsman_current_position == '11b':
+            pass
+        elif scotsman_current_position == '11c':
+            pass
+        elif scotsman_current_position == '12b':
+            pass
+        elif scotsman_current_position == '12c':
+            pass
+        elif scotsman_current_position == '13b':
+            pass
+        elif scotsman_current_position == '13c':
+            pass
+        elif scotsman_current_position == '14b':
+            pass
+        elif scotsman_current_position == '14c':
+            pass
+        elif scotsman_current_position == '15b':
+            pass
+        elif scotsman_current_position == '15c':
+            pass
+        elif scotsman_current_position == '16b':
+            pass
+        elif scotsman_current_position == '16c':
+            pass
+        elif scotsman_current_position == '17b':
+            pass
+        elif scotsman_current_position == '17c':
+            pass
+        elif scotsman_current_position == '18b':
+            pass
+        elif scotsman_current_position == '18c':
+            pass
+        elif scotsman_current_position == '19b':
+            pass
+        elif scotsman_current_position == '19c':
+            pass
+        elif scotsman_current_position == '20b':
+            pass
+        elif scotsman_current_position == '20c':
+            pass
+        elif scotsman_current_position == '21b':
+            pass
+        elif scotsman_current_position == '21c':
+            pass
         elif scotsman_current_position == '22b':
             sensor_data[3] = True
         elif scotsman_current_position == '22c':
             sensor_data[4] = True
+        elif scotsman_current_position == '23b':
+            pass
+        elif scotsman_current_position == '23c':
+            pass
+        elif scotsman_current_position == '24b':
+            pass
+        elif scotsman_current_position == '24c':
+            pass
+        elif scotsman_current_position == '25b':
+            pass
+        elif scotsman_current_position == '25c':
+            pass
+        elif scotsman_current_position == '26':
+            pass
+        elif scotsman_current_position == '27':
+            pass
         elif scotsman_current_position == '28':
             sensor_data[5] = not sensor_data[5]
-        if mallard_current_position == '3':
+        elif scotsman_current_position == '29':
+            pass
+        elif scotsman_current_position == '30':
+            pass
+        if mallard_current_position == '1':
+            pass
+        elif mallard_current_position == '2':
+            pass
+        elif mallard_current_position == '3':
             sensor_data[0] = not sensor_data[0]
+        elif mallard_current_position == '4':
+            pass
+        elif mallard_current_position == '5':
+            pass
+        elif mallard_current_position == '6b':
+            pass
+        elif mallard_current_position == '6c':
+            pass
+        elif mallard_current_position == '7b':
+            pass
+        elif mallard_current_position == '7c':
+            pass
+        elif mallard_current_position == '8b':
+            pass
+        elif mallard_current_position == '8c':
+            pass
         elif mallard_current_position == '9b':
             sensor_data[1] = True
         elif mallard_current_position == '9c':
             sensor_data[2] = True
+        elif mallard_current_position == '10b':
+            pass
+        elif mallard_current_position == '10c':
+            pass
+        elif mallard_current_position == '11b':
+            pass
+        elif mallard_current_position == '11c':
+            pass
+        elif mallard_current_position == '12b':
+            pass
+        elif mallard_current_position == '12c':
+            pass
+        elif mallard_current_position == '13b':
+            pass
+        elif mallard_current_position == '13c':
+            pass
+        elif mallard_current_position == '14b':
+            pass
+        elif mallard_current_position == '14c':
+            pass
+        elif mallard_current_position == '15b':
+            pass
+        elif mallard_current_position == '15c':
+            pass
+        elif mallard_current_position == '16b':
+            pass
+        elif mallard_current_position == '16c':
+            pass
+        elif mallard_current_position == '17b':
+            pass
+        elif mallard_current_position == '17c':
+            pass
+        elif mallard_current_position == '18b':
+            pass
+        elif mallard_current_position == '18c':
+            pass
+        elif mallard_current_position == '19b':
+            pass
+        elif mallard_current_position == '19c':
+            pass
+        elif mallard_current_position == '20b':
+            pass
+        elif mallard_current_position == '20c':
+            pass
+        elif mallard_current_position == '21b':
+            pass
+        elif mallard_current_position == '21c':
+            pass
         elif mallard_current_position == '22b':
             sensor_data[3] = True
         elif mallard_current_position == '22c':
             sensor_data[4] = True
+        elif mallard_current_position == '23b':
+            pass
+        elif mallard_current_position == '23c':
+            pass
+        elif mallard_current_position == '24b':
+            pass
+        elif mallard_current_position == '24c':
+            pass
+        elif mallard_current_position == '25b':
+            pass
+        elif mallard_current_position == '25c':
+            pass
+        elif mallard_current_position == '26':
+            pass
+        elif mallard_current_position == '27':
+            pass
         elif mallard_current_position == '28':
             sensor_data[5] = not sensor_data[5]
+        elif mallard_current_position == '29':
+            pass
+        elif mallard_current_position == '30':
+            pass
         print(sensor_data)
         point_change()
         record_data()
@@ -145,6 +500,7 @@ def constant_run():
     from main import emergency_stop
     from main import record_data
     from main import point_change
+    global position
     scotsman_current_position = route_1[0]
     mallard_current_position = route_2[0]
     l3: bool = True
@@ -182,30 +538,207 @@ def constant_run():
                 break
             scotsman_current_position = route_1[x]
             mallard_current_position = route_2[x]
-            if scotsman_current_position == '3':
+            if scotsman_current_position == '1':
+                position = '1'
+                return position
+            elif scotsman_current_position == '2':
+                pass
+            elif scotsman_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
+            elif scotsman_current_position == '4':
+                pass
+            elif scotsman_current_position == '5':
+                pass
+            elif scotsman_current_position == '6b':
+                pass
+            elif scotsman_current_position == '6c':
+                pass
+            elif scotsman_current_position == '7b':
+                pass
+            elif scotsman_current_position == '7c':
+                pass
+            elif scotsman_current_position == '8b':
+                pass
+            elif scotsman_current_position == '8c':
+                pass
             elif scotsman_current_position == '9b':
                 sensor_data[1] = True
             elif scotsman_current_position == '9c':
                 sensor_data[2] = True
+            elif scotsman_current_position == '10b':
+                pass
+            elif scotsman_current_position == '10c':
+                pass
+            elif scotsman_current_position == '11b':
+                pass
+            elif scotsman_current_position == '11c':
+                pass
+            elif scotsman_current_position == '12b':
+                pass
+            elif scotsman_current_position == '12c':
+                pass
+            elif scotsman_current_position == '13b':
+                pass
+            elif scotsman_current_position == '13c':
+                pass
+            elif scotsman_current_position == '14b':
+                pass
+            elif scotsman_current_position == '14c':
+                pass
+            elif scotsman_current_position == '15b':
+                pass
+            elif scotsman_current_position == '15c':
+                pass
+            elif scotsman_current_position == '16b':
+                pass
+            elif scotsman_current_position == '16c':
+                pass
+            elif scotsman_current_position == '17b':
+                pass
+            elif scotsman_current_position == '17c':
+                pass
+            elif scotsman_current_position == '18b':
+                pass
+            elif scotsman_current_position == '18c':
+                pass
+            elif scotsman_current_position == '19b':
+                pass
+            elif scotsman_current_position == '19c':
+                pass
+            elif scotsman_current_position == '20b':
+                pass
+            elif scotsman_current_position == '20c':
+                pass
+            elif scotsman_current_position == '21b':
+                pass
+            elif scotsman_current_position == '21c':
+                pass
             elif scotsman_current_position == '22b':
                 sensor_data[3] = True
             elif scotsman_current_position == '22c':
                 sensor_data[4] = True
+            elif scotsman_current_position == '23b':
+                pass
+            elif scotsman_current_position == '23c':
+                pass
+            elif scotsman_current_position == '24b':
+                pass
+            elif scotsman_current_position == '24c':
+                pass
+            elif scotsman_current_position == '25b':
+                pass
+            elif scotsman_current_position == '25c':
+                pass
+            elif scotsman_current_position == '26':
+                pass
+            elif scotsman_current_position == '27':
+                pass
             elif scotsman_current_position == '28':
                 sensor_data[5] = not sensor_data[5]
-            if mallard_current_position == '3':
+            elif scotsman_current_position == '29':
+                pass
+            elif scotsman_current_position == '30':
+                pass
+            if mallard_current_position == '1':
+                pass
+            elif mallard_current_position == '2':
+                pass
+            elif mallard_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
+            elif mallard_current_position == '4':
+                pass
+            elif mallard_current_position == '5':
+                pass
+            elif mallard_current_position == '6b':
+                pass
+            elif mallard_current_position == '6c':
+                pass
+            elif mallard_current_position == '7b':
+                pass
+            elif mallard_current_position == '7c':
+                pass
+            elif mallard_current_position == '8b':
+                pass
+            elif mallard_current_position == '8c':
+                pass
             elif mallard_current_position == '9b':
                 sensor_data[1] = True
             elif mallard_current_position == '9c':
                 sensor_data[2] = True
+            elif mallard_current_position == '10b':
+                pass
+            elif mallard_current_position == '10c':
+                pass
+            elif mallard_current_position == '11b':
+                pass
+            elif mallard_current_position == '11c':
+                pass
+            elif mallard_current_position == '12b':
+                pass
+            elif mallard_current_position == '12c':
+                pass
+            elif mallard_current_position == '13b':
+                pass
+            elif mallard_current_position == '13c':
+                pass
+            elif mallard_current_position == '14b':
+                pass
+            elif mallard_current_position == '14c':
+                pass
+            elif mallard_current_position == '15b':
+                pass
+            elif mallard_current_position == '15c':
+                pass
+            elif mallard_current_position == '16b':
+                pass
+            elif mallard_current_position == '16c':
+                pass
+            elif mallard_current_position == '17b':
+                pass
+            elif mallard_current_position == '17c':
+                pass
+            elif mallard_current_position == '18b':
+                pass
+            elif mallard_current_position == '18c':
+                pass
+            elif mallard_current_position == '19b':
+                pass
+            elif mallard_current_position == '19c':
+                pass
+            elif mallard_current_position == '20b':
+                pass
+            elif mallard_current_position == '20c':
+                pass
+            elif mallard_current_position == '21b':
+                pass
+            elif mallard_current_position == '21c':
+                pass
             elif mallard_current_position == '22b':
                 sensor_data[3] = True
             elif mallard_current_position == '22c':
                 sensor_data[4] = True
+            elif mallard_current_position == '23b':
+                pass
+            elif mallard_current_position == '23c':
+                pass
+            elif mallard_current_position == '24b':
+                pass
+            elif mallard_current_position == '24c':
+                pass
+            elif mallard_current_position == '25b':
+                pass
+            elif mallard_current_position == '25c':
+                pass
+            elif mallard_current_position == '26':
+                pass
+            elif mallard_current_position == '27':
+                pass
             elif mallard_current_position == '28':
                 sensor_data[5] = not sensor_data[5]
+            elif mallard_current_position == '29':
+                pass
+            elif mallard_current_position == '30':
+                pass
             print(sensor_data)
             point_change()
             record_data()
@@ -237,30 +770,206 @@ def constant_run():
                 break
             scotsman_current_position = route_2[y]
             mallard_current_position = route_1[y]
-            if scotsman_current_position == '3':
+            if scotsman_current_position == '1':
+                pass
+            elif scotsman_current_position == '2':
+                pass
+            elif scotsman_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
+            elif scotsman_current_position == '4':
+                pass
+            elif scotsman_current_position == '5':
+                pass
+            elif scotsman_current_position == '6b':
+                pass
+            elif scotsman_current_position == '6c':
+                pass
+            elif scotsman_current_position == '7b':
+                pass
+            elif scotsman_current_position == '7c':
+                pass
+            elif scotsman_current_position == '8b':
+                pass
+            elif scotsman_current_position == '8c':
+                pass
             elif scotsman_current_position == '9b':
                 sensor_data[1] = True
             elif scotsman_current_position == '9c':
                 sensor_data[2] = True
+            elif scotsman_current_position == '10b':
+                pass
+            elif scotsman_current_position == '10c':
+                pass
+            elif scotsman_current_position == '11b':
+                pass
+            elif scotsman_current_position == '11c':
+                pass
+            elif scotsman_current_position == '12b':
+                pass
+            elif scotsman_current_position == '12c':
+                pass
+            elif scotsman_current_position == '13b':
+                pass
+            elif scotsman_current_position == '13c':
+                pass
+            elif scotsman_current_position == '14b':
+                pass
+            elif scotsman_current_position == '14c':
+                pass
+            elif scotsman_current_position == '15b':
+                pass
+            elif scotsman_current_position == '15c':
+                pass
+            elif scotsman_current_position == '16b':
+                pass
+            elif scotsman_current_position == '16c':
+                pass
+            elif scotsman_current_position == '17b':
+                pass
+            elif scotsman_current_position == '17c':
+                pass
+            elif scotsman_current_position == '18b':
+                pass
+            elif scotsman_current_position == '18c':
+                pass
+            elif scotsman_current_position == '19b':
+                pass
+            elif scotsman_current_position == '19c':
+                pass
+            elif scotsman_current_position == '20b':
+                pass
+            elif scotsman_current_position == '20c':
+                pass
+            elif scotsman_current_position == '21b':
+                pass
+            elif scotsman_current_position == '21c':
+                pass
             elif scotsman_current_position == '22b':
                 sensor_data[3] = True
             elif scotsman_current_position == '22c':
                 sensor_data[4] = True
+            elif scotsman_current_position == '23b':
+                pass
+            elif scotsman_current_position == '23c':
+                pass
+            elif scotsman_current_position == '24b':
+                pass
+            elif scotsman_current_position == '24c':
+                pass
+            elif scotsman_current_position == '25b':
+                pass
+            elif scotsman_current_position == '25c':
+                pass
+            elif scotsman_current_position == '26':
+                pass
+            elif scotsman_current_position == '27':
+                pass
             elif scotsman_current_position == '28':
                 sensor_data[5] = not sensor_data[5]
-            if mallard_current_position == '3':
+            elif scotsman_current_position == '29':
+                pass
+            elif scotsman_current_position == '30':
+                pass
+            if mallard_current_position == '1':
+                pass
+            elif mallard_current_position == '2':
+                pass
+            elif mallard_current_position == '3':
                 sensor_data[0] = not sensor_data[0]
+            elif mallard_current_position == '4':
+                pass
+            elif mallard_current_position == '5':
+                pass
+            elif mallard_current_position == '6b':
+                pass
+            elif mallard_current_position == '6c':
+                pass
+            elif mallard_current_position == '7b':
+                pass
+            elif mallard_current_position == '7c':
+                pass
+            elif mallard_current_position == '8b':
+                pass
+            elif mallard_current_position == '8c':
+                pass
             elif mallard_current_position == '9b':
                 sensor_data[1] = True
             elif mallard_current_position == '9c':
                 sensor_data[2] = True
+            elif mallard_current_position == '10b':
+                pass
+            elif mallard_current_position == '10c':
+                pass
+            elif mallard_current_position == '11b':
+                pass
+            elif mallard_current_position == '11c':
+                pass
+            elif mallard_current_position == '12b':
+                pass
+            elif mallard_current_position == '12c':
+                pass
+            elif mallard_current_position == '13b':
+                pass
+            elif mallard_current_position == '13c':
+                pass
+            elif mallard_current_position == '14b':
+                pass
+            elif mallard_current_position == '14c':
+                pass
+            elif mallard_current_position == '15b':
+                pass
+            elif mallard_current_position == '15c':
+                pass
+            elif mallard_current_position == '16b':
+                pass
+            elif mallard_current_position == '16c':
+                pass
+            elif mallard_current_position == '17b':
+                pass
+            elif mallard_current_position == '17c':
+                pass
+            elif mallard_current_position == '18b':
+                pass
+            elif mallard_current_position == '18c':
+                pass
+            elif mallard_current_position == '19b':
+                pass
+            elif mallard_current_position == '19c':
+                pass
+            elif mallard_current_position == '20b':
+                pass
+            elif mallard_current_position == '20c':
+                pass
+            elif mallard_current_position == '21b':
+                pass
+            elif mallard_current_position == '21c':
+                pass
             elif mallard_current_position == '22b':
                 sensor_data[3] = True
             elif mallard_current_position == '22c':
                 sensor_data[4] = True
+            elif mallard_current_position == '23b':
+                pass
+            elif mallard_current_position == '23c':
+                pass
+            elif mallard_current_position == '24b':
+                pass
+            elif mallard_current_position == '24c':
+                pass
+            elif mallard_current_position == '25b':
+                pass
+            elif mallard_current_position == '25c':
+                pass
+            elif mallard_current_position == '26':
+                pass
+            elif mallard_current_position == '27':
+                pass
             elif mallard_current_position == '28':
                 sensor_data[5] = not sensor_data[5]
+            elif mallard_current_position == '29':
+                pass
+            elif mallard_current_position == '30':
+                pass
             print(sensor_data)
             point_change()
             record_data()
