@@ -2077,3 +2077,1279 @@ Signal 6 == False at Sun Feb 21 2021 16:58:08
 POINT DATA:
 Point 1 == 0° at Sun Feb 21 2021 16:58:08
 Point 2 == 30° at Sun Feb 21 2021 16:58:08
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:20
+Sensor 2 == False at Tue Feb 23 2021 09:56:20
+Sensor 3 == False at Tue Feb 23 2021 09:56:20
+Sensor 4 == False at Tue Feb 23 2021 09:56:20
+Sensor 5 == False at Tue Feb 23 2021 09:56:20
+Sensor 6 == True at Tue Feb 23 2021 09:56:20
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:20
+Signal 2 == False at Tue Feb 23 2021 09:56:20
+Signal 3 == False at Tue Feb 23 2021 09:56:20
+Signal 4 == False at Tue Feb 23 2021 09:56:20
+Signal 5 == False at Tue Feb 23 2021 09:56:20
+Signal 6 == False at Tue Feb 23 2021 09:56:20
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:20
+Point 2 == 0° at Tue Feb 23 2021 09:56:20
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:29
+Sensor 2 == False at Tue Feb 23 2021 09:56:29
+Sensor 3 == False at Tue Feb 23 2021 09:56:29
+Sensor 4 == False at Tue Feb 23 2021 09:56:29
+Sensor 5 == False at Tue Feb 23 2021 09:56:29
+Sensor 6 == True at Tue Feb 23 2021 09:56:29
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:29
+Signal 2 == False at Tue Feb 23 2021 09:56:29
+Signal 3 == False at Tue Feb 23 2021 09:56:29
+Signal 4 == False at Tue Feb 23 2021 09:56:29
+Signal 5 == False at Tue Feb 23 2021 09:56:29
+Signal 6 == False at Tue Feb 23 2021 09:56:29
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:29
+Point 2 == 0° at Tue Feb 23 2021 09:56:29
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:29
+Sensor 2 == False at Tue Feb 23 2021 09:56:29
+Sensor 3 == False at Tue Feb 23 2021 09:56:29
+Sensor 4 == False at Tue Feb 23 2021 09:56:29
+Sensor 5 == False at Tue Feb 23 2021 09:56:29
+Sensor 6 == False at Tue Feb 23 2021 09:56:29
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:29
+Signal 2 == False at Tue Feb 23 2021 09:56:29
+Signal 3 == False at Tue Feb 23 2021 09:56:29
+Signal 4 == False at Tue Feb 23 2021 09:56:29
+Signal 5 == False at Tue Feb 23 2021 09:56:29
+Signal 6 == False at Tue Feb 23 2021 09:56:29
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:29
+Point 2 == 0° at Tue Feb 23 2021 09:56:29
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:30
+Sensor 2 == False at Tue Feb 23 2021 09:56:30
+Sensor 3 == False at Tue Feb 23 2021 09:56:30
+Sensor 4 == False at Tue Feb 23 2021 09:56:30
+Sensor 5 == False at Tue Feb 23 2021 09:56:30
+Sensor 6 == False at Tue Feb 23 2021 09:56:30
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:30
+Signal 2 == False at Tue Feb 23 2021 09:56:30
+Signal 3 == False at Tue Feb 23 2021 09:56:30
+Signal 4 == False at Tue Feb 23 2021 09:56:30
+Signal 5 == False at Tue Feb 23 2021 09:56:30
+Signal 6 == False at Tue Feb 23 2021 09:56:30
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:30
+Point 2 == 0° at Tue Feb 23 2021 09:56:30
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:30
+Sensor 2 == False at Tue Feb 23 2021 09:56:30
+Sensor 3 == False at Tue Feb 23 2021 09:56:30
+Sensor 4 == False at Tue Feb 23 2021 09:56:30
+Sensor 5 == False at Tue Feb 23 2021 09:56:30
+Sensor 6 == False at Tue Feb 23 2021 09:56:30
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:30
+Signal 2 == False at Tue Feb 23 2021 09:56:30
+Signal 3 == False at Tue Feb 23 2021 09:56:30
+Signal 4 == False at Tue Feb 23 2021 09:56:30
+Signal 5 == False at Tue Feb 23 2021 09:56:30
+Signal 6 == False at Tue Feb 23 2021 09:56:30
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:30
+Point 2 == 0° at Tue Feb 23 2021 09:56:30
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:30
+Sensor 2 == False at Tue Feb 23 2021 09:56:30
+Sensor 3 == False at Tue Feb 23 2021 09:56:30
+Sensor 4 == False at Tue Feb 23 2021 09:56:30
+Sensor 5 == False at Tue Feb 23 2021 09:56:30
+Sensor 6 == False at Tue Feb 23 2021 09:56:30
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:30
+Signal 2 == False at Tue Feb 23 2021 09:56:30
+Signal 3 == False at Tue Feb 23 2021 09:56:30
+Signal 4 == False at Tue Feb 23 2021 09:56:30
+Signal 5 == False at Tue Feb 23 2021 09:56:30
+Signal 6 == False at Tue Feb 23 2021 09:56:30
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:30
+Point 2 == 0° at Tue Feb 23 2021 09:56:30
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:31
+Sensor 2 == False at Tue Feb 23 2021 09:56:31
+Sensor 3 == False at Tue Feb 23 2021 09:56:31
+Sensor 4 == False at Tue Feb 23 2021 09:56:31
+Sensor 5 == False at Tue Feb 23 2021 09:56:31
+Sensor 6 == False at Tue Feb 23 2021 09:56:31
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:31
+Signal 2 == False at Tue Feb 23 2021 09:56:31
+Signal 3 == False at Tue Feb 23 2021 09:56:31
+Signal 4 == False at Tue Feb 23 2021 09:56:31
+Signal 5 == False at Tue Feb 23 2021 09:56:31
+Signal 6 == False at Tue Feb 23 2021 09:56:31
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:31
+Point 2 == 0° at Tue Feb 23 2021 09:56:31
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:31
+Sensor 2 == False at Tue Feb 23 2021 09:56:31
+Sensor 3 == False at Tue Feb 23 2021 09:56:31
+Sensor 4 == False at Tue Feb 23 2021 09:56:31
+Sensor 5 == False at Tue Feb 23 2021 09:56:31
+Sensor 6 == False at Tue Feb 23 2021 09:56:31
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:31
+Signal 2 == False at Tue Feb 23 2021 09:56:31
+Signal 3 == False at Tue Feb 23 2021 09:56:31
+Signal 4 == False at Tue Feb 23 2021 09:56:31
+Signal 5 == False at Tue Feb 23 2021 09:56:31
+Signal 6 == False at Tue Feb 23 2021 09:56:31
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:31
+Point 2 == 0° at Tue Feb 23 2021 09:56:31
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:32
+Sensor 2 == False at Tue Feb 23 2021 09:56:32
+Sensor 3 == True at Tue Feb 23 2021 09:56:32
+Sensor 4 == True at Tue Feb 23 2021 09:56:32
+Sensor 5 == False at Tue Feb 23 2021 09:56:32
+Sensor 6 == False at Tue Feb 23 2021 09:56:32
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:32
+Signal 2 == False at Tue Feb 23 2021 09:56:32
+Signal 3 == False at Tue Feb 23 2021 09:56:32
+Signal 4 == False at Tue Feb 23 2021 09:56:32
+Signal 5 == False at Tue Feb 23 2021 09:56:32
+Signal 6 == False at Tue Feb 23 2021 09:56:32
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:32
+Point 2 == 30° at Tue Feb 23 2021 09:56:32
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:32
+Sensor 2 == False at Tue Feb 23 2021 09:56:32
+Sensor 3 == False at Tue Feb 23 2021 09:56:32
+Sensor 4 == False at Tue Feb 23 2021 09:56:32
+Sensor 5 == False at Tue Feb 23 2021 09:56:32
+Sensor 6 == False at Tue Feb 23 2021 09:56:32
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:32
+Signal 2 == False at Tue Feb 23 2021 09:56:32
+Signal 3 == False at Tue Feb 23 2021 09:56:32
+Signal 4 == False at Tue Feb 23 2021 09:56:32
+Signal 5 == False at Tue Feb 23 2021 09:56:32
+Signal 6 == False at Tue Feb 23 2021 09:56:32
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:32
+Point 2 == 30° at Tue Feb 23 2021 09:56:32
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:33
+Sensor 2 == False at Tue Feb 23 2021 09:56:33
+Sensor 3 == False at Tue Feb 23 2021 09:56:33
+Sensor 4 == False at Tue Feb 23 2021 09:56:33
+Sensor 5 == False at Tue Feb 23 2021 09:56:33
+Sensor 6 == False at Tue Feb 23 2021 09:56:33
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:33
+Signal 2 == False at Tue Feb 23 2021 09:56:33
+Signal 3 == False at Tue Feb 23 2021 09:56:33
+Signal 4 == False at Tue Feb 23 2021 09:56:33
+Signal 5 == False at Tue Feb 23 2021 09:56:33
+Signal 6 == False at Tue Feb 23 2021 09:56:33
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:33
+Point 2 == 30° at Tue Feb 23 2021 09:56:33
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:33
+Sensor 2 == False at Tue Feb 23 2021 09:56:33
+Sensor 3 == False at Tue Feb 23 2021 09:56:33
+Sensor 4 == False at Tue Feb 23 2021 09:56:33
+Sensor 5 == False at Tue Feb 23 2021 09:56:33
+Sensor 6 == False at Tue Feb 23 2021 09:56:33
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:33
+Signal 2 == False at Tue Feb 23 2021 09:56:33
+Signal 3 == False at Tue Feb 23 2021 09:56:33
+Signal 4 == False at Tue Feb 23 2021 09:56:33
+Signal 5 == False at Tue Feb 23 2021 09:56:33
+Signal 6 == False at Tue Feb 23 2021 09:56:33
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:33
+Point 2 == 30° at Tue Feb 23 2021 09:56:33
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:33
+Sensor 2 == False at Tue Feb 23 2021 09:56:33
+Sensor 3 == False at Tue Feb 23 2021 09:56:33
+Sensor 4 == False at Tue Feb 23 2021 09:56:33
+Sensor 5 == False at Tue Feb 23 2021 09:56:33
+Sensor 6 == False at Tue Feb 23 2021 09:56:33
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:33
+Signal 2 == False at Tue Feb 23 2021 09:56:33
+Signal 3 == False at Tue Feb 23 2021 09:56:33
+Signal 4 == False at Tue Feb 23 2021 09:56:33
+Signal 5 == False at Tue Feb 23 2021 09:56:33
+Signal 6 == False at Tue Feb 23 2021 09:56:33
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:33
+Point 2 == 30° at Tue Feb 23 2021 09:56:33
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:34
+Sensor 2 == False at Tue Feb 23 2021 09:56:34
+Sensor 3 == False at Tue Feb 23 2021 09:56:34
+Sensor 4 == False at Tue Feb 23 2021 09:56:34
+Sensor 5 == False at Tue Feb 23 2021 09:56:34
+Sensor 6 == False at Tue Feb 23 2021 09:56:34
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:34
+Signal 2 == False at Tue Feb 23 2021 09:56:34
+Signal 3 == False at Tue Feb 23 2021 09:56:34
+Signal 4 == False at Tue Feb 23 2021 09:56:34
+Signal 5 == False at Tue Feb 23 2021 09:56:34
+Signal 6 == False at Tue Feb 23 2021 09:56:34
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:34
+Point 2 == 30° at Tue Feb 23 2021 09:56:34
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:34
+Sensor 2 == False at Tue Feb 23 2021 09:56:34
+Sensor 3 == False at Tue Feb 23 2021 09:56:34
+Sensor 4 == False at Tue Feb 23 2021 09:56:34
+Sensor 5 == False at Tue Feb 23 2021 09:56:34
+Sensor 6 == False at Tue Feb 23 2021 09:56:34
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:34
+Signal 2 == False at Tue Feb 23 2021 09:56:34
+Signal 3 == False at Tue Feb 23 2021 09:56:34
+Signal 4 == False at Tue Feb 23 2021 09:56:34
+Signal 5 == False at Tue Feb 23 2021 09:56:34
+Signal 6 == False at Tue Feb 23 2021 09:56:34
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:34
+Point 2 == 30° at Tue Feb 23 2021 09:56:34
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:35
+Sensor 2 == False at Tue Feb 23 2021 09:56:35
+Sensor 3 == False at Tue Feb 23 2021 09:56:35
+Sensor 4 == False at Tue Feb 23 2021 09:56:35
+Sensor 5 == False at Tue Feb 23 2021 09:56:35
+Sensor 6 == False at Tue Feb 23 2021 09:56:35
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:35
+Signal 2 == False at Tue Feb 23 2021 09:56:35
+Signal 3 == False at Tue Feb 23 2021 09:56:35
+Signal 4 == False at Tue Feb 23 2021 09:56:35
+Signal 5 == False at Tue Feb 23 2021 09:56:35
+Signal 6 == False at Tue Feb 23 2021 09:56:35
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:35
+Point 2 == 30° at Tue Feb 23 2021 09:56:35
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:35
+Sensor 2 == False at Tue Feb 23 2021 09:56:35
+Sensor 3 == False at Tue Feb 23 2021 09:56:35
+Sensor 4 == False at Tue Feb 23 2021 09:56:35
+Sensor 5 == False at Tue Feb 23 2021 09:56:35
+Sensor 6 == False at Tue Feb 23 2021 09:56:35
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:35
+Signal 2 == False at Tue Feb 23 2021 09:56:35
+Signal 3 == False at Tue Feb 23 2021 09:56:35
+Signal 4 == False at Tue Feb 23 2021 09:56:35
+Signal 5 == False at Tue Feb 23 2021 09:56:35
+Signal 6 == False at Tue Feb 23 2021 09:56:35
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:35
+Point 2 == 30° at Tue Feb 23 2021 09:56:35
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:36
+Sensor 2 == False at Tue Feb 23 2021 09:56:36
+Sensor 3 == False at Tue Feb 23 2021 09:56:36
+Sensor 4 == False at Tue Feb 23 2021 09:56:36
+Sensor 5 == False at Tue Feb 23 2021 09:56:36
+Sensor 6 == False at Tue Feb 23 2021 09:56:36
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:36
+Signal 2 == False at Tue Feb 23 2021 09:56:36
+Signal 3 == False at Tue Feb 23 2021 09:56:36
+Signal 4 == False at Tue Feb 23 2021 09:56:36
+Signal 5 == False at Tue Feb 23 2021 09:56:36
+Signal 6 == False at Tue Feb 23 2021 09:56:36
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:36
+Point 2 == 30° at Tue Feb 23 2021 09:56:36
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:36
+Sensor 2 == False at Tue Feb 23 2021 09:56:36
+Sensor 3 == False at Tue Feb 23 2021 09:56:36
+Sensor 4 == False at Tue Feb 23 2021 09:56:36
+Sensor 5 == False at Tue Feb 23 2021 09:56:36
+Sensor 6 == False at Tue Feb 23 2021 09:56:36
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:36
+Signal 2 == False at Tue Feb 23 2021 09:56:36
+Signal 3 == False at Tue Feb 23 2021 09:56:36
+Signal 4 == False at Tue Feb 23 2021 09:56:36
+Signal 5 == False at Tue Feb 23 2021 09:56:36
+Signal 6 == False at Tue Feb 23 2021 09:56:36
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:36
+Point 2 == 30° at Tue Feb 23 2021 09:56:36
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:36
+Sensor 2 == False at Tue Feb 23 2021 09:56:36
+Sensor 3 == False at Tue Feb 23 2021 09:56:36
+Sensor 4 == False at Tue Feb 23 2021 09:56:36
+Sensor 5 == False at Tue Feb 23 2021 09:56:36
+Sensor 6 == False at Tue Feb 23 2021 09:56:36
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:36
+Signal 2 == False at Tue Feb 23 2021 09:56:36
+Signal 3 == False at Tue Feb 23 2021 09:56:36
+Signal 4 == False at Tue Feb 23 2021 09:56:36
+Signal 5 == False at Tue Feb 23 2021 09:56:36
+Signal 6 == False at Tue Feb 23 2021 09:56:36
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:36
+Point 2 == 30° at Tue Feb 23 2021 09:56:36
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:37
+Sensor 2 == False at Tue Feb 23 2021 09:56:37
+Sensor 3 == False at Tue Feb 23 2021 09:56:37
+Sensor 4 == False at Tue Feb 23 2021 09:56:37
+Sensor 5 == False at Tue Feb 23 2021 09:56:37
+Sensor 6 == False at Tue Feb 23 2021 09:56:37
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:37
+Signal 2 == False at Tue Feb 23 2021 09:56:37
+Signal 3 == False at Tue Feb 23 2021 09:56:37
+Signal 4 == False at Tue Feb 23 2021 09:56:37
+Signal 5 == False at Tue Feb 23 2021 09:56:37
+Signal 6 == False at Tue Feb 23 2021 09:56:37
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:37
+Point 2 == 30° at Tue Feb 23 2021 09:56:37
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:37
+Sensor 2 == True at Tue Feb 23 2021 09:56:37
+Sensor 3 == False at Tue Feb 23 2021 09:56:37
+Sensor 4 == False at Tue Feb 23 2021 09:56:37
+Sensor 5 == True at Tue Feb 23 2021 09:56:37
+Sensor 6 == False at Tue Feb 23 2021 09:56:37
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:37
+Signal 2 == False at Tue Feb 23 2021 09:56:37
+Signal 3 == False at Tue Feb 23 2021 09:56:37
+Signal 4 == False at Tue Feb 23 2021 09:56:37
+Signal 5 == False at Tue Feb 23 2021 09:56:37
+Signal 6 == False at Tue Feb 23 2021 09:56:37
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:37
+Point 2 == 30° at Tue Feb 23 2021 09:56:37
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:38
+Sensor 2 == False at Tue Feb 23 2021 09:56:38
+Sensor 3 == False at Tue Feb 23 2021 09:56:38
+Sensor 4 == False at Tue Feb 23 2021 09:56:38
+Sensor 5 == False at Tue Feb 23 2021 09:56:38
+Sensor 6 == False at Tue Feb 23 2021 09:56:38
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:38
+Signal 2 == False at Tue Feb 23 2021 09:56:38
+Signal 3 == False at Tue Feb 23 2021 09:56:38
+Signal 4 == False at Tue Feb 23 2021 09:56:38
+Signal 5 == False at Tue Feb 23 2021 09:56:38
+Signal 6 == False at Tue Feb 23 2021 09:56:38
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:38
+Point 2 == 30° at Tue Feb 23 2021 09:56:38
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:38
+Sensor 2 == False at Tue Feb 23 2021 09:56:38
+Sensor 3 == False at Tue Feb 23 2021 09:56:38
+Sensor 4 == False at Tue Feb 23 2021 09:56:38
+Sensor 5 == False at Tue Feb 23 2021 09:56:38
+Sensor 6 == False at Tue Feb 23 2021 09:56:38
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:38
+Signal 2 == False at Tue Feb 23 2021 09:56:38
+Signal 3 == False at Tue Feb 23 2021 09:56:38
+Signal 4 == False at Tue Feb 23 2021 09:56:38
+Signal 5 == False at Tue Feb 23 2021 09:56:38
+Signal 6 == False at Tue Feb 23 2021 09:56:38
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:38
+Point 2 == 30° at Tue Feb 23 2021 09:56:38
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:39
+Sensor 2 == False at Tue Feb 23 2021 09:56:39
+Sensor 3 == False at Tue Feb 23 2021 09:56:39
+Sensor 4 == False at Tue Feb 23 2021 09:56:39
+Sensor 5 == False at Tue Feb 23 2021 09:56:39
+Sensor 6 == False at Tue Feb 23 2021 09:56:39
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:39
+Signal 2 == False at Tue Feb 23 2021 09:56:39
+Signal 3 == False at Tue Feb 23 2021 09:56:39
+Signal 4 == False at Tue Feb 23 2021 09:56:39
+Signal 5 == False at Tue Feb 23 2021 09:56:39
+Signal 6 == False at Tue Feb 23 2021 09:56:39
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:39
+Point 2 == 30° at Tue Feb 23 2021 09:56:39
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:39
+Sensor 2 == False at Tue Feb 23 2021 09:56:39
+Sensor 3 == False at Tue Feb 23 2021 09:56:39
+Sensor 4 == False at Tue Feb 23 2021 09:56:39
+Sensor 5 == False at Tue Feb 23 2021 09:56:39
+Sensor 6 == False at Tue Feb 23 2021 09:56:39
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:39
+Signal 2 == False at Tue Feb 23 2021 09:56:39
+Signal 3 == False at Tue Feb 23 2021 09:56:39
+Signal 4 == False at Tue Feb 23 2021 09:56:39
+Signal 5 == False at Tue Feb 23 2021 09:56:39
+Signal 6 == False at Tue Feb 23 2021 09:56:39
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:39
+Point 2 == 30° at Tue Feb 23 2021 09:56:39
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:39
+Sensor 2 == False at Tue Feb 23 2021 09:56:39
+Sensor 3 == False at Tue Feb 23 2021 09:56:39
+Sensor 4 == False at Tue Feb 23 2021 09:56:39
+Sensor 5 == False at Tue Feb 23 2021 09:56:39
+Sensor 6 == False at Tue Feb 23 2021 09:56:39
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:39
+Signal 2 == False at Tue Feb 23 2021 09:56:39
+Signal 3 == False at Tue Feb 23 2021 09:56:39
+Signal 4 == False at Tue Feb 23 2021 09:56:39
+Signal 5 == False at Tue Feb 23 2021 09:56:39
+Signal 6 == False at Tue Feb 23 2021 09:56:39
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:39
+Point 2 == 30° at Tue Feb 23 2021 09:56:39
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:40
+Sensor 2 == False at Tue Feb 23 2021 09:56:40
+Sensor 3 == False at Tue Feb 23 2021 09:56:40
+Sensor 4 == False at Tue Feb 23 2021 09:56:40
+Sensor 5 == False at Tue Feb 23 2021 09:56:40
+Sensor 6 == True at Tue Feb 23 2021 09:56:40
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:40
+Signal 2 == False at Tue Feb 23 2021 09:56:40
+Signal 3 == False at Tue Feb 23 2021 09:56:40
+Signal 4 == False at Tue Feb 23 2021 09:56:40
+Signal 5 == False at Tue Feb 23 2021 09:56:40
+Signal 6 == False at Tue Feb 23 2021 09:56:40
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:40
+Point 2 == 0° at Tue Feb 23 2021 09:56:40
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:40
+Sensor 2 == False at Tue Feb 23 2021 09:56:40
+Sensor 3 == False at Tue Feb 23 2021 09:56:40
+Sensor 4 == False at Tue Feb 23 2021 09:56:40
+Sensor 5 == False at Tue Feb 23 2021 09:56:40
+Sensor 6 == True at Tue Feb 23 2021 09:56:40
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:40
+Signal 2 == False at Tue Feb 23 2021 09:56:40
+Signal 3 == False at Tue Feb 23 2021 09:56:40
+Signal 4 == False at Tue Feb 23 2021 09:56:40
+Signal 5 == False at Tue Feb 23 2021 09:56:40
+Signal 6 == False at Tue Feb 23 2021 09:56:40
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:40
+Point 2 == 0° at Tue Feb 23 2021 09:56:40
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:41
+Sensor 2 == False at Tue Feb 23 2021 09:56:41
+Sensor 3 == False at Tue Feb 23 2021 09:56:41
+Sensor 4 == False at Tue Feb 23 2021 09:56:41
+Sensor 5 == False at Tue Feb 23 2021 09:56:41
+Sensor 6 == True at Tue Feb 23 2021 09:56:41
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:41
+Signal 2 == False at Tue Feb 23 2021 09:56:41
+Signal 3 == False at Tue Feb 23 2021 09:56:41
+Signal 4 == False at Tue Feb 23 2021 09:56:41
+Signal 5 == False at Tue Feb 23 2021 09:56:41
+Signal 6 == False at Tue Feb 23 2021 09:56:41
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:41
+Point 2 == 0° at Tue Feb 23 2021 09:56:41
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:43
+Sensor 2 == False at Tue Feb 23 2021 09:56:43
+Sensor 3 == False at Tue Feb 23 2021 09:56:43
+Sensor 4 == False at Tue Feb 23 2021 09:56:43
+Sensor 5 == False at Tue Feb 23 2021 09:56:43
+Sensor 6 == True at Tue Feb 23 2021 09:56:43
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:43
+Signal 2 == False at Tue Feb 23 2021 09:56:43
+Signal 3 == False at Tue Feb 23 2021 09:56:43
+Signal 4 == False at Tue Feb 23 2021 09:56:43
+Signal 5 == False at Tue Feb 23 2021 09:56:43
+Signal 6 == False at Tue Feb 23 2021 09:56:43
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:43
+Point 2 == 0° at Tue Feb 23 2021 09:56:43
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:44
+Sensor 2 == False at Tue Feb 23 2021 09:56:44
+Sensor 3 == False at Tue Feb 23 2021 09:56:44
+Sensor 4 == False at Tue Feb 23 2021 09:56:44
+Sensor 5 == False at Tue Feb 23 2021 09:56:44
+Sensor 6 == False at Tue Feb 23 2021 09:56:44
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:44
+Signal 2 == False at Tue Feb 23 2021 09:56:44
+Signal 3 == False at Tue Feb 23 2021 09:56:44
+Signal 4 == False at Tue Feb 23 2021 09:56:44
+Signal 5 == False at Tue Feb 23 2021 09:56:44
+Signal 6 == False at Tue Feb 23 2021 09:56:44
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:44
+Point 2 == 0° at Tue Feb 23 2021 09:56:44
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:44
+Sensor 2 == False at Tue Feb 23 2021 09:56:44
+Sensor 3 == False at Tue Feb 23 2021 09:56:44
+Sensor 4 == False at Tue Feb 23 2021 09:56:44
+Sensor 5 == False at Tue Feb 23 2021 09:56:44
+Sensor 6 == False at Tue Feb 23 2021 09:56:44
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:44
+Signal 2 == False at Tue Feb 23 2021 09:56:44
+Signal 3 == False at Tue Feb 23 2021 09:56:44
+Signal 4 == False at Tue Feb 23 2021 09:56:44
+Signal 5 == False at Tue Feb 23 2021 09:56:44
+Signal 6 == False at Tue Feb 23 2021 09:56:44
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:44
+Point 2 == 0° at Tue Feb 23 2021 09:56:44
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:45
+Sensor 2 == False at Tue Feb 23 2021 09:56:45
+Sensor 3 == False at Tue Feb 23 2021 09:56:45
+Sensor 4 == False at Tue Feb 23 2021 09:56:45
+Sensor 5 == False at Tue Feb 23 2021 09:56:45
+Sensor 6 == False at Tue Feb 23 2021 09:56:45
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:45
+Signal 2 == False at Tue Feb 23 2021 09:56:45
+Signal 3 == False at Tue Feb 23 2021 09:56:45
+Signal 4 == False at Tue Feb 23 2021 09:56:45
+Signal 5 == False at Tue Feb 23 2021 09:56:45
+Signal 6 == False at Tue Feb 23 2021 09:56:45
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:45
+Point 2 == 0° at Tue Feb 23 2021 09:56:45
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:45
+Sensor 2 == False at Tue Feb 23 2021 09:56:45
+Sensor 3 == False at Tue Feb 23 2021 09:56:45
+Sensor 4 == False at Tue Feb 23 2021 09:56:45
+Sensor 5 == False at Tue Feb 23 2021 09:56:45
+Sensor 6 == False at Tue Feb 23 2021 09:56:45
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:45
+Signal 2 == False at Tue Feb 23 2021 09:56:45
+Signal 3 == False at Tue Feb 23 2021 09:56:45
+Signal 4 == False at Tue Feb 23 2021 09:56:45
+Signal 5 == False at Tue Feb 23 2021 09:56:45
+Signal 6 == False at Tue Feb 23 2021 09:56:45
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:45
+Point 2 == 0° at Tue Feb 23 2021 09:56:45
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:46
+Sensor 2 == False at Tue Feb 23 2021 09:56:46
+Sensor 3 == False at Tue Feb 23 2021 09:56:46
+Sensor 4 == False at Tue Feb 23 2021 09:56:46
+Sensor 5 == False at Tue Feb 23 2021 09:56:46
+Sensor 6 == False at Tue Feb 23 2021 09:56:46
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:46
+Signal 2 == False at Tue Feb 23 2021 09:56:46
+Signal 3 == False at Tue Feb 23 2021 09:56:46
+Signal 4 == False at Tue Feb 23 2021 09:56:46
+Signal 5 == False at Tue Feb 23 2021 09:56:46
+Signal 6 == False at Tue Feb 23 2021 09:56:46
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:46
+Point 2 == 0° at Tue Feb 23 2021 09:56:46
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:46
+Sensor 2 == False at Tue Feb 23 2021 09:56:46
+Sensor 3 == False at Tue Feb 23 2021 09:56:46
+Sensor 4 == False at Tue Feb 23 2021 09:56:46
+Sensor 5 == False at Tue Feb 23 2021 09:56:46
+Sensor 6 == False at Tue Feb 23 2021 09:56:46
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:46
+Signal 2 == False at Tue Feb 23 2021 09:56:46
+Signal 3 == False at Tue Feb 23 2021 09:56:46
+Signal 4 == False at Tue Feb 23 2021 09:56:46
+Signal 5 == False at Tue Feb 23 2021 09:56:46
+Signal 6 == False at Tue Feb 23 2021 09:56:46
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:46
+Point 2 == 0° at Tue Feb 23 2021 09:56:46
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:46
+Sensor 2 == False at Tue Feb 23 2021 09:56:46
+Sensor 3 == True at Tue Feb 23 2021 09:56:46
+Sensor 4 == True at Tue Feb 23 2021 09:56:46
+Sensor 5 == False at Tue Feb 23 2021 09:56:46
+Sensor 6 == False at Tue Feb 23 2021 09:56:46
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:46
+Signal 2 == False at Tue Feb 23 2021 09:56:46
+Signal 3 == False at Tue Feb 23 2021 09:56:46
+Signal 4 == False at Tue Feb 23 2021 09:56:46
+Signal 5 == False at Tue Feb 23 2021 09:56:46
+Signal 6 == False at Tue Feb 23 2021 09:56:46
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:46
+Point 2 == 30° at Tue Feb 23 2021 09:56:46
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:47
+Sensor 2 == False at Tue Feb 23 2021 09:56:47
+Sensor 3 == False at Tue Feb 23 2021 09:56:47
+Sensor 4 == False at Tue Feb 23 2021 09:56:47
+Sensor 5 == False at Tue Feb 23 2021 09:56:47
+Sensor 6 == False at Tue Feb 23 2021 09:56:47
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:47
+Signal 2 == False at Tue Feb 23 2021 09:56:47
+Signal 3 == False at Tue Feb 23 2021 09:56:47
+Signal 4 == False at Tue Feb 23 2021 09:56:47
+Signal 5 == False at Tue Feb 23 2021 09:56:47
+Signal 6 == False at Tue Feb 23 2021 09:56:47
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:47
+Point 2 == 30° at Tue Feb 23 2021 09:56:47
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:47
+Sensor 2 == False at Tue Feb 23 2021 09:56:47
+Sensor 3 == False at Tue Feb 23 2021 09:56:47
+Sensor 4 == False at Tue Feb 23 2021 09:56:47
+Sensor 5 == False at Tue Feb 23 2021 09:56:47
+Sensor 6 == False at Tue Feb 23 2021 09:56:47
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:47
+Signal 2 == False at Tue Feb 23 2021 09:56:47
+Signal 3 == False at Tue Feb 23 2021 09:56:47
+Signal 4 == False at Tue Feb 23 2021 09:56:47
+Signal 5 == False at Tue Feb 23 2021 09:56:47
+Signal 6 == False at Tue Feb 23 2021 09:56:47
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:47
+Point 2 == 30° at Tue Feb 23 2021 09:56:47
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:48
+Sensor 2 == False at Tue Feb 23 2021 09:56:48
+Sensor 3 == False at Tue Feb 23 2021 09:56:48
+Sensor 4 == False at Tue Feb 23 2021 09:56:48
+Sensor 5 == False at Tue Feb 23 2021 09:56:48
+Sensor 6 == False at Tue Feb 23 2021 09:56:48
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:48
+Signal 2 == False at Tue Feb 23 2021 09:56:48
+Signal 3 == False at Tue Feb 23 2021 09:56:48
+Signal 4 == False at Tue Feb 23 2021 09:56:48
+Signal 5 == False at Tue Feb 23 2021 09:56:48
+Signal 6 == False at Tue Feb 23 2021 09:56:48
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:48
+Point 2 == 30° at Tue Feb 23 2021 09:56:48
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:48
+Sensor 2 == False at Tue Feb 23 2021 09:56:48
+Sensor 3 == False at Tue Feb 23 2021 09:56:48
+Sensor 4 == False at Tue Feb 23 2021 09:56:48
+Sensor 5 == False at Tue Feb 23 2021 09:56:48
+Sensor 6 == False at Tue Feb 23 2021 09:56:48
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:48
+Signal 2 == False at Tue Feb 23 2021 09:56:48
+Signal 3 == False at Tue Feb 23 2021 09:56:48
+Signal 4 == False at Tue Feb 23 2021 09:56:48
+Signal 5 == False at Tue Feb 23 2021 09:56:48
+Signal 6 == False at Tue Feb 23 2021 09:56:48
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:48
+Point 2 == 30° at Tue Feb 23 2021 09:56:48
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:49
+Sensor 2 == False at Tue Feb 23 2021 09:56:49
+Sensor 3 == False at Tue Feb 23 2021 09:56:49
+Sensor 4 == False at Tue Feb 23 2021 09:56:49
+Sensor 5 == False at Tue Feb 23 2021 09:56:49
+Sensor 6 == False at Tue Feb 23 2021 09:56:49
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:49
+Signal 2 == False at Tue Feb 23 2021 09:56:49
+Signal 3 == False at Tue Feb 23 2021 09:56:49
+Signal 4 == False at Tue Feb 23 2021 09:56:49
+Signal 5 == False at Tue Feb 23 2021 09:56:49
+Signal 6 == False at Tue Feb 23 2021 09:56:49
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:49
+Point 2 == 30° at Tue Feb 23 2021 09:56:49
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:49
+Sensor 2 == False at Tue Feb 23 2021 09:56:49
+Sensor 3 == False at Tue Feb 23 2021 09:56:49
+Sensor 4 == False at Tue Feb 23 2021 09:56:49
+Sensor 5 == False at Tue Feb 23 2021 09:56:49
+Sensor 6 == False at Tue Feb 23 2021 09:56:49
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:49
+Signal 2 == False at Tue Feb 23 2021 09:56:49
+Signal 3 == False at Tue Feb 23 2021 09:56:49
+Signal 4 == False at Tue Feb 23 2021 09:56:49
+Signal 5 == False at Tue Feb 23 2021 09:56:49
+Signal 6 == False at Tue Feb 23 2021 09:56:49
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:49
+Point 2 == 30° at Tue Feb 23 2021 09:56:49
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:49
+Sensor 2 == False at Tue Feb 23 2021 09:56:49
+Sensor 3 == False at Tue Feb 23 2021 09:56:49
+Sensor 4 == False at Tue Feb 23 2021 09:56:49
+Sensor 5 == False at Tue Feb 23 2021 09:56:49
+Sensor 6 == False at Tue Feb 23 2021 09:56:49
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:49
+Signal 2 == False at Tue Feb 23 2021 09:56:49
+Signal 3 == False at Tue Feb 23 2021 09:56:49
+Signal 4 == False at Tue Feb 23 2021 09:56:49
+Signal 5 == False at Tue Feb 23 2021 09:56:49
+Signal 6 == False at Tue Feb 23 2021 09:56:49
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:49
+Point 2 == 30° at Tue Feb 23 2021 09:56:49
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:50
+Sensor 2 == False at Tue Feb 23 2021 09:56:50
+Sensor 3 == False at Tue Feb 23 2021 09:56:50
+Sensor 4 == False at Tue Feb 23 2021 09:56:50
+Sensor 5 == False at Tue Feb 23 2021 09:56:50
+Sensor 6 == False at Tue Feb 23 2021 09:56:50
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:50
+Signal 2 == False at Tue Feb 23 2021 09:56:50
+Signal 3 == False at Tue Feb 23 2021 09:56:50
+Signal 4 == False at Tue Feb 23 2021 09:56:50
+Signal 5 == False at Tue Feb 23 2021 09:56:50
+Signal 6 == False at Tue Feb 23 2021 09:56:50
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:50
+Point 2 == 30° at Tue Feb 23 2021 09:56:50
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:50
+Sensor 2 == False at Tue Feb 23 2021 09:56:50
+Sensor 3 == False at Tue Feb 23 2021 09:56:50
+Sensor 4 == False at Tue Feb 23 2021 09:56:50
+Sensor 5 == False at Tue Feb 23 2021 09:56:50
+Sensor 6 == False at Tue Feb 23 2021 09:56:50
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:50
+Signal 2 == False at Tue Feb 23 2021 09:56:50
+Signal 3 == False at Tue Feb 23 2021 09:56:50
+Signal 4 == False at Tue Feb 23 2021 09:56:50
+Signal 5 == False at Tue Feb 23 2021 09:56:50
+Signal 6 == False at Tue Feb 23 2021 09:56:50
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:50
+Point 2 == 30° at Tue Feb 23 2021 09:56:50
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:51
+Sensor 2 == False at Tue Feb 23 2021 09:56:51
+Sensor 3 == False at Tue Feb 23 2021 09:56:51
+Sensor 4 == False at Tue Feb 23 2021 09:56:51
+Sensor 5 == False at Tue Feb 23 2021 09:56:51
+Sensor 6 == False at Tue Feb 23 2021 09:56:51
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:51
+Signal 2 == False at Tue Feb 23 2021 09:56:51
+Signal 3 == False at Tue Feb 23 2021 09:56:51
+Signal 4 == False at Tue Feb 23 2021 09:56:51
+Signal 5 == False at Tue Feb 23 2021 09:56:51
+Signal 6 == False at Tue Feb 23 2021 09:56:51
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:51
+Point 2 == 30° at Tue Feb 23 2021 09:56:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:51
+Sensor 2 == False at Tue Feb 23 2021 09:56:51
+Sensor 3 == False at Tue Feb 23 2021 09:56:51
+Sensor 4 == False at Tue Feb 23 2021 09:56:51
+Sensor 5 == False at Tue Feb 23 2021 09:56:51
+Sensor 6 == False at Tue Feb 23 2021 09:56:51
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:51
+Signal 2 == False at Tue Feb 23 2021 09:56:51
+Signal 3 == False at Tue Feb 23 2021 09:56:51
+Signal 4 == False at Tue Feb 23 2021 09:56:51
+Signal 5 == False at Tue Feb 23 2021 09:56:51
+Signal 6 == False at Tue Feb 23 2021 09:56:51
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:51
+Point 2 == 30° at Tue Feb 23 2021 09:56:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:51
+Sensor 2 == False at Tue Feb 23 2021 09:56:51
+Sensor 3 == False at Tue Feb 23 2021 09:56:51
+Sensor 4 == False at Tue Feb 23 2021 09:56:51
+Sensor 5 == False at Tue Feb 23 2021 09:56:51
+Sensor 6 == False at Tue Feb 23 2021 09:56:51
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:51
+Signal 2 == False at Tue Feb 23 2021 09:56:51
+Signal 3 == False at Tue Feb 23 2021 09:56:51
+Signal 4 == False at Tue Feb 23 2021 09:56:51
+Signal 5 == False at Tue Feb 23 2021 09:56:51
+Signal 6 == False at Tue Feb 23 2021 09:56:51
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:51
+Point 2 == 30° at Tue Feb 23 2021 09:56:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:52
+Sensor 2 == True at Tue Feb 23 2021 09:56:52
+Sensor 3 == False at Tue Feb 23 2021 09:56:52
+Sensor 4 == False at Tue Feb 23 2021 09:56:52
+Sensor 5 == True at Tue Feb 23 2021 09:56:52
+Sensor 6 == False at Tue Feb 23 2021 09:56:52
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:52
+Signal 2 == False at Tue Feb 23 2021 09:56:52
+Signal 3 == False at Tue Feb 23 2021 09:56:52
+Signal 4 == False at Tue Feb 23 2021 09:56:52
+Signal 5 == False at Tue Feb 23 2021 09:56:52
+Signal 6 == False at Tue Feb 23 2021 09:56:52
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:52
+Point 2 == 30° at Tue Feb 23 2021 09:56:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:52
+Sensor 2 == False at Tue Feb 23 2021 09:56:52
+Sensor 3 == False at Tue Feb 23 2021 09:56:52
+Sensor 4 == False at Tue Feb 23 2021 09:56:52
+Sensor 5 == False at Tue Feb 23 2021 09:56:52
+Sensor 6 == False at Tue Feb 23 2021 09:56:52
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:52
+Signal 2 == False at Tue Feb 23 2021 09:56:52
+Signal 3 == False at Tue Feb 23 2021 09:56:52
+Signal 4 == False at Tue Feb 23 2021 09:56:52
+Signal 5 == False at Tue Feb 23 2021 09:56:52
+Signal 6 == False at Tue Feb 23 2021 09:56:52
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:52
+Point 2 == 30° at Tue Feb 23 2021 09:56:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:53
+Sensor 2 == False at Tue Feb 23 2021 09:56:53
+Sensor 3 == False at Tue Feb 23 2021 09:56:53
+Sensor 4 == False at Tue Feb 23 2021 09:56:53
+Sensor 5 == False at Tue Feb 23 2021 09:56:53
+Sensor 6 == False at Tue Feb 23 2021 09:56:53
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:53
+Signal 2 == False at Tue Feb 23 2021 09:56:53
+Signal 3 == False at Tue Feb 23 2021 09:56:53
+Signal 4 == False at Tue Feb 23 2021 09:56:53
+Signal 5 == False at Tue Feb 23 2021 09:56:53
+Signal 6 == False at Tue Feb 23 2021 09:56:53
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:53
+Point 2 == 30° at Tue Feb 23 2021 09:56:53
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:53
+Sensor 2 == False at Tue Feb 23 2021 09:56:53
+Sensor 3 == False at Tue Feb 23 2021 09:56:53
+Sensor 4 == False at Tue Feb 23 2021 09:56:53
+Sensor 5 == False at Tue Feb 23 2021 09:56:53
+Sensor 6 == False at Tue Feb 23 2021 09:56:53
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:53
+Signal 2 == False at Tue Feb 23 2021 09:56:53
+Signal 3 == False at Tue Feb 23 2021 09:56:53
+Signal 4 == False at Tue Feb 23 2021 09:56:53
+Signal 5 == False at Tue Feb 23 2021 09:56:53
+Signal 6 == False at Tue Feb 23 2021 09:56:53
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:53
+Point 2 == 30° at Tue Feb 23 2021 09:56:53
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:54
+Sensor 2 == False at Tue Feb 23 2021 09:56:54
+Sensor 3 == False at Tue Feb 23 2021 09:56:54
+Sensor 4 == False at Tue Feb 23 2021 09:56:54
+Sensor 5 == False at Tue Feb 23 2021 09:56:54
+Sensor 6 == False at Tue Feb 23 2021 09:56:54
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:54
+Signal 2 == False at Tue Feb 23 2021 09:56:54
+Signal 3 == False at Tue Feb 23 2021 09:56:54
+Signal 4 == False at Tue Feb 23 2021 09:56:54
+Signal 5 == False at Tue Feb 23 2021 09:56:54
+Signal 6 == False at Tue Feb 23 2021 09:56:54
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:54
+Point 2 == 30° at Tue Feb 23 2021 09:56:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Tue Feb 23 2021 09:56:54
+Sensor 2 == False at Tue Feb 23 2021 09:56:54
+Sensor 3 == False at Tue Feb 23 2021 09:56:54
+Sensor 4 == False at Tue Feb 23 2021 09:56:54
+Sensor 5 == False at Tue Feb 23 2021 09:56:54
+Sensor 6 == False at Tue Feb 23 2021 09:56:54
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:54
+Signal 2 == False at Tue Feb 23 2021 09:56:54
+Signal 3 == False at Tue Feb 23 2021 09:56:54
+Signal 4 == False at Tue Feb 23 2021 09:56:54
+Signal 5 == False at Tue Feb 23 2021 09:56:54
+Signal 6 == False at Tue Feb 23 2021 09:56:54
+
+POINT DATA:
+Point 1 == 0° at Tue Feb 23 2021 09:56:54
+Point 2 == 30° at Tue Feb 23 2021 09:56:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:54
+Sensor 2 == False at Tue Feb 23 2021 09:56:54
+Sensor 3 == False at Tue Feb 23 2021 09:56:54
+Sensor 4 == False at Tue Feb 23 2021 09:56:54
+Sensor 5 == False at Tue Feb 23 2021 09:56:54
+Sensor 6 == True at Tue Feb 23 2021 09:56:54
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:54
+Signal 2 == False at Tue Feb 23 2021 09:56:54
+Signal 3 == False at Tue Feb 23 2021 09:56:54
+Signal 4 == False at Tue Feb 23 2021 09:56:54
+Signal 5 == False at Tue Feb 23 2021 09:56:54
+Signal 6 == False at Tue Feb 23 2021 09:56:54
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:54
+Point 2 == 0° at Tue Feb 23 2021 09:56:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Tue Feb 23 2021 09:56:55
+Sensor 2 == False at Tue Feb 23 2021 09:56:55
+Sensor 3 == False at Tue Feb 23 2021 09:56:55
+Sensor 4 == False at Tue Feb 23 2021 09:56:55
+Sensor 5 == False at Tue Feb 23 2021 09:56:55
+Sensor 6 == True at Tue Feb 23 2021 09:56:55
+
+SIGNAL DATA:
+Signal 1 == False at Tue Feb 23 2021 09:56:55
+Signal 2 == False at Tue Feb 23 2021 09:56:55
+Signal 3 == False at Tue Feb 23 2021 09:56:55
+Signal 4 == False at Tue Feb 23 2021 09:56:55
+Signal 5 == False at Tue Feb 23 2021 09:56:55
+Signal 6 == False at Tue Feb 23 2021 09:56:55
+
+POINT DATA:
+Point 1 == 30° at Tue Feb 23 2021 09:56:55
+Point 2 == 0° at Tue Feb 23 2021 09:56:55
