@@ -3,7 +3,6 @@
 
 # imports
 import time
-import sys
 from shutil import copyfile
 from tkinter import *
 from PIL import Image, ImageTk
@@ -101,7 +100,6 @@ def find_train_position():
     f.close()
 
 
-
 def raise_frame(tk_frame):
     tk_frame.tkraise()
 
@@ -140,12 +138,18 @@ def constant_run():
     scotsman_current_position = pos[0]
     mallard_current_position = pos[1]
     l3: bool = True
+    x = int(pos[0].replace('c', '').replace('b', '')) - 1
+    y = int(pos[0].replace('c', '').replace('b', '')) - 1
+    z = False
     while l3 is True:
-        x = 0
-        y = 0
+        # x = 0
+        # y = 0
         l4: bool = True
         l5: bool = True
         while l4 is True and emergency_stop is False:
+            # if z:
+            #     x = 0
+            #     y = 0
             sensor_data[1] = False
             sensor_data[2] = False
             sensor_data[3] = False
@@ -588,6 +592,9 @@ def constant_run():
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
+            z = True
+        x = 0
+        y = 0
         while l5 is True and emergency_stop is False:
             sensor_data[1] = False
             sensor_data[2] = False
@@ -1027,12 +1034,21 @@ def constant_run():
                 photo_1.configure(image=root.nrm29)
             elif mallard_current_position == '30':
                 photo_1.configure(image=root.nrm30)
+            f = open('train_data', 'a')
+            f.truncate(0)
+            f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
+            f.close()
+            z = True
 
 
 def run():
     t = threading.Thread(target=constant_run)
     t.daemon = True
     t.start()
+
+
+def switch():
+    Start_Sim.configure(state=DISABLED)
 
 
 w1 = 27
@@ -1045,14 +1061,18 @@ Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(
     grid(row=1, column=0, sticky='nsew')
 Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
 
-Check_Sensors = Button(f1, text="CHECK SENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
+Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
     grid(row=3, column=0)
-Check_Points = Button(f1, text="CHECK POINTS", width=w, height=h, command=run, font=VerdanaL). \
+Check_Points = Button(f1, text="CHECK\nPOINTS", width=w, height=h, command=test, font=VerdanaL). \
     grid(row=3, column=1)
-Check_Signals = Button(f1, text="CHECK SIGNALS", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
+Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL,
+                   font=VerdanaL)
+Start_Sim.grid(row=3, column=2)
 Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
-photo_1 = Label(f1, image=root.nrm1)
+find_train_position()
+num = int(pos[0].replace('c', '').replace('b', '')) - 1
+photo_1 = Label(f1, image=root.error)
 photo_1.grid(row=0, column=0, columnspan=4)
 
 Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL). \
