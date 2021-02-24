@@ -95,7 +95,7 @@ route_2 = route_two[::-1]
 
 def find_train_position():
     global pos
-    f = open('train_data', 'r')
+    f = open('train_data.txt', 'r')
     pos = f.readlines(0-1)
     f.close()
 
@@ -132,8 +132,12 @@ def test():
     pass
 
 
+def interrupted():
+    global interrupted
+    interrupted = not interrupted
+
+
 def constant_run():
-    global l4, l5
     emergency_stop = False
 
     l3: bool = True
@@ -170,6 +174,9 @@ def constant_run():
             x += 1
             if x == 30:
                 break
+            if interrupted is True:
+                l5 = False
+                l3 = False
             scotsman_current_position = route_1[x]
             mallard_current_position = route_2[x]
             if scotsman_current_position == '1':
@@ -596,7 +603,7 @@ def constant_run():
                 photo_1.configure(image=root.nrm29)
             elif mallard_current_position == '30':
                 photo_1.configure(image=root.nrm30)
-            f = open('train_data', 'a')
+            f = open('train_data.txt', 'a')
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
@@ -616,6 +623,9 @@ def constant_run():
             y += 1
             if y == 30:
                 break
+            if interrupted is True:
+                l5 = False
+                l3 = False
             scotsman_current_position = route_2[y]
             mallard_current_position = route_1[y]
             if scotsman_current_position == '1':
@@ -1042,7 +1052,7 @@ def constant_run():
                 photo_1.configure(image=root.nrm29)
             elif mallard_current_position == '30':
                 photo_1.configure(image=root.nrm30)
-            f = open('train_data', 'a')
+            f = open('train_data.txt', 'a')
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
@@ -1053,14 +1063,14 @@ def run(stop_run=False):
     t = threading.Thread(target=constant_run)
     t.daemon = True
     t.start()
-    # if stop_run == True:
-    #     t.terminate()
-    #     t.join()
+    # t.join()
 
 
 def switch():
-    Start_Sim.configure(state=DISABLED, text='STOP')
-
+    if Start_Sim['text'] == 'START':
+        Start_Sim.configure(command=lambda: [interrupted(), switch()], text='STOP')
+    else:
+        Start_Sim.configure(command=lambda: [run(), switch()], text='START')
 
 
 w1 = 27
