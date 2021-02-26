@@ -15,8 +15,8 @@ pos = ''
 root = Tk()
 w = 13
 h = 8
-global end_code
-global stop_loop
+global end_loop
+stop_threads = False
 root.title('NRM GUI')
 root.geometry("400x300")
 root.resizable(0, 0)
@@ -95,7 +95,7 @@ route_2 = route_two[::-1]
 
 def find_train_position():
     global pos
-    f = open('train_data', 'r')
+    f = open('train_data.txt', 'r')
     pos = f.readlines(0-1)
     f.close()
 
@@ -113,7 +113,9 @@ download = Frame(root)
 for frame in (f0, f1, f2, f3, download):
     frame.grid(row=0, column=0, sticky='news')
 
-stop = threading.Event()
+
+def end_code():
+    end_loop = True
 
 
 def close():
@@ -133,23 +135,27 @@ def test():
 
 
 def constant_run():
+    end_loop = False
     emergency_stop = False
-    find_train_position()
-    scotsman_current_position = pos[0]
-    mallard_current_position = pos[1]
     l3: bool = True
-    x = int(pos[0].replace('c', '').replace('b', '')) - 1
-    y = int(pos[0].replace('c', '').replace('b', '')) - 1
-    z = False
+    try:
+        find_train_position()
+        scotsman_current_position = pos[0]
+        mallard_current_position = pos[1]
+        x = int(pos[0].replace('c', '').replace('b', '')) - 1
+        y = int(pos[0].replace('c', '').replace('b', '')) - 1
+    except:
+        scotsman_current_position = 1
+        mallard_current_position = 30
+        x = 0
+        y = 0
     while l3 is True:
         # x = 0
         # y = 0
-        l4: bool = True
-        l5: bool = True
+        l4 = True
+        l5 = True
         while l4 is True and emergency_stop is False:
-            # if z:
-            #     x = 0
-            #     y = 0
+
             sensor_data[1] = False
             sensor_data[2] = False
             sensor_data[3] = False
@@ -588,13 +594,14 @@ def constant_run():
                 photo_1.configure(image=root.nrm29)
             elif mallard_current_position == '30':
                 photo_1.configure(image=root.nrm30)
-            f = open('train_data', 'a')
+            f = open('train_data.txt', 'a')
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
-            z = True
         x = 0
         y = 0
+        if end_loop:
+            break
         while l5 is True and emergency_stop is False:
             sensor_data[1] = False
             sensor_data[2] = False
@@ -1034,21 +1041,28 @@ def constant_run():
                 photo_1.configure(image=root.nrm29)
             elif mallard_current_position == '30':
                 photo_1.configure(image=root.nrm30)
-            f = open('train_data', 'a')
+            f = open('train_data.txt', 'a')
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
-            z = True
 
 
 def run():
-    t = threading.Thread(target=constant_run)
-    t.daemon = True
-    t.start()
+    global p
+    p = threading.Thread(target=constant_run)
+    p.daemon = True
+    p.start()
 
 
 def switch():
-    Start_Sim.configure(state=DISABLED)
+    Start_Sim.configure(command=lambda: [return_train(), close()], text='STOP')
+
+
+def return_train():
+    f = open('train_data.txt', 'a')
+    f.truncate(0)
+    f.writelines(f'1\n30\n')
+    f.close()
 
 
 w1 = 27
@@ -1062,24 +1076,22 @@ Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(
 Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
 
 Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
-    grid(row=3, column=0)
+    grid(row=3, column=0)  # TODO: Write code to check sensors and display it in the GUI
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w, height=h, command=test, font=VerdanaL). \
-    grid(row=3, column=1)
-Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL,
-                   font=VerdanaL)
+    grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
+Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
 Start_Sim.grid(row=3, column=2)
 Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
-find_train_position()
-num = int(pos[0].replace('c', '').replace('b', '')) - 1
 photo_1 = Label(f1, image=root.error)
 photo_1.grid(row=0, column=0, columnspan=4)
 
 Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL). \
-    grid(row=3, column=0)
+    grid(row=3, column=0)   # TODO: Write code to read last input and display it in the GUI
 Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
-    grid(row=3, column=1)
+    grid(row=3, column=1)    # TODO: Write code to download the black box
 Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
+# TODO: Write code to clear black box
 Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
@@ -1087,6 +1099,7 @@ photo_2.grid(row=0, column=0, columnspan=4)
 
 Run_Through = Button(f3, text="Test System", width=27, height=h, command=control_panel, font=VerdanaL). \
     grid(row=3, column=0)
+# TODO: Write code to test whole system and display it in the GUI (use code from constant run)
 Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_3 = Label(f3, image=root.error)
