@@ -15,8 +15,8 @@ pos = ''
 root = Tk()
 w = 13
 h = 8
-global end_code
-global stop_loop
+global end_loop
+stop_threads = False
 root.title('NRM GUI')
 root.geometry("400x300")
 root.resizable(0, 0)
@@ -113,7 +113,9 @@ download = Frame(root)
 for frame in (f0, f1, f2, f3, download):
     frame.grid(row=0, column=0, sticky='news')
 
-stop = threading.Event()
+
+def end_code():
+    end_loop = True
 
 
 def close():
@@ -132,14 +134,9 @@ def test():
     pass
 
 
-def interrupted():
-    global interrupted
-    interrupted = not interrupted
-
-
 def constant_run():
+    end_loop = False
     emergency_stop = False
-
     l3: bool = True
     try:
         find_train_position()
@@ -152,16 +149,13 @@ def constant_run():
         mallard_current_position = 30
         x = 0
         y = 0
-    z = False
     while l3 is True:
         # x = 0
         # y = 0
         l4 = True
         l5 = True
         while l4 is True and emergency_stop is False:
-            # if z:
-            #     x = 0
-            #     y = 0
+
             sensor_data[1] = False
             sensor_data[2] = False
             sensor_data[3] = False
@@ -174,9 +168,6 @@ def constant_run():
             x += 1
             if x == 30:
                 break
-            if interrupted is True:
-                l5 = False
-                l3 = False
             scotsman_current_position = route_1[x]
             mallard_current_position = route_2[x]
             if scotsman_current_position == '1':
@@ -607,9 +598,10 @@ def constant_run():
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
-            z = True
         x = 0
         y = 0
+        if end_loop:
+            break
         while l5 is True and emergency_stop is False:
             sensor_data[1] = False
             sensor_data[2] = False
@@ -623,9 +615,6 @@ def constant_run():
             y += 1
             if y == 30:
                 break
-            if interrupted is True:
-                l5 = False
-                l3 = False
             scotsman_current_position = route_2[y]
             mallard_current_position = route_1[y]
             if scotsman_current_position == '1':
@@ -1056,21 +1045,24 @@ def constant_run():
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
-            z = True
 
 
-def run(stop_run=False):
-    t = threading.Thread(target=constant_run)
-    t.daemon = True
-    t.start()
-    # t.join()
+def run():
+    global p
+    p = threading.Thread(target=constant_run)
+    p.daemon = True
+    p.start()
 
 
 def switch():
-    if Start_Sim['text'] == 'START':
-        Start_Sim.configure(command=lambda: [interrupted(), switch()], text='STOP')
-    else:
-        Start_Sim.configure(command=lambda: [run(), switch()], text='START')
+    Start_Sim.configure(command=lambda: [return_train(), close()], text='STOP')
+
+
+def return_train():
+    f = open('train_data.txt', 'a')
+    f.truncate(0)
+    f.writelines(f'1\n30\n')
+    f.close()
 
 
 w1 = 27
@@ -1087,8 +1079,7 @@ Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w, height=h, command=con
     grid(row=3, column=0)  # TODO: Write code to check sensors and display it in the GUI
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w, height=h, command=test, font=VerdanaL). \
     grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
-Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL,
-                   font=VerdanaL)
+Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
 Start_Sim.grid(row=3, column=2)
 Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
