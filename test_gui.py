@@ -1055,14 +1055,7 @@ def run():
 
 
 def switch():
-    Start_Sim.configure(command=lambda: [return_train(), close()], text='STOP')
-
-
-def return_train():
-    f = open('train_data.txt', 'a')
-    f.truncate(0)
-    f.writelines(f'1\n30\n')
-    f.close()
+    Start_Sim.configure(command=lambda: [close()], text='STOP')
 
 
 w1 = 27
