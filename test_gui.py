@@ -122,16 +122,9 @@ def close():
     root.destroy()
 
 
-def control_panel():
-    pass
-
-
-def black_box():
-    pass
-
-
-def test():
-    pass
+def place_holder():
+    # This is purely to put in as a function where I haven't written yet.
+    print('Button Pressed')
 
 
 def constant_run():
@@ -1068,29 +1061,33 @@ Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(
     grid(row=1, column=0, sticky='nsew')
 Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
 
-Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
+w2 = 10
+h2 = 8
+Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to check sensors and display it in the GUI
-Check_Points = Button(f1, text="CHECK\nPOINTS", width=w, height=h, command=test, font=VerdanaL). \
+Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
-Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
-Start_Sim.grid(row=3, column=2)
-Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
-    grid(row=3, column=3)
+Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
+    grid(row=3, column=2)
+Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
+Start_Sim.grid(row=3, column=3)
+Leave = Button(f1, text="RETURN", width=w2, height=h2, command=lambda: raise_frame(f0), font=VerdanaL). \
+    grid(row=3, column=4)
 photo_1 = Label(f1, image=root.error)
-photo_1.grid(row=0, column=0, columnspan=4)
+photo_1.grid(row=0, column=0, columnspan=5)
 
-Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL). \
+Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)   # TODO: Write code to read last input and display it in the GUI
 Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
     grid(row=3, column=1)    # TODO: Write code to download the black box
-Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
-# TODO: Write code to clear black box
+Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=place_holder, font=VerdanaL).\
+    grid(row=3, column=2)  # TODO: Write code to clear black box
 Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
 photo_2.grid(row=0, column=0, columnspan=4)
 
-Run_Through = Button(f3, text="Test System", width=27, height=h, command=control_panel, font=VerdanaL). \
+Run_Through = Button(f3, text="Test System", width=27, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)
 # TODO: Write code to test whole system and display it in the GUI (use code from constant run)
 Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
