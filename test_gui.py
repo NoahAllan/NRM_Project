@@ -8,7 +8,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 from tkinter.font import Font
 from track import *
-from main import sensor_data
+# from main import sensor_data
 import threading
 
 pos = ''
@@ -17,6 +17,16 @@ w = 13
 h = 8
 global end_loop
 stop_threads = False
+sensor_data: list[bool] = [True, False, False, False, False, True]
+signal_data: list[bool] = [False, False, False, False, False, False]
+Point_A: int = 0
+Point_B: int = 0
+Sig_a: str = ''
+Sig_b: str = ''
+Sig_c: str = ''
+Sig_d: str = ''
+Sig_e: str = ''
+Sig_f: str = ''
 root.title('NRM GUI')
 root.geometry("400x300")
 root.resizable(0, 0)
@@ -96,7 +106,7 @@ route_2 = route_two[::-1]
 def find_train_position():
     global pos
     f = open('train_data.txt', 'r')
-    pos = f.readlines(0-1)
+    pos = f.readlines(0 - 1)
     f.close()
 
 
@@ -109,8 +119,9 @@ f1 = Frame(root)
 f2 = Frame(root)
 f3 = Frame(root)
 download = Frame(root)
+sensor = Frame(root)
 
-for frame in (f0, f1, f2, f3, download):
+for frame in (f0, f1, f2, f3, download, sensor):
     frame.grid(row=0, column=0, sticky='news')
 
 
@@ -1057,30 +1068,39 @@ Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w1, height=h1, command=l
                        font=VerdanaL).grid(row=0, column=0, sticky='nsew')
 Black_Box = Button(f0, text="BLACK\nBOX", width=w1, height=h1, command=lambda: raise_frame(f2), font=VerdanaL). \
     grid(row=0, column=1, sticky='nsew')
-Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL).\
+Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL). \
     grid(row=1, column=0, sticky='nsew')
 Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
 
 w2 = 10
 h2 = 8
-Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=0)  # TODO: Write code to check sensors and display it in the GUI
+Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
+                       font=VerdanaL).grid(row=3,
+                                           column=0)  # TODO: Write code to check sensors and display it in the GUI
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
 Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=2)
-Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
+    grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
+Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
+                   font=VerdanaL)
 Start_Sim.grid(row=3, column=3)
 Leave = Button(f1, text="RETURN", width=w2, height=h2, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=4)
 photo_1 = Label(f1, image=root.error)
 photo_1.grid(row=0, column=0, columnspan=5)
 
+Sensor_ONE = Label(sensor, text=f'Sensor 1 reads {sensor_data[0]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_TWO = Label(sensor, text=f'Sensor 2 reads {sensor_data[1]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_THREE = Label(sensor, text=f'Sensor 3 reads {sensor_data[2]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_FOUR = Label(sensor, text=f'Sensor 4 reads {sensor_data[3]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_FIVE = Label(sensor, text=f'Sensor 5 reads {sensor_data[4]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_SIX = Label(sensor, text=f'Sensor 6 reads {sensor_data[5]}', font=Verdana, padx=12, pady=12).grid()
+
 Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=0)   # TODO: Write code to read last input and display it in the GUI
+    grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
 Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
-    grid(row=3, column=1)    # TODO: Write code to download the black box
-Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=place_holder, font=VerdanaL).\
+    grid(row=3, column=1)  # TODO: Write code to download the black box
+Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
 Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
