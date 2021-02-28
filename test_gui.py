@@ -13,7 +13,7 @@ import threading
 
 pos = ''
 root = Tk()
-w = 13
+width = 13
 h = 8
 global end_loop
 stop_threads = False
@@ -1089,20 +1089,28 @@ Leave = Button(f1, text="RETURN", width=w2, height=h2, command=lambda: raise_fra
 photo_1 = Label(f1, image=root.error)
 photo_1.grid(row=0, column=0, columnspan=5)
 
-Sensor_ONE = Label(sensor, text=f'Sensor 1 reads {sensor_data[0]}', font=Verdana, padx=12, pady=12).grid()
-Sensor_TWO = Label(sensor, text=f'Sensor 2 reads {sensor_data[1]}', font=Verdana, padx=12, pady=12).grid()
-Sensor_THREE = Label(sensor, text=f'Sensor 3 reads {sensor_data[2]}', font=Verdana, padx=12, pady=12).grid()
-Sensor_FOUR = Label(sensor, text=f'Sensor 4 reads {sensor_data[3]}', font=Verdana, padx=12, pady=12).grid()
-Sensor_FIVE = Label(sensor, text=f'Sensor 5 reads {sensor_data[4]}', font=Verdana, padx=12, pady=12).grid()
-Sensor_SIX = Label(sensor, text=f'Sensor 6 reads {sensor_data[5]}', font=Verdana, padx=12, pady=12).grid()
+Sensor_ONE = Label(sensor, text=f'Sensor 1 reads ', font=Verdana, padx=0, pady=7).grid(row=0, column=0)
+Sensor_ONE_DATA = Label(sensor, text=f'{sensor_data[0]}', font=Verdana, padx=0, pady=7).grid(row=0, column=1)
+Sensor_TWO = Label(sensor, text=f'Sensor 2 reads ', font=Verdana, padx=0, pady=7).grid(row=1, column=0)
+Sensor_TWO_DATA = Label(sensor, text=f'{sensor_data[1]}', font=Verdana, padx=0, pady=7).grid(row=1, column=1)
+Sensor_THREE = Label(sensor, text=f'Sensor 3 reads ', font=Verdana, padx=0, pady=7).grid(row=2, column=0)
+Sensor_THREE_DATA = Label(sensor, text=f'{sensor_data[2]}', font=Verdana, padx=0, pady=7).grid(row=2, column=1)
+Sensor_FOUR = Label(sensor, text=f'Sensor 4 reads ', font=Verdana, padx=0, pady=7).grid(row=3, column=0)
+Sensor_FOUR_DATA = Label(sensor, text=f'{sensor_data[3]}', font=Verdana, padx=0, pady=7).grid(row=3, column=1)
+Sensor_FIVE = Label(sensor, text=f'Sensor 5 reads ', font=Verdana, padx=0, pady=7).grid(row=4, column=0)
+Sensor_FIVE_DATA = Label(sensor, text=f'{sensor_data[4]}', font=Verdana, padx=0, pady=7).grid(row=4, column=1)
+Sensor_SIX = Label(sensor, text=f'Sensor 6 reads ', font=Verdana, padx=0, pady=7).grid(row=5, column=0)
+Sensor_SIX_DATA = Label(sensor, text=f'{sensor_data[5]}', font=Verdana, padx=0, pady=7).grid(row=5, column=1)
+Sensor_retrn = Button(sensor, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                      command=lambda: raise_frame(f1)).grid(columnspan=2)
 
-Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=place_holder, font=VerdanaL). \
+Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
-Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
+Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
     grid(row=3, column=1)  # TODO: Write code to download the black box
-Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=place_holder, font=VerdanaL). \
+Clear = Button(f2, text="CLEAR\nBLACK BOX", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
-Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
+Leave_1 = Button(f2, text="RETURN", width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
 photo_2.grid(row=0, column=0, columnspan=4)
