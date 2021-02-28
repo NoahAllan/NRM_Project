@@ -8,15 +8,25 @@ from tkinter import *
 from PIL import Image, ImageTk
 from tkinter.font import Font
 from track import *
-from main import sensor_data
+# from main import sensor_data
 import threading
 
 pos = ''
 root = Tk()
-w = 13
+width = 13
 h = 8
 global end_loop
 stop_threads = False
+sensor_data: list[bool] = [True, False, False, False, False, True]
+signal_data: list[bool] = [False, False, False, False, False, False]
+Point_A: int = 0
+Point_B: int = 0
+Sig_a: str = ''
+Sig_b: str = ''
+Sig_c: str = ''
+Sig_d: str = ''
+Sig_e: str = ''
+Sig_f: str = ''
 root.title('NRM GUI')
 root.geometry("400x300")
 root.resizable(0, 0)
@@ -96,7 +106,7 @@ route_2 = route_two[::-1]
 def find_train_position():
     global pos
     f = open('train_data.txt', 'r')
-    pos = f.readlines(0-1)
+    pos = f.readlines(0 - 1)
     f.close()
 
 
@@ -109,9 +119,20 @@ f1 = Frame(root)
 f2 = Frame(root)
 f3 = Frame(root)
 download = Frame(root)
+sensor = Frame(root)
 
-for frame in (f0, f1, f2, f3, download):
+for frame in (f0, f1, f2, f3, download, sensor):
     frame.grid(row=0, column=0, sticky='news')
+
+
+def bool_change(bool_input):
+    if bool_input is True:
+        bool_input = False
+    elif bool_input is False:
+        bool_input = True
+    else:
+        print(f'{bool_input} is not valid input')
+    return bool_input
 
 
 def end_code():
@@ -122,16 +143,9 @@ def close():
     root.destroy()
 
 
-def control_panel():
-    pass
-
-
-def black_box():
-    pass
-
-
-def test():
-    pass
+def place_holder():
+    # This is purely to put in as a function where I haven't written yet.
+    print('Button Pressed')
 
 
 def constant_run():
@@ -150,463 +164,473 @@ def constant_run():
         x = 0
         y = 0
     while l3 is True:
-        # x = 0
-        # y = 0
         l4 = True
         l5 = True
         while l4 is True and emergency_stop is False:
-
+            sensor_data[0] = False
             sensor_data[1] = False
             sensor_data[2] = False
             sensor_data[3] = False
             sensor_data[4] = False
+            sensor_data[5] = False
 
             print(f'Scotsman is at position - {scotsman_current_position}')
             print(f'Mallard is at position - {mallard_current_position}')
             time.sleep(v)
             time.sleep(0.2)
             x += 1
-            if x == 30:
-                break
-            scotsman_current_position = route_1[x]
-            mallard_current_position = route_2[x]
-            if scotsman_current_position == '1':
-                photo_1.configure(image=root.nrm1)
-            elif scotsman_current_position == '2':
-                photo_1.configure(image=root.nrm2)
-            elif scotsman_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
-                photo_1.configure(image=root.nrm3)
-            elif scotsman_current_position == '4':
-                photo_1.configure(image=root.nrm4)
-            elif scotsman_current_position == '5':
-                photo_1.configure(image=root.nrm5)
-            elif scotsman_current_position == '6b':
-                photo_1.configure(image=root.nrm6)
-            elif scotsman_current_position == '6c':
-                photo_1.configure(image=root.nrm6)
-            elif scotsman_current_position == '7b':
-                photo_1.configure(image=root.nrm7)
-            elif scotsman_current_position == '7c':
-                photo_1.configure(image=root.nrm7)
-            elif scotsman_current_position == '8b':
-                photo_1.configure(image=root.nrm8)
-            elif scotsman_current_position == '8c':
-                photo_1.configure(image=root.nrm8)
-            elif scotsman_current_position == '9b':
-                sensor_data[1] = True
-                photo_1.configure(image=root.nrm9)
-            elif scotsman_current_position == '9c':
-                sensor_data[2] = True
-                photo_1.configure(image=root.nrm9)
-            elif scotsman_current_position == '10b':
-                photo_1.configure(image=root.nrm10)
-            elif scotsman_current_position == '10c':
-                photo_1.configure(image=root.nrm10)
-            elif scotsman_current_position == '11b':
-                photo_1.configure(image=root.nrm11)
-            elif scotsman_current_position == '11c':
-                photo_1.configure(image=root.nrm11)
-            elif scotsman_current_position == '12b':
-                photo_1.configure(image=root.nrm12)
-            elif scotsman_current_position == '12c':
-                photo_1.configure(image=root.nrm12)
-            elif scotsman_current_position == '13b':
-                photo_1.configure(image=root.nrm13)
-            elif scotsman_current_position == '13c':
-                photo_1.configure(image=root.nrm13)
-            elif scotsman_current_position == '14b':
-                photo_1.configure(image=root.nrm14)
-            elif scotsman_current_position == '14c':
-                photo_1.configure(image=root.nrm14)
-            elif scotsman_current_position == '15b':
-                photo_1.configure(image=root.nrm15)
-            elif scotsman_current_position == '15c':
-                photo_1.configure(image=root.nrm15)
-            elif scotsman_current_position == '16b':
-                photo_1.configure(image=root.nrm16)
-            elif scotsman_current_position == '16c':
-                photo_1.configure(image=root.nrm16)
-            elif scotsman_current_position == '17b':
-                photo_1.configure(image=root.nrm17)
-            elif scotsman_current_position == '17c':
-                photo_1.configure(image=root.nrm17)
-            elif scotsman_current_position == '18b':
-                photo_1.configure(image=root.nrm18)
-            elif scotsman_current_position == '18c':
-                photo_1.configure(image=root.nrm18)
-            elif scotsman_current_position == '19b':
-                photo_1.configure(image=root.nrm19)
-            elif scotsman_current_position == '19c':
-                photo_1.configure(image=root.nrm19)
-            elif scotsman_current_position == '20b':
-                photo_1.configure(image=root.nrm20)
-            elif scotsman_current_position == '20c':
-                photo_1.configure(image=root.nrm20)
-            elif scotsman_current_position == '21b':
-                photo_1.configure(image=root.nrm21)
-            elif scotsman_current_position == '21c':
-                photo_1.configure(image=root.nrm21)
-            elif scotsman_current_position == '22b':
-                sensor_data[3] = True
-                photo_1.configure(image=root.nrm22)
-            elif scotsman_current_position == '22c':
-                sensor_data[4] = True
-                photo_1.configure(image=root.nrm22)
-            elif scotsman_current_position == '23b':
-                photo_1.configure(image=root.nrm23)
-            elif scotsman_current_position == '23c':
-                photo_1.configure(image=root.nrm23)
-            elif scotsman_current_position == '24b':
-                photo_1.configure(image=root.nrm24)
-            elif scotsman_current_position == '24c':
-                photo_1.configure(image=root.nrm24)
-            elif scotsman_current_position == '25b':
-                photo_1.configure(image=root.nrm25)
-            elif scotsman_current_position == '25c':
-                photo_1.configure(image=root.nrm25)
-            elif scotsman_current_position == '26':
-                photo_1.configure(image=root.nrm26)
-            elif scotsman_current_position == '27':
-                photo_1.configure(image=root.nrm27)
-            elif scotsman_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
-                photo_1.configure(image=root.nrm28)
-            elif scotsman_current_position == '29':
-                photo_1.configure(image=root.nrm29)
-            elif scotsman_current_position == '30':
-                photo_1.configure(image=root.nrm30)
-            if mallard_current_position == '1':
-                photo_1.configure(image=root.nrm1)
-            elif mallard_current_position == '2':
-                photo_1.configure(image=root.nrm2)
-            elif mallard_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
-                photo_1.configure(image=root.nrm3)
-            elif mallard_current_position == '4':
-                photo_1.configure(image=root.nrm4)
-            elif mallard_current_position == '5':
-                photo_1.configure(image=root.nrm5)
-            elif mallard_current_position == '6b':
-                photo_1.configure(image=root.nrm6)
-            elif mallard_current_position == '6c':
-                photo_1.configure(image=root.nrm6)
-            elif mallard_current_position == '7b':
-                photo_1.configure(image=root.nrm7)
-            elif mallard_current_position == '7c':
-                photo_1.configure(image=root.nrm7)
-            elif mallard_current_position == '8b':
-                photo_1.configure(image=root.nrm8)
-            elif mallard_current_position == '8c':
-                photo_1.configure(image=root.nrm8)
-            elif mallard_current_position == '9b':
-                sensor_data[1] = True
-                photo_1.configure(image=root.nrm9)
-            elif mallard_current_position == '9c':
-                sensor_data[2] = True
-                photo_1.configure(image=root.nrm9)
-            elif mallard_current_position == '10b':
-                photo_1.configure(image=root.nrm10)
-            elif mallard_current_position == '10c':
-                photo_1.configure(image=root.nrm10)
-            elif mallard_current_position == '11b':
-                photo_1.configure(image=root.nrm11)
-            elif mallard_current_position == '11c':
-                photo_1.configure(image=root.nrm11)
-            elif mallard_current_position == '12b':
-                photo_1.configure(image=root.nrm12)
-            elif mallard_current_position == '12c':
-                photo_1.configure(image=root.nrm12)
-            elif mallard_current_position == '13b':
-                photo_1.configure(image=root.nrm13)
-            elif mallard_current_position == '13c':
-                photo_1.configure(image=root.nrm13)
-            elif mallard_current_position == '14b':
-                photo_1.configure(image=root.nrm14)
-            elif mallard_current_position == '14c':
-                photo_1.configure(image=root.nrm14)
-            elif mallard_current_position == '15b':
-                photo_1.configure(image=root.nrm15)
-            elif mallard_current_position == '15c':
-                photo_1.configure(image=root.nrm15)
-            elif mallard_current_position == '16b':
-                photo_1.configure(image=root.nrm16)
-            elif mallard_current_position == '16c':
-                photo_1.configure(image=root.nrm16)
-            elif mallard_current_position == '17b':
-                photo_1.configure(image=root.nrm17)
-            elif mallard_current_position == '17c':
-                photo_1.configure(image=root.nrm17)
-            elif mallard_current_position == '18b':
-                photo_1.configure(image=root.nrm18)
-            elif mallard_current_position == '18c':
-                photo_1.configure(image=root.nrm18)
-            elif mallard_current_position == '19b':
-                photo_1.configure(image=root.nrm19)
-            elif mallard_current_position == '19c':
-                photo_1.configure(image=root.nrm19)
-            elif mallard_current_position == '20b':
-                photo_1.configure(image=root.nrm20)
-            elif mallard_current_position == '20c':
-                photo_1.configure(image=root.nrm20)
-            elif mallard_current_position == '21b':
-                photo_1.configure(image=root.nrm21)
-            elif mallard_current_position == '21c':
-                photo_1.configure(image=root.nrm21)
-            elif mallard_current_position == '22b':
-                sensor_data[3] = True
-                photo_1.configure(image=root.nrm22)
-            elif mallard_current_position == '22c':
-                sensor_data[4] = True
-                photo_1.configure(image=root.nrm22)
-            elif mallard_current_position == '23b':
-                photo_1.configure(image=root.nrm23)
-            elif mallard_current_position == '23c':
-                photo_1.configure(image=root.nrm23)
-            elif mallard_current_position == '24b':
-                photo_1.configure(image=root.nrm24)
-            elif mallard_current_position == '24c':
-                photo_1.configure(image=root.nrm24)
-            elif mallard_current_position == '25b':
-                photo_1.configure(image=root.nrm25)
-            elif mallard_current_position == '25c':
-                photo_1.configure(image=root.nrm25)
-            elif mallard_current_position == '26':
-                photo_1.configure(image=root.nrm26)
-            elif mallard_current_position == '27':
-                photo_1.configure(image=root.nrm27)
-            elif mallard_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
-                photo_1.configure(image=root.nrm28)
-            elif mallard_current_position == '29':
-                photo_1.configure(image=root.nrm29)
-            elif mallard_current_position == '30':
-                photo_1.configure(image=root.nrm30)
-            if scotsman_current_position == '1':
-                photo_1.configure(image=root.nrm1)
-            elif scotsman_current_position == '2':
-                photo_1.configure(image=root.nrm2)
-            elif scotsman_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
-                photo_1.configure(image=root.nrm3)
-            elif scotsman_current_position == '4':
-                photo_1.configure(image=root.nrm4)
-            elif scotsman_current_position == '5':
-                photo_1.configure(image=root.nrm5)
-            elif scotsman_current_position == '6b':
-                photo_1.configure(image=root.nrm6)
-            elif scotsman_current_position == '6c':
-                photo_1.configure(image=root.nrm6)
-            elif scotsman_current_position == '7b':
-                photo_1.configure(image=root.nrm7)
-            elif scotsman_current_position == '7c':
-                photo_1.configure(image=root.nrm7)
-            elif scotsman_current_position == '8b':
-                photo_1.configure(image=root.nrm8)
-            elif scotsman_current_position == '8c':
-                photo_1.configure(image=root.nrm8)
-            elif scotsman_current_position == '9b':
-                sensor_data[1] = True
-                photo_1.configure(image=root.nrm9)
-            elif scotsman_current_position == '9c':
-                sensor_data[2] = True
-                photo_1.configure(image=root.nrm9)
-            elif scotsman_current_position == '10b':
-                photo_1.configure(image=root.nrm10)
-            elif scotsman_current_position == '10c':
-                photo_1.configure(image=root.nrm10)
-            elif scotsman_current_position == '11b':
-                photo_1.configure(image=root.nrm11)
-            elif scotsman_current_position == '11c':
-                photo_1.configure(image=root.nrm11)
-            elif scotsman_current_position == '12b':
-                photo_1.configure(image=root.nrm12)
-            elif scotsman_current_position == '12c':
-                photo_1.configure(image=root.nrm12)
-            elif scotsman_current_position == '13b':
-                photo_1.configure(image=root.nrm13)
-            elif scotsman_current_position == '13c':
-                photo_1.configure(image=root.nrm13)
-            elif scotsman_current_position == '14b':
-                photo_1.configure(image=root.nrm14)
-            elif scotsman_current_position == '14c':
-                photo_1.configure(image=root.nrm14)
-            elif scotsman_current_position == '15b':
-                photo_1.configure(image=root.nrm15)
-            elif scotsman_current_position == '15c':
-                photo_1.configure(image=root.nrm15)
-            elif scotsman_current_position == '16b':
-                photo_1.configure(image=root.nrm16)
-            elif scotsman_current_position == '16c':
-                photo_1.configure(image=root.nrm16)
-            elif scotsman_current_position == '17b':
-                photo_1.configure(image=root.nrm17)
-            elif scotsman_current_position == '17c':
-                photo_1.configure(image=root.nrm17)
-            elif scotsman_current_position == '18b':
-                photo_1.configure(image=root.nrm18)
-            elif scotsman_current_position == '18c':
-                photo_1.configure(image=root.nrm18)
-            elif scotsman_current_position == '19b':
-                photo_1.configure(image=root.nrm19)
-            elif scotsman_current_position == '19c':
-                photo_1.configure(image=root.nrm19)
-            elif scotsman_current_position == '20b':
-                photo_1.configure(image=root.nrm20)
-            elif scotsman_current_position == '20c':
-                photo_1.configure(image=root.nrm20)
-            elif scotsman_current_position == '21b':
-                photo_1.configure(image=root.nrm21)
-            elif scotsman_current_position == '21c':
-                photo_1.configure(image=root.nrm21)
-            elif scotsman_current_position == '22b':
-                sensor_data[3] = True
-                photo_1.configure(image=root.nrm22)
-            elif scotsman_current_position == '22c':
-                sensor_data[4] = True
-                photo_1.configure(image=root.nrm22)
-            elif scotsman_current_position == '23b':
-                photo_1.configure(image=root.nrm23)
-            elif scotsman_current_position == '23c':
-                photo_1.configure(image=root.nrm23)
-            elif scotsman_current_position == '24b':
-                photo_1.configure(image=root.nrm24)
-            elif scotsman_current_position == '24c':
-                photo_1.configure(image=root.nrm24)
-            elif scotsman_current_position == '25b':
-                photo_1.configure(image=root.nrm25)
-            elif scotsman_current_position == '25c':
-                photo_1.configure(image=root.nrm25)
-            elif scotsman_current_position == '26':
-                photo_1.configure(image=root.nrm26)
-            elif scotsman_current_position == '27':
-                photo_1.configure(image=root.nrm27)
-            elif scotsman_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
-                photo_1.configure(image=root.nrm28)
-            elif scotsman_current_position == '29':
-                photo_1.configure(image=root.nrm29)
-            elif scotsman_current_position == '30':
-                photo_1.configure(image=root.nrm30)
-            if mallard_current_position == '1':
-                photo_1.configure(image=root.nrm1)
-            elif mallard_current_position == '2':
-                photo_1.configure(image=root.nrm2)
-            elif mallard_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
-                photo_1.configure(image=root.nrm3)
-            elif mallard_current_position == '4':
-                photo_1.configure(image=root.nrm4)
-            elif mallard_current_position == '5':
-                photo_1.configure(image=root.nrm5)
-            elif mallard_current_position == '6b':
-                photo_1.configure(image=root.nrm6)
-            elif mallard_current_position == '6c':
-                photo_1.configure(image=root.nrm6)
-            elif mallard_current_position == '7b':
-                photo_1.configure(image=root.nrm7)
-            elif mallard_current_position == '7c':
-                photo_1.configure(image=root.nrm7)
-            elif mallard_current_position == '8b':
-                photo_1.configure(image=root.nrm8)
-            elif mallard_current_position == '8c':
-                photo_1.configure(image=root.nrm8)
-            elif mallard_current_position == '9b':
-                sensor_data[1] = True
-                photo_1.configure(image=root.nrm9)
-            elif mallard_current_position == '9c':
-                sensor_data[2] = True
-                photo_1.configure(image=root.nrm9)
-            elif mallard_current_position == '10b':
-                photo_1.configure(image=root.nrm10)
-            elif mallard_current_position == '10c':
-                photo_1.configure(image=root.nrm10)
-            elif mallard_current_position == '11b':
-                photo_1.configure(image=root.nrm11)
-            elif mallard_current_position == '11c':
-                photo_1.configure(image=root.nrm11)
-            elif mallard_current_position == '12b':
-                photo_1.configure(image=root.nrm12)
-            elif mallard_current_position == '12c':
-                photo_1.configure(image=root.nrm12)
-            elif mallard_current_position == '13b':
-                photo_1.configure(image=root.nrm13)
-            elif mallard_current_position == '13c':
-                photo_1.configure(image=root.nrm13)
-            elif mallard_current_position == '14b':
-                photo_1.configure(image=root.nrm14)
-            elif mallard_current_position == '14c':
-                photo_1.configure(image=root.nrm14)
-            elif mallard_current_position == '15b':
-                photo_1.configure(image=root.nrm15)
-            elif mallard_current_position == '15c':
-                photo_1.configure(image=root.nrm15)
-            elif mallard_current_position == '16b':
-                photo_1.configure(image=root.nrm16)
-            elif mallard_current_position == '16c':
-                photo_1.configure(image=root.nrm16)
-            elif mallard_current_position == '17b':
-                photo_1.configure(image=root.nrm17)
-            elif mallard_current_position == '17c':
-                photo_1.configure(image=root.nrm17)
-            elif mallard_current_position == '18b':
-                photo_1.configure(image=root.nrm18)
-            elif mallard_current_position == '18c':
-                photo_1.configure(image=root.nrm18)
-            elif mallard_current_position == '19b':
-                photo_1.configure(image=root.nrm19)
-            elif mallard_current_position == '19c':
-                photo_1.configure(image=root.nrm19)
-            elif mallard_current_position == '20b':
-                photo_1.configure(image=root.nrm20)
-            elif mallard_current_position == '20c':
-                photo_1.configure(image=root.nrm20)
-            elif mallard_current_position == '21b':
-                photo_1.configure(image=root.nrm21)
-            elif mallard_current_position == '21c':
-                photo_1.configure(image=root.nrm21)
-            elif mallard_current_position == '22b':
-                sensor_data[3] = True
-                photo_1.configure(image=root.nrm22)
-            elif mallard_current_position == '22c':
-                sensor_data[4] = True
-                photo_1.configure(image=root.nrm22)
-            elif mallard_current_position == '23b':
-                photo_1.configure(image=root.nrm23)
-            elif mallard_current_position == '23c':
-                photo_1.configure(image=root.nrm23)
-            elif mallard_current_position == '24b':
-                photo_1.configure(image=root.nrm24)
-            elif mallard_current_position == '24c':
-                photo_1.configure(image=root.nrm24)
-            elif mallard_current_position == '25b':
-                photo_1.configure(image=root.nrm25)
-            elif mallard_current_position == '25c':
-                photo_1.configure(image=root.nrm25)
-            elif mallard_current_position == '26':
-                photo_1.configure(image=root.nrm26)
-            elif mallard_current_position == '27':
-                photo_1.configure(image=root.nrm27)
-            elif mallard_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
-                photo_1.configure(image=root.nrm28)
-            elif mallard_current_position == '29':
-                photo_1.configure(image=root.nrm29)
-            elif mallard_current_position == '30':
-                photo_1.configure(image=root.nrm30)
-            f = open('train_data.txt', 'a')
-            f.truncate(0)
-            f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
-            f.close()
+            if x != 30:
+                scotsman_current_position = route_1[x]
+                mallard_current_position = route_2[x]
+                if scotsman_current_position == '1':
+                    photo_1.configure(image=root.nrm1)
+                elif scotsman_current_position == '2':
+                    photo_1.configure(image=root.nrm2)
+                elif scotsman_current_position == '3':
+                    sensor_data[0] = True
+                    photo_1.configure(image=root.nrm3)
+                elif scotsman_current_position == '4':
+                    photo_1.configure(image=root.nrm4)
+                elif scotsman_current_position == '5':
+                    photo_1.configure(image=root.nrm5)
+                elif scotsman_current_position == '6b':
+                    photo_1.configure(image=root.nrm6)
+                elif scotsman_current_position == '6c':
+                    photo_1.configure(image=root.nrm6)
+                elif scotsman_current_position == '7b':
+                    photo_1.configure(image=root.nrm7)
+                elif scotsman_current_position == '7c':
+                    photo_1.configure(image=root.nrm7)
+                elif scotsman_current_position == '8b':
+                    photo_1.configure(image=root.nrm8)
+                elif scotsman_current_position == '8c':
+                    photo_1.configure(image=root.nrm8)
+                elif scotsman_current_position == '9b':
+                    sensor_data[1] = True
+                    photo_1.configure(image=root.nrm9)
+                elif scotsman_current_position == '9c':
+                    sensor_data[2] = True
+                    photo_1.configure(image=root.nrm9)
+                elif scotsman_current_position == '10b':
+                    photo_1.configure(image=root.nrm10)
+                elif scotsman_current_position == '10c':
+                    photo_1.configure(image=root.nrm10)
+                elif scotsman_current_position == '11b':
+                    photo_1.configure(image=root.nrm11)
+                elif scotsman_current_position == '11c':
+                    photo_1.configure(image=root.nrm11)
+                elif scotsman_current_position == '12b':
+                    photo_1.configure(image=root.nrm12)
+                elif scotsman_current_position == '12c':
+                    photo_1.configure(image=root.nrm12)
+                elif scotsman_current_position == '13b':
+                    photo_1.configure(image=root.nrm13)
+                elif scotsman_current_position == '13c':
+                    photo_1.configure(image=root.nrm13)
+                elif scotsman_current_position == '14b':
+                    photo_1.configure(image=root.nrm14)
+                elif scotsman_current_position == '14c':
+                    photo_1.configure(image=root.nrm14)
+                elif scotsman_current_position == '15b':
+                    photo_1.configure(image=root.nrm15)
+                elif scotsman_current_position == '15c':
+                    photo_1.configure(image=root.nrm15)
+                elif scotsman_current_position == '16b':
+                    photo_1.configure(image=root.nrm16)
+                elif scotsman_current_position == '16c':
+                    photo_1.configure(image=root.nrm16)
+                elif scotsman_current_position == '17b':
+                    photo_1.configure(image=root.nrm17)
+                elif scotsman_current_position == '17c':
+                    photo_1.configure(image=root.nrm17)
+                elif scotsman_current_position == '18b':
+                    photo_1.configure(image=root.nrm18)
+                elif scotsman_current_position == '18c':
+                    photo_1.configure(image=root.nrm18)
+                elif scotsman_current_position == '19b':
+                    photo_1.configure(image=root.nrm19)
+                elif scotsman_current_position == '19c':
+                    photo_1.configure(image=root.nrm19)
+                elif scotsman_current_position == '20b':
+                    photo_1.configure(image=root.nrm20)
+                elif scotsman_current_position == '20c':
+                    photo_1.configure(image=root.nrm20)
+                elif scotsman_current_position == '21b':
+                    photo_1.configure(image=root.nrm21)
+                elif scotsman_current_position == '21c':
+                    photo_1.configure(image=root.nrm21)
+                elif scotsman_current_position == '22b':
+                    sensor_data[3] = True
+                    photo_1.configure(image=root.nrm22)
+                elif scotsman_current_position == '22c':
+                    sensor_data[4] = True
+                    photo_1.configure(image=root.nrm22)
+                elif scotsman_current_position == '23b':
+                    photo_1.configure(image=root.nrm23)
+                elif scotsman_current_position == '23c':
+                    photo_1.configure(image=root.nrm23)
+                elif scotsman_current_position == '24b':
+                    photo_1.configure(image=root.nrm24)
+                elif scotsman_current_position == '24c':
+                    photo_1.configure(image=root.nrm24)
+                elif scotsman_current_position == '25b':
+                    photo_1.configure(image=root.nrm25)
+                elif scotsman_current_position == '25c':
+                    photo_1.configure(image=root.nrm25)
+                elif scotsman_current_position == '26':
+                    photo_1.configure(image=root.nrm26)
+                elif scotsman_current_position == '27':
+                    photo_1.configure(image=root.nrm27)
+                elif scotsman_current_position == '28':
+                    sensor_data[5] = True
+                    photo_1.configure(image=root.nrm28)
+                elif scotsman_current_position == '29':
+                    photo_1.configure(image=root.nrm29)
+                elif scotsman_current_position == '30':
+                    photo_1.configure(image=root.nrm30)
+                if mallard_current_position == '1':
+                    photo_1.configure(image=root.nrm1)
+                elif mallard_current_position == '2':
+                    photo_1.configure(image=root.nrm2)
+                elif mallard_current_position == '3':
+                    sensor_data[0] = True
+                    photo_1.configure(image=root.nrm3)
+                elif mallard_current_position == '4':
+                    photo_1.configure(image=root.nrm4)
+                elif mallard_current_position == '5':
+                    photo_1.configure(image=root.nrm5)
+                elif mallard_current_position == '6b':
+                    photo_1.configure(image=root.nrm6)
+                elif mallard_current_position == '6c':
+                    photo_1.configure(image=root.nrm6)
+                elif mallard_current_position == '7b':
+                    photo_1.configure(image=root.nrm7)
+                elif mallard_current_position == '7c':
+                    photo_1.configure(image=root.nrm7)
+                elif mallard_current_position == '8b':
+                    photo_1.configure(image=root.nrm8)
+                elif mallard_current_position == '8c':
+                    photo_1.configure(image=root.nrm8)
+                elif mallard_current_position == '9b':
+                    sensor_data[1] = True
+                    photo_1.configure(image=root.nrm9)
+                elif mallard_current_position == '9c':
+                    sensor_data[2] = True
+                    photo_1.configure(image=root.nrm9)
+                elif mallard_current_position == '10b':
+                    photo_1.configure(image=root.nrm10)
+                elif mallard_current_position == '10c':
+                    photo_1.configure(image=root.nrm10)
+                elif mallard_current_position == '11b':
+                    photo_1.configure(image=root.nrm11)
+                elif mallard_current_position == '11c':
+                    photo_1.configure(image=root.nrm11)
+                elif mallard_current_position == '12b':
+                    photo_1.configure(image=root.nrm12)
+                elif mallard_current_position == '12c':
+                    photo_1.configure(image=root.nrm12)
+                elif mallard_current_position == '13b':
+                    photo_1.configure(image=root.nrm13)
+                elif mallard_current_position == '13c':
+                    photo_1.configure(image=root.nrm13)
+                elif mallard_current_position == '14b':
+                    photo_1.configure(image=root.nrm14)
+                elif mallard_current_position == '14c':
+                    photo_1.configure(image=root.nrm14)
+                elif mallard_current_position == '15b':
+                    photo_1.configure(image=root.nrm15)
+                elif mallard_current_position == '15c':
+                    photo_1.configure(image=root.nrm15)
+                elif mallard_current_position == '16b':
+                    photo_1.configure(image=root.nrm16)
+                elif mallard_current_position == '16c':
+                    photo_1.configure(image=root.nrm16)
+                elif mallard_current_position == '17b':
+                    photo_1.configure(image=root.nrm17)
+                elif mallard_current_position == '17c':
+                    photo_1.configure(image=root.nrm17)
+                elif mallard_current_position == '18b':
+                    photo_1.configure(image=root.nrm18)
+                elif mallard_current_position == '18c':
+                    photo_1.configure(image=root.nrm18)
+                elif mallard_current_position == '19b':
+                    photo_1.configure(image=root.nrm19)
+                elif mallard_current_position == '19c':
+                    photo_1.configure(image=root.nrm19)
+                elif mallard_current_position == '20b':
+                    photo_1.configure(image=root.nrm20)
+                elif mallard_current_position == '20c':
+                    photo_1.configure(image=root.nrm20)
+                elif mallard_current_position == '21b':
+                    photo_1.configure(image=root.nrm21)
+                elif mallard_current_position == '21c':
+                    photo_1.configure(image=root.nrm21)
+                elif mallard_current_position == '22b':
+                    sensor_data[3] = True
+                    photo_1.configure(image=root.nrm22)
+                elif mallard_current_position == '22c':
+                    sensor_data[4] = True
+                    photo_1.configure(image=root.nrm22)
+                elif mallard_current_position == '23b':
+                    photo_1.configure(image=root.nrm23)
+                elif mallard_current_position == '23c':
+                    photo_1.configure(image=root.nrm23)
+                elif mallard_current_position == '24b':
+                    photo_1.configure(image=root.nrm24)
+                elif mallard_current_position == '24c':
+                    photo_1.configure(image=root.nrm24)
+                elif mallard_current_position == '25b':
+                    photo_1.configure(image=root.nrm25)
+                elif mallard_current_position == '25c':
+                    photo_1.configure(image=root.nrm25)
+                elif mallard_current_position == '26':
+                    photo_1.configure(image=root.nrm26)
+                elif mallard_current_position == '27':
+                    photo_1.configure(image=root.nrm27)
+                elif mallard_current_position == '28':
+                    sensor_data[5] = True
+                    photo_1.configure(image=root.nrm28)
+                elif mallard_current_position == '29':
+                    photo_1.configure(image=root.nrm29)
+                elif mallard_current_position == '30':
+                    photo_1.configure(image=root.nrm30)
+                if scotsman_current_position == '1':
+                    photo_1.configure(image=root.nrm1)
+                elif scotsman_current_position == '2':
+                    photo_1.configure(image=root.nrm2)
+                elif scotsman_current_position == '3':
+                    sensor_data[0] = True
+                    photo_1.configure(image=root.nrm3)
+                elif scotsman_current_position == '4':
+                    photo_1.configure(image=root.nrm4)
+                elif scotsman_current_position == '5':
+                    photo_1.configure(image=root.nrm5)
+                elif scotsman_current_position == '6b':
+                    photo_1.configure(image=root.nrm6)
+                elif scotsman_current_position == '6c':
+                    photo_1.configure(image=root.nrm6)
+                elif scotsman_current_position == '7b':
+                    photo_1.configure(image=root.nrm7)
+                elif scotsman_current_position == '7c':
+                    photo_1.configure(image=root.nrm7)
+                elif scotsman_current_position == '8b':
+                    photo_1.configure(image=root.nrm8)
+                elif scotsman_current_position == '8c':
+                    photo_1.configure(image=root.nrm8)
+                elif scotsman_current_position == '9b':
+                    sensor_data[1] = True
+                    photo_1.configure(image=root.nrm9)
+                elif scotsman_current_position == '9c':
+                    sensor_data[2] = True
+                    photo_1.configure(image=root.nrm9)
+                elif scotsman_current_position == '10b':
+                    photo_1.configure(image=root.nrm10)
+                elif scotsman_current_position == '10c':
+                    photo_1.configure(image=root.nrm10)
+                elif scotsman_current_position == '11b':
+                    photo_1.configure(image=root.nrm11)
+                elif scotsman_current_position == '11c':
+                    photo_1.configure(image=root.nrm11)
+                elif scotsman_current_position == '12b':
+                    photo_1.configure(image=root.nrm12)
+                elif scotsman_current_position == '12c':
+                    photo_1.configure(image=root.nrm12)
+                elif scotsman_current_position == '13b':
+                    photo_1.configure(image=root.nrm13)
+                elif scotsman_current_position == '13c':
+                    photo_1.configure(image=root.nrm13)
+                elif scotsman_current_position == '14b':
+                    photo_1.configure(image=root.nrm14)
+                elif scotsman_current_position == '14c':
+                    photo_1.configure(image=root.nrm14)
+                elif scotsman_current_position == '15b':
+                    photo_1.configure(image=root.nrm15)
+                elif scotsman_current_position == '15c':
+                    photo_1.configure(image=root.nrm15)
+                elif scotsman_current_position == '16b':
+                    photo_1.configure(image=root.nrm16)
+                elif scotsman_current_position == '16c':
+                    photo_1.configure(image=root.nrm16)
+                elif scotsman_current_position == '17b':
+                    photo_1.configure(image=root.nrm17)
+                elif scotsman_current_position == '17c':
+                    photo_1.configure(image=root.nrm17)
+                elif scotsman_current_position == '18b':
+                    photo_1.configure(image=root.nrm18)
+                elif scotsman_current_position == '18c':
+                    photo_1.configure(image=root.nrm18)
+                elif scotsman_current_position == '19b':
+                    photo_1.configure(image=root.nrm19)
+                elif scotsman_current_position == '19c':
+                    photo_1.configure(image=root.nrm19)
+                elif scotsman_current_position == '20b':
+                    photo_1.configure(image=root.nrm20)
+                elif scotsman_current_position == '20c':
+                    photo_1.configure(image=root.nrm20)
+                elif scotsman_current_position == '21b':
+                    photo_1.configure(image=root.nrm21)
+                elif scotsman_current_position == '21c':
+                    photo_1.configure(image=root.nrm21)
+                elif scotsman_current_position == '22b':
+                    sensor_data[3] = True
+                    photo_1.configure(image=root.nrm22)
+                elif scotsman_current_position == '22c':
+                    sensor_data[4] = True
+                    photo_1.configure(image=root.nrm22)
+                elif scotsman_current_position == '23b':
+                    photo_1.configure(image=root.nrm23)
+                elif scotsman_current_position == '23c':
+                    photo_1.configure(image=root.nrm23)
+                elif scotsman_current_position == '24b':
+                    photo_1.configure(image=root.nrm24)
+                elif scotsman_current_position == '24c':
+                    photo_1.configure(image=root.nrm24)
+                elif scotsman_current_position == '25b':
+                    photo_1.configure(image=root.nrm25)
+                elif scotsman_current_position == '25c':
+                    photo_1.configure(image=root.nrm25)
+                elif scotsman_current_position == '26':
+                    photo_1.configure(image=root.nrm26)
+                elif scotsman_current_position == '27':
+                    photo_1.configure(image=root.nrm27)
+                elif scotsman_current_position == '28':
+                    sensor_data[5] = True
+                    photo_1.configure(image=root.nrm28)
+                elif scotsman_current_position == '29':
+                    photo_1.configure(image=root.nrm29)
+                elif scotsman_current_position == '30':
+                    photo_1.configure(image=root.nrm30)
+                if mallard_current_position == '1':
+                    photo_1.configure(image=root.nrm1)
+                elif mallard_current_position == '2':
+                    photo_1.configure(image=root.nrm2)
+                elif mallard_current_position == '3':
+                    sensor_data[0] = True
+                    photo_1.configure(image=root.nrm3)
+                elif mallard_current_position == '4':
+                    photo_1.configure(image=root.nrm4)
+                elif mallard_current_position == '5':
+                    photo_1.configure(image=root.nrm5)
+                elif mallard_current_position == '6b':
+                    photo_1.configure(image=root.nrm6)
+                elif mallard_current_position == '6c':
+                    photo_1.configure(image=root.nrm6)
+                elif mallard_current_position == '7b':
+                    photo_1.configure(image=root.nrm7)
+                elif mallard_current_position == '7c':
+                    photo_1.configure(image=root.nrm7)
+                elif mallard_current_position == '8b':
+                    photo_1.configure(image=root.nrm8)
+                elif mallard_current_position == '8c':
+                    photo_1.configure(image=root.nrm8)
+                elif mallard_current_position == '9b':
+                    sensor_data[1] = True
+                    photo_1.configure(image=root.nrm9)
+                elif mallard_current_position == '9c':
+                    sensor_data[2] = True
+                    photo_1.configure(image=root.nrm9)
+                elif mallard_current_position == '10b':
+                    photo_1.configure(image=root.nrm10)
+                elif mallard_current_position == '10c':
+                    photo_1.configure(image=root.nrm10)
+                elif mallard_current_position == '11b':
+                    photo_1.configure(image=root.nrm11)
+                elif mallard_current_position == '11c':
+                    photo_1.configure(image=root.nrm11)
+                elif mallard_current_position == '12b':
+                    photo_1.configure(image=root.nrm12)
+                elif mallard_current_position == '12c':
+                    photo_1.configure(image=root.nrm12)
+                elif mallard_current_position == '13b':
+                    photo_1.configure(image=root.nrm13)
+                elif mallard_current_position == '13c':
+                    photo_1.configure(image=root.nrm13)
+                elif mallard_current_position == '14b':
+                    photo_1.configure(image=root.nrm14)
+                elif mallard_current_position == '14c':
+                    photo_1.configure(image=root.nrm14)
+                elif mallard_current_position == '15b':
+                    photo_1.configure(image=root.nrm15)
+                elif mallard_current_position == '15c':
+                    photo_1.configure(image=root.nrm15)
+                elif mallard_current_position == '16b':
+                    photo_1.configure(image=root.nrm16)
+                elif mallard_current_position == '16c':
+                    photo_1.configure(image=root.nrm16)
+                elif mallard_current_position == '17b':
+                    photo_1.configure(image=root.nrm17)
+                elif mallard_current_position == '17c':
+                    photo_1.configure(image=root.nrm17)
+                elif mallard_current_position == '18b':
+                    photo_1.configure(image=root.nrm18)
+                elif mallard_current_position == '18c':
+                    photo_1.configure(image=root.nrm18)
+                elif mallard_current_position == '19b':
+                    photo_1.configure(image=root.nrm19)
+                elif mallard_current_position == '19c':
+                    photo_1.configure(image=root.nrm19)
+                elif mallard_current_position == '20b':
+                    photo_1.configure(image=root.nrm20)
+                elif mallard_current_position == '20c':
+                    photo_1.configure(image=root.nrm20)
+                elif mallard_current_position == '21b':
+                    photo_1.configure(image=root.nrm21)
+                elif mallard_current_position == '21c':
+                    photo_1.configure(image=root.nrm21)
+                elif mallard_current_position == '22b':
+                    sensor_data[3] = True
+                    photo_1.configure(image=root.nrm22)
+                elif mallard_current_position == '22c':
+                    sensor_data[4] = True
+                    photo_1.configure(image=root.nrm22)
+                elif mallard_current_position == '23b':
+                    photo_1.configure(image=root.nrm23)
+                elif mallard_current_position == '23c':
+                    photo_1.configure(image=root.nrm23)
+                elif mallard_current_position == '24b':
+                    photo_1.configure(image=root.nrm24)
+                elif mallard_current_position == '24c':
+                    photo_1.configure(image=root.nrm24)
+                elif mallard_current_position == '25b':
+                    photo_1.configure(image=root.nrm25)
+                elif mallard_current_position == '25c':
+                    photo_1.configure(image=root.nrm25)
+                elif mallard_current_position == '26':
+                    photo_1.configure(image=root.nrm26)
+                elif mallard_current_position == '27':
+                    photo_1.configure(image=root.nrm27)
+                elif mallard_current_position == '28':
+                    sensor_data[5] = True
+                    photo_1.configure(image=root.nrm28)
+                elif mallard_current_position == '29':
+                    photo_1.configure(image=root.nrm29)
+                elif mallard_current_position == '30':
+                    photo_1.configure(image=root.nrm30)
+                f = open('train_data.txt', 'a')
+                f.truncate(0)
+                f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
+                f.close()
+
+                Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
+                Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
+                Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
+                Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
+                Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
+                Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
+                continue
+            break
         x = 0
         y = 0
         if end_loop:
             break
         while l5 is True and emergency_stop is False:
+            sensor_data[0] = False
             sensor_data[1] = False
             sensor_data[2] = False
             sensor_data[3] = False
             sensor_data[4] = False
+            sensor_data[5] = False
+
             print(f'Scotsman is at position - {scotsman_current_position}')
             print(f'Mallard is at position - {mallard_current_position}')
 
@@ -622,7 +646,7 @@ def constant_run():
             elif scotsman_current_position == '2':
                 photo_1.configure(image=root.nrm2)
             elif scotsman_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
+                sensor_data[0] = True
                 photo_1.configure(image=root.nrm3)
             elif scotsman_current_position == '4':
                 photo_1.configure(image=root.nrm4)
@@ -717,7 +741,7 @@ def constant_run():
             elif scotsman_current_position == '27':
                 photo_1.configure(image=root.nrm27)
             elif scotsman_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
+                sensor_data[5] = True
                 photo_1.configure(image=root.nrm28)
             elif scotsman_current_position == '29':
                 photo_1.configure(image=root.nrm29)
@@ -728,7 +752,7 @@ def constant_run():
             elif mallard_current_position == '2':
                 photo_1.configure(image=root.nrm2)
             elif mallard_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
+                sensor_data[0] = True
                 photo_1.configure(image=root.nrm3)
             elif mallard_current_position == '4':
                 photo_1.configure(image=root.nrm4)
@@ -823,7 +847,7 @@ def constant_run():
             elif mallard_current_position == '27':
                 photo_1.configure(image=root.nrm27)
             elif mallard_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
+                sensor_data[5] = True
                 photo_1.configure(image=root.nrm28)
             elif mallard_current_position == '29':
                 photo_1.configure(image=root.nrm29)
@@ -834,7 +858,7 @@ def constant_run():
             elif scotsman_current_position == '2':
                 photo_1.configure(image=root.nrm2)
             elif scotsman_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
+                sensor_data[0] = True
                 photo_1.configure(image=root.nrm3)
             elif scotsman_current_position == '4':
                 photo_1.configure(image=root.nrm4)
@@ -929,7 +953,7 @@ def constant_run():
             elif scotsman_current_position == '27':
                 photo_1.configure(image=root.nrm27)
             elif scotsman_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
+                sensor_data[5] = True
                 photo_1.configure(image=root.nrm28)
             elif scotsman_current_position == '29':
                 photo_1.configure(image=root.nrm29)
@@ -940,7 +964,7 @@ def constant_run():
             elif mallard_current_position == '2':
                 photo_1.configure(image=root.nrm2)
             elif mallard_current_position == '3':
-                sensor_data[0] = not sensor_data[0]
+                sensor_data[0] = True
                 photo_1.configure(image=root.nrm3)
             elif mallard_current_position == '4':
                 photo_1.configure(image=root.nrm4)
@@ -1035,7 +1059,7 @@ def constant_run():
             elif mallard_current_position == '27':
                 photo_1.configure(image=root.nrm27)
             elif mallard_current_position == '28':
-                sensor_data[5] = not sensor_data[5]
+                sensor_data[5] = True
                 photo_1.configure(image=root.nrm28)
             elif mallard_current_position == '29':
                 photo_1.configure(image=root.nrm29)
@@ -1045,6 +1069,13 @@ def constant_run():
             f.truncate(0)
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
+
+            Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
+            Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
+            Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
+            Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
+            Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
+            Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
 
 
 def run():
@@ -1064,33 +1095,60 @@ Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w1, height=h1, command=l
                        font=VerdanaL).grid(row=0, column=0, sticky='nsew')
 Black_Box = Button(f0, text="BLACK\nBOX", width=w1, height=h1, command=lambda: raise_frame(f2), font=VerdanaL). \
     grid(row=0, column=1, sticky='nsew')
-Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL).\
+Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL). \
     grid(row=1, column=0, sticky='nsew')
 Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
 
-Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w, height=h, command=control_panel, font=VerdanaL). \
-    grid(row=3, column=0)  # TODO: Write code to check sensors and display it in the GUI
-Check_Points = Button(f1, text="CHECK\nPOINTS", width=w, height=h, command=test, font=VerdanaL). \
+w2 = 10
+h2 = 8
+Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
+                       font=VerdanaL).grid(row=3,
+                                           column=0)  # Working_on_it
+Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
-Start_Sim = Button(f1, text="START", width=w, height=h, command=lambda: [run(), switch()], state=NORMAL, font=VerdanaL)
-Start_Sim.grid(row=3, column=2)
-Leave = Button(f1, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
-    grid(row=3, column=3)
+Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
+    grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
+Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
+                   font=VerdanaL)
+Start_Sim.grid(row=3, column=3)
+Leave = Button(f1, text="RETURN", width=w2, height=h2, command=lambda: raise_frame(f0), font=VerdanaL). \
+    grid(row=3, column=4)
 photo_1 = Label(f1, image=root.error)
-photo_1.grid(row=0, column=0, columnspan=4)
+photo_1.grid(row=0, column=0, columnspan=5)
 
-Read_last = Button(f2, text="READ LAST\nINPUT", width=w, height=h, command=control_panel, font=VerdanaL). \
-    grid(row=3, column=0)   # TODO: Write code to read last input and display it in the GUI
-Download = Button(f2, text="DOWNLOAD ALL", width=w, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
-    grid(row=3, column=1)    # TODO: Write code to download the black box
-Clear = Button(f2, text="CLEAR\nBLACK BOX", width=w, height=h, command=test, font=VerdanaL).grid(row=3, column=2)
-# TODO: Write code to clear black box
-Leave_1 = Button(f2, text="RETURN", width=w, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
+Sensor_ONE = Label(sensor, text=f'Sensor 1 reads ', font=Verdana, padx=0, pady=7).grid(row=0, column=0)
+Sensor_ONE_DATA = Label(sensor, text=f'{sensor_data[0]}', font=Verdana, padx=0, pady=7)
+Sensor_ONE_DATA.grid(row=0, column=1)
+Sensor_TWO = Label(sensor, text=f'Sensor 2 reads ', font=Verdana, padx=0, pady=7).grid(row=1, column=0)
+Sensor_TWO_DATA = Label(sensor, text=f'{sensor_data[1]}', font=Verdana, padx=0, pady=7)
+Sensor_TWO_DATA.grid(row=1, column=1)
+Sensor_THREE = Label(sensor, text=f'Sensor 3 reads ', font=Verdana, padx=0, pady=7).grid(row=2, column=0)
+Sensor_THREE_DATA = Label(sensor, text=f'{sensor_data[2]}', font=Verdana, padx=0, pady=7)
+Sensor_THREE_DATA.grid(row=2, column=1)
+Sensor_FOUR = Label(sensor, text=f'Sensor 4 reads ', font=Verdana, padx=0, pady=7).grid(row=3, column=0)
+Sensor_FOUR_DATA = Label(sensor, text=f'{sensor_data[3]}', font=Verdana, padx=0, pady=7)
+Sensor_FOUR_DATA.grid(row=3, column=1)
+Sensor_FIVE = Label(sensor, text=f'Sensor 5 reads ', font=Verdana, padx=0, pady=7).grid(row=4, column=0)
+Sensor_FIVE_DATA = Label(sensor, text=f'{sensor_data[4]}', font=Verdana, padx=0, pady=7)
+Sensor_FIVE_DATA.grid(row=4, column=1)
+Sensor_SIX = Label(sensor, text=f'Sensor 6 reads ', font=Verdana, padx=0, pady=7).grid(row=5, column=0)
+Sensor_SIX_DATA = Label(sensor, text=f'{sensor_data[5]}', font=Verdana, padx=0, pady=7)
+Sensor_SIX_DATA.grid(row=5, column=1)
+Sensor_return = Button(sensor, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                       command=lambda: raise_frame(f1)).grid(columnspan=2)
+
+Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
+    grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
+Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
+    grid(row=3, column=1)  # TODO: Write code to download the black box
+Clear = Button(f2, text="CLEAR\nBLACK BOX", width=width, height=h, command=place_holder, font=VerdanaL). \
+    grid(row=3, column=2)  # TODO: Write code to clear black box
+Leave_1 = Button(f2, text="RETURN", width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
 photo_2.grid(row=0, column=0, columnspan=4)
 
-Run_Through = Button(f3, text="Test System", width=27, height=h, command=control_panel, font=VerdanaL). \
+Run_Through = Button(f3, text="Test System", width=27, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)
 # TODO: Write code to test whole system and display it in the GUI (use code from constant run)
 Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
