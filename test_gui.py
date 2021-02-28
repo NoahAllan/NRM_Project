@@ -1101,8 +1101,8 @@ Sensor_FIVE = Label(sensor, text=f'Sensor 5 reads ', font=Verdana, padx=0, pady=
 Sensor_FIVE_DATA = Label(sensor, text=f'{sensor_data[4]}', font=Verdana, padx=0, pady=7).grid(row=4, column=1)
 Sensor_SIX = Label(sensor, text=f'Sensor 6 reads ', font=Verdana, padx=0, pady=7).grid(row=5, column=0)
 Sensor_SIX_DATA = Label(sensor, text=f'{sensor_data[5]}', font=Verdana, padx=0, pady=7).grid(row=5, column=1)
-Sensor_retrn = Button(sensor, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
-                      command=lambda: raise_frame(f1)).grid(columnspan=2)
+Sensor_return = Button(sensor, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                       command=lambda: raise_frame(f1)).grid(columnspan=2)
 
 Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
