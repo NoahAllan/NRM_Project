@@ -33,30 +33,6 @@
 #
 # print(bool_change(data[0]))
 
-# S1 = True
-# Sig a = green
-# Sig b = red
-# Sig c = red
-# S2 = ture
-# Sig a = red
-# Sig b = red
-# Sig c = red
-# S3 true
-# Sig a = red
-# Sig b = green
-# Sig c = red
-# S4 true
-# Sig d = green
-# Sig e = red
-# Sig f = red
-# S5 true
-# Sig d = red
-# Sig e = red
-# Sig f = red
-# S6 true
-# Sig d = red
-# Sig e = red
-# Sig f = green
 import time
 
 sensor_data: list[bool] = [False, False, False, False, False, False]

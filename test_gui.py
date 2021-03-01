@@ -1145,7 +1145,7 @@ def signal_check():
         signal_data[3] = False
         signal_data[4] = False
         signal_data[5] = True
-    print(f'{signal_data}')
+    print(sensor_data)
 
 
 w1 = 27
