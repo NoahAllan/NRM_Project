@@ -17,7 +17,7 @@ width = 13
 h = 8
 global end_loop
 stop_threads = False
-sensor_data: list[bool] = [True, False, False, False, False, True]
+sensor_data: list[bool] = [False, False, False, False, False, False]
 signal_data: list[bool] = [False, False, False, False, False, False]
 Point_A: int = 0
 Point_B: int = 0
@@ -633,6 +633,7 @@ def constant_run():
                 f.close()
 
                 point_change()
+                signal_check()
 
                 Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
                 Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
@@ -1097,6 +1098,7 @@ def constant_run():
             f.close()
 
             point_change()
+            signal_check()
 
             Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
             Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
@@ -1116,6 +1118,34 @@ def run():
 
 def switch():
     Start_Sim.configure(command=lambda: [close()], text='STOP')
+
+
+def signal_check():
+    if sensor_data[0] is True:
+        signal_data[0] = True
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[1] is True:
+        signal_data[0] = False
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[2] is True:
+        signal_data[0] = False
+        signal_data[1] = True
+        signal_data[2] = False
+    if sensor_data[3] is True:
+        signal_data[3] = True
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[4] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[5] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = True
+    print(f'{signal_data}')
 
 
 w1 = 27

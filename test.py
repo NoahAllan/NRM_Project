@@ -33,11 +33,72 @@
 #
 # print(bool_change(data[0]))
 
-from PIL import ImageTk, Image
+# S1 = True
+# Sig a = green
+# Sig b = red
+# Sig c = red
+# S2 = ture
+# Sig a = red
+# Sig b = red
+# Sig c = red
+# S3 true
+# Sig a = red
+# Sig b = green
+# Sig c = red
+# S4 true
+# Sig d = green
+# Sig e = red
+# Sig f = red
+# S5 true
+# Sig d = red
+# Sig e = red
+# Sig f = red
+# S6 true
+# Sig d = red
+# Sig e = red
+# Sig f = green
+import time
+
+sensor_data: list[bool] = [False, False, False, False, False, False]
+signal_data: list[bool] = [False, False, False, False, False, False]
 
 
-path = f'images/Red_Circle.png'
-image1 = Image.open(path)
-x = image1.resize((12, 12))
-x.save(path)
+def signal_check():
+    if sensor_data[0] is True:
+        signal_data[0] = True
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[1] is True:
+        signal_data[0] = False
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[2] is True:
+        signal_data[0] = False
+        signal_data[1] = True
+        signal_data[2] = False
+    if sensor_data[3] is True:
+        signal_data[3] = True
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[4] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[5] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = True
+    print(f'{signal_data}')
+    # sensor_data[0] = False
+    # sensor_data[1] = False
+    # sensor_data[2] = False
+    # sensor_data[3] = False
+    # sensor_data[4] = False
+    # sensor_data[5] = False
 
+
+for x in range(30):
+    sensor_data[2] = True
+    sensor_data[3] = True
+    signal_check()
+    time.sleep(1)
