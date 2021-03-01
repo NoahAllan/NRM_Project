@@ -1134,9 +1134,9 @@ Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=l
                        font=VerdanaL).grid(row=3,
                                            column=0)
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=lambda: raise_frame(point),
-                      font=VerdanaL).grid(row=3, column=1)  # working_on_it
+                      font=VerdanaL).grid(row=3, column=1)
 Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
+    grid(row=3, column=2)  # working_on_it
 Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
                    font=VerdanaL)
 Start_Sim.grid(row=3, column=3)
