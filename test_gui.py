@@ -102,6 +102,42 @@ route_two = section_a + section_b + section_d
 
 route_2 = route_two[::-1]
 
+f0 = Frame(root)
+f1 = Frame(root)
+f2 = Frame(root)
+f3 = Frame(root)
+download = Frame(root)
+sensor = Frame(root)
+point = Frame(root)
+
+for frame in (f0, f1, f2, f3, download, sensor, point):
+    frame.grid(row=0, column=0, sticky='news')
+
+
+def point_change():
+    global Point_A
+    global Point_B
+
+    s1 = sensor_data[0]
+    s2 = sensor_data[1]
+    s3 = sensor_data[2]
+    s4 = sensor_data[3]
+    s5 = sensor_data[4]
+    s6 = sensor_data[5]
+
+    if s1 is True:
+        Point_A = 30
+    if s2 is True:
+        Point_B = 30
+    if s3 is True:
+        Point_A = 0
+    if s4 is True:
+        Point_B = 30
+    if s5 is True:
+        Point_A = 0
+    if s6 is True:
+        Point_B = 0
+
 
 def find_train_position():
     global pos
@@ -114,17 +150,6 @@ def raise_frame(tk_frame):
     tk_frame.tkraise()
 
 
-f0 = Frame(root)
-f1 = Frame(root)
-f2 = Frame(root)
-f3 = Frame(root)
-download = Frame(root)
-sensor = Frame(root)
-
-for frame in (f0, f1, f2, f3, download, sensor):
-    frame.grid(row=0, column=0, sticky='news')
-
-
 def bool_change(bool_input):
     if bool_input is True:
         bool_input = False
@@ -133,10 +158,6 @@ def bool_change(bool_input):
     else:
         print(f'{bool_input} is not valid input')
     return bool_input
-
-
-def end_code():
-    end_loop = True
 
 
 def close():
@@ -611,12 +632,17 @@ def constant_run():
                 f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
                 f.close()
 
+                point_change()
+
                 Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
                 Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
                 Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
                 Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
                 Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
                 Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
+
+                Point_A_DATA.configure(text=f'{Point_A}°')
+                Point_B_DATA.configure(text=f'{Point_B}°')
                 continue
             break
         x = 0
@@ -1070,16 +1096,19 @@ def constant_run():
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
 
+            point_change()
+
             Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
             Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
             Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
             Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
             Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
             Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
+            Point_A_DATA.configure(text=f'{Point_A}°')
+            Point_B_DATA.configure(text=f'{Point_B}°')
 
 
 def run():
-    global p
     p = threading.Thread(target=constant_run)
     p.daemon = True
     p.start()
@@ -1103,9 +1132,9 @@ w2 = 10
 h2 = 8
 Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
                        font=VerdanaL).grid(row=3,
-                                           column=0)  # Working_on_it
-Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
+                                           column=0)
+Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=lambda: raise_frame(point),
+                      font=VerdanaL).grid(row=3, column=1)  # working_on_it
 Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
 Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
@@ -1136,11 +1165,21 @@ Sensor_SIX_DATA = Label(sensor, text=f'{sensor_data[5]}', font=Verdana, padx=0, 
 Sensor_SIX_DATA.grid(row=5, column=1)
 Sensor_return = Button(sensor, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
                        command=lambda: raise_frame(f1)).grid(columnspan=2)
+nom = 42
+nox = 42
+Point_A_ = Label(point, text='POINT A IS AT ', font=Verdana).grid(column=0, row=0, padx=nom, pady=nox)
+Point_B_ = Label(point, text='POINT B IS AT ', font=Verdana).grid(column=0, row=1, padx=nom, pady=nox)
+Point_A_DATA = Label(point, text=f'{Point_A}°', font=Verdana)
+Point_A_DATA.grid(column=1, row=0)
+Point_B_DATA = Label(point, text=f'{Point_B}°', font=Verdana)
+Point_B_DATA.grid(column=1, row=1)
+Point_return = Button(point, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                      command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
 Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
-Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download), font=VerdanaL). \
-    grid(row=3, column=1)  # TODO: Write code to download the black box
+Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download),
+                  font=VerdanaL).grid(row=3, column=1)  # TODO: Write code to download the black box
 Clear = Button(f2, text="CLEAR\nBLACK BOX", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
 Leave_1 = Button(f2, text="RETURN", width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
