@@ -1079,7 +1079,6 @@ def constant_run():
 
 
 def run():
-    global p
     p = threading.Thread(target=constant_run)
     p.daemon = True
     p.start()
@@ -1103,9 +1102,9 @@ w2 = 10
 h2 = 8
 Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
                        font=VerdanaL).grid(row=3,
-                                           column=0)  # Working_on_it
+                                           column=0)
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=1)  # TODO: Write code to check points and display it in the GUI
+    grid(row=3, column=1)  # working_on_it
 Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
 Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
