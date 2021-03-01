@@ -102,18 +102,6 @@ route_two = section_a + section_b + section_d
 
 route_2 = route_two[::-1]
 
-
-def find_train_position():
-    global pos
-    f = open('train_data.txt', 'r')
-    pos = f.readlines(0 - 1)
-    f.close()
-
-
-def raise_frame(tk_frame):
-    tk_frame.tkraise()
-
-
 f0 = Frame(root)
 f1 = Frame(root)
 f2 = Frame(root)
@@ -124,6 +112,42 @@ point = Frame(root)
 
 for frame in (f0, f1, f2, f3, download, sensor, point):
     frame.grid(row=0, column=0, sticky='news')
+
+
+def point_change():
+    global Point_A
+    global Point_B
+
+    s1 = sensor_data[0]
+    s2 = sensor_data[1]
+    s3 = sensor_data[2]
+    s4 = sensor_data[3]
+    s5 = sensor_data[4]
+    s6 = sensor_data[5]
+
+    if s1 is True:
+        Point_A = 30
+    if s2 is True:
+        Point_B = 30
+    if s3 is True:
+        Point_A = 0
+    if s4 is True:
+        Point_B = 30
+    if s5 is True:
+        Point_A = 0
+    if s6 is True:
+        Point_B = 0
+
+
+def find_train_position():
+    global pos
+    f = open('train_data.txt', 'r')
+    pos = f.readlines(0 - 1)
+    f.close()
+
+
+def raise_frame(tk_frame):
+    tk_frame.tkraise()
 
 
 def bool_change(bool_input):
@@ -608,12 +632,17 @@ def constant_run():
                 f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
                 f.close()
 
+                point_change()
+
                 Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
                 Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
                 Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
                 Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
                 Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
                 Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
+
+                Point_A_DATA.configure(text=f'{Point_A}°')
+                Point_B_DATA.configure(text=f'{Point_B}°')
                 continue
             break
         x = 0
@@ -1067,12 +1096,16 @@ def constant_run():
             f.writelines(f'{scotsman_current_position}\n{mallard_current_position}\n')
             f.close()
 
+            point_change()
+
             Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
             Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
             Sensor_THREE_DATA.configure(text=f'{sensor_data[2]}')
             Sensor_FOUR_DATA.configure(text=f'{sensor_data[3]}')
             Sensor_FIVE_DATA.configure(text=f'{sensor_data[4]}')
             Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
+            Point_A_DATA.configure(text=f'{Point_A}°')
+            Point_B_DATA.configure(text=f'{Point_B}°')
 
 
 def run():
@@ -1136,9 +1169,9 @@ nom = 42
 nox = 42
 Point_A_ = Label(point, text='POINT A IS AT ', font=Verdana).grid(column=0, row=0, padx=nom, pady=nox)
 Point_B_ = Label(point, text='POINT B IS AT ', font=Verdana).grid(column=0, row=1, padx=nom, pady=nox)
-Point_A_DATA = Label(point, text=f'0', font=Verdana)
+Point_A_DATA = Label(point, text=f'{Point_A}°', font=Verdana)
 Point_A_DATA.grid(column=1, row=0)
-Point_B_DATA = Label(point, text=f'0', font=Verdana)
+Point_B_DATA = Label(point, text=f'{Point_B}°', font=Verdana)
 Point_B_DATA.grid(column=1, row=1)
 Point_return = Button(point, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
                       command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
