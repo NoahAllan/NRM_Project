@@ -1126,6 +1126,12 @@ def switch():
 
 
 def signal_check():
+    # Signals_ONE_DATA.configure(image=root.red)
+    # Signals_TWO_DATA.configure(image=root.red)
+    # Signals_THREE_DATA.configure(image=root.red)
+    # Signals_FOUR_DATA.configure(image=root.red)
+    # Signals_FIVE_DATA.configure(image=root.red)
+    # Signals_SIX_DATA.configure(image=root.red)
     if sensor_data[0] is True:
         signal_data[0] = True
         Signals_ONE_DATA.configure(image=root.green)
@@ -1134,12 +1140,7 @@ def signal_check():
         signal_data[2] = False
         Signals_THREE_DATA.configure(image=root.red)
     if sensor_data[1] is True:
-        signal_data[0] = False
-        Signals_ONE_DATA.configure(image=root.red)
-        signal_data[1] = False
-        Signals_TWO_DATA.configure(image=root.red)
-        signal_data[2] = False
-        Signals_THREE_DATA.configure(image=root.red)
+        pass
     if sensor_data[2] is True:
         signal_data[0] = False
         Signals_ONE_DATA.configure(image=root.red)
@@ -1155,12 +1156,7 @@ def signal_check():
         signal_data[5] = False
         Signals_SIX_DATA.configure(image=root.red)
     if sensor_data[4] is True:
-        signal_data[3] = False
-        Signals_FOUR_DATA.configure(image=root.red)
-        signal_data[4] = False
-        Signals_FIVE_DATA.configure(image=root.red)
-        signal_data[5] = False
-        Signals_SIX_DATA.configure(image=root.red)
+        pass
     if sensor_data[5] is True:
         signal_data[3] = False
         Signals_FOUR_DATA.configure(image=root.red)
