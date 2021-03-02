@@ -1164,28 +1164,41 @@ def signal_check():
         Signals_FIVE_DATA.configure(image=root.red)
         signal_data[5] = True
         Signals_SIX_DATA.configure(image=root.green)
-    print(sensor_data)
 
 
+def download_black_box(event):
+    file_dst = event.widget.get()
+    event.widget.delete(0, len(file_dst))
+    src = 'blackbox.txt'
+    dst = f'{file_dst}blackbox.txt'
+    try:
+        f = open(dst, 'a')
+        f.close()
+        copyfile(src, dst)
+    except Exception as e:
+        print('Error: %s' % str(e))
+
+
+# Home Page
 w1 = 27
 h1 = 11
 Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w1, height=h1, command=lambda: raise_frame(f1),
-                       font=VerdanaL).grid(row=0, column=0, sticky='nsew')
+                       font=VerdanaL).grid(row=0, column=0, sticky='w')
 Black_Box = Button(f0, text="BLACK\nBOX", width=w1, height=h1, command=lambda: raise_frame(f2), font=VerdanaL). \
-    grid(row=0, column=1, sticky='nsew')
+    grid(row=0, column=1, sticky='e')
 Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL). \
-    grid(row=1, column=0, sticky='nsew')
-Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
+    grid(row=1, column=0, sticky='w')
+Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='e')
 
+# Control Panel
 w2 = 10
 h2 = 8
 Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
-                       font=VerdanaL).grid(row=3,
-                                           column=0)
+                       font=VerdanaL).grid(row=3, column=0)
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=lambda: raise_frame(point),
                       font=VerdanaL).grid(row=3, column=1)
 Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=lambda: raise_frame(signal),
-                       font=VerdanaL).grid(row=3, column=2)  # working_on_it
+                       font=VerdanaL).grid(row=3, column=2)
 Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
                    font=VerdanaL)
 Start_Sim.grid(row=3, column=3)
@@ -1246,6 +1259,7 @@ Signals_SIX_DATA.grid(row=5, column=1)
 Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
                        command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
+# Black Box
 Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
 Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download),
@@ -1257,6 +1271,15 @@ Leave_1 = Button(f2, text="RETURN", width=width, height=h, command=lambda: raise
 photo_2 = Label(f2, image=root.error)
 photo_2.grid(row=0, column=0, columnspan=4)
 
+lab = Label(download, text="Enter Location for Download:", font=Verdana)
+lab.grid(row=0, column=0, pady=85, padx=85)
+ent = Entry(download, width=66)
+ent.grid(row=1, column=0, sticky='w')
+ent.bind('<Return>', download_black_box)
+Download_return = Button(download, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                         command=lambda: raise_frame(f1)).grid(row=2, column=0)
+
+# System testing
 Run_Through = Button(f3, text="Test System", width=27, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)
 # TODO: Write code to test whole system and display it in the GUI (use code from constant run)
@@ -1264,27 +1287,6 @@ Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_fr
     grid(row=3, column=3)
 photo_3 = Label(f3, image=root.error)
 photo_3.grid(row=0, column=0, columnspan=4)
-
-
-def download_black_box(event):
-    file_dst = event.widget.get()
-    event.widget.delete(0, len(file_dst))
-    src = 't1'
-    dst = f'{file_dst}blackbox.txt'
-    try:
-        f = open(dst, 'a')
-        f.close()
-        copyfile(src, dst)
-    except Exception as e:
-        print('Error: %s' % str(e))
-
-
-lab = Label(download, text="Enter Location for Download:", font=Verdana)
-lab.grid(row=0, column=0, pady=100, padx=100)
-
-ent = Entry(download)
-ent.grid(row=1, column=0)
-ent.bind('<Return>', download_black_box)
 
 raise_frame(f0)
 root.mainloop()
