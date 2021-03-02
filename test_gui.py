@@ -62,6 +62,8 @@ NRM_28 = 'images/NRM_P3.png'
 NRM_29 = 'images/NRM_P2.png'
 NRM_30 = 'images/NRM_P1.png'
 Error_Screen = 'images/ERROR_404.png'
+Green_Light = 'images/Green_Circle.png'
+Red_Light = 'images/Red_Circle.png'
 root.nrm1 = ImageTk.PhotoImage(Image.open(NRM_1))
 root.nrm2 = ImageTk.PhotoImage(Image.open(NRM_2))
 root.nrm3 = ImageTk.PhotoImage(Image.open(NRM_3))
@@ -93,6 +95,8 @@ root.nrm28 = ImageTk.PhotoImage(Image.open(NRM_28))
 root.nrm29 = ImageTk.PhotoImage(Image.open(NRM_29))
 root.nrm30 = ImageTk.PhotoImage(Image.open(NRM_30))
 root.error = ImageTk.PhotoImage(Image.open(Error_Screen))
+root.green = ImageTk.PhotoImage(Image.open(Green_Light))
+root.red = ImageTk.PhotoImage(Image.open(Red_Light))
 
 Verdana = Font(family="Verdana", size=12)
 VerdanaL = Font(family="Verdana", size=8)
@@ -109,8 +113,9 @@ f3 = Frame(root)
 download = Frame(root)
 sensor = Frame(root)
 point = Frame(root)
+signal = Frame(root)
 
-for frame in (f0, f1, f2, f3, download, sensor, point):
+for frame in (f0, f1, f2, f3, download, sensor, point, signal):
     frame.grid(row=0, column=0, sticky='news')
 
 
@@ -1145,7 +1150,7 @@ def signal_check():
         signal_data[3] = False
         signal_data[4] = False
         signal_data[5] = True
-    print(sensor_data)
+    print(f'{signal_data}')
 
 
 w1 = 27
@@ -1165,8 +1170,8 @@ Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=l
                                            column=0)
 Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=lambda: raise_frame(point),
                       font=VerdanaL).grid(row=3, column=1)
-Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=2)  # working_on_it
+Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=lambda: raise_frame(signal),
+                       font=VerdanaL).grid(row=3, column=2)  # working_on_it
 Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
                    font=VerdanaL)
 Start_Sim.grid(row=3, column=3)
@@ -1205,6 +1210,27 @@ Point_B_DATA = Label(point, text=f'{Point_B}°', font=Verdana)
 Point_B_DATA.grid(column=1, row=1)
 Point_return = Button(point, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
                       command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
+
+Signals_ONE = Label(signal, text=f'Signal 1 reads ', font=Verdana, padx=0, pady=7).grid(row=0, column=0)
+Signals_ONE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_ONE_DATA.grid(row=0, column=1)
+Signals_TWO = Label(signal, text=f'Signal 2 reads ', font=Verdana, padx=0, pady=7).grid(row=1, column=0)
+Signals_TWO_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_TWO_DATA.grid(row=1, column=1)
+Signals_THREE = Label(signal, text=f'Signal 3 reads ', font=Verdana, padx=0, pady=7).grid(row=2, column=0)
+Signals_THREE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_THREE_DATA.grid(row=2, column=1)
+Signals_FOUR = Label(signal, text=f'Signal 4 reads ', font=Verdana, padx=0, pady=7).grid(row=3, column=0)
+Signals_FOUR_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_FOUR_DATA.grid(row=3, column=1)
+Signals_FIVE = Label(signal, text=f'Signal 5 reads ', font=Verdana, padx=0, pady=7).grid(row=4, column=0)
+Signals_FIVE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_FIVE_DATA.grid(row=4, column=1)
+Signals_SIX = Label(signal, text=f'Signal 6 reads ', font=Verdana, padx=0, pady=7).grid(row=5, column=0)
+Signals_SIX_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_SIX_DATA.grid(row=5, column=1)
+Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                       command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
 Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
