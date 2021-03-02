@@ -18,19 +18,63 @@
 # #     f.close()
 # del_10000('oof.txt')
 
-data = [True, False, False, False, False, True]
+# data = [True, False, False, False, False, True]
+#
+#
+# def bool_change(bool_input):
+#     if bool_input is True:
+#         bool_input = False
+#     elif bool_input is False:
+#         bool_input = True
+#     else:
+#         print(f'{bool_input} is not valid input')
+#     return bool_input
+#
+#
+# print(bool_change(data[0]))
+
+import time
+
+sensor_data: list[bool] = [False, False, False, False, False, False]
+signal_data: list[bool] = [False, False, False, False, False, False]
 
 
-def bool_change(bool_input):
-    if bool_input is True:
-        bool_input = False
-    elif bool_input is False:
-        bool_input = True
-    else:
-        print(f'{bool_input} is not valid input')
-    return bool_input
+def signal_check():
+    if sensor_data[0] is True:
+        signal_data[0] = True
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[1] is True:
+        signal_data[0] = False
+        signal_data[1] = False
+        signal_data[2] = False
+    if sensor_data[2] is True:
+        signal_data[0] = False
+        signal_data[1] = True
+        signal_data[2] = False
+    if sensor_data[3] is True:
+        signal_data[3] = True
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[4] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = False
+    if sensor_data[5] is True:
+        signal_data[3] = False
+        signal_data[4] = False
+        signal_data[5] = True
+    print(f'{signal_data}')
+    # sensor_data[0] = False
+    # sensor_data[1] = False
+    # sensor_data[2] = False
+    # sensor_data[3] = False
+    # sensor_data[4] = False
+    # sensor_data[5] = False
 
 
-print(bool_change(data[0]))
-
-
+for x in range(30):
+    sensor_data[2] = True
+    sensor_data[3] = True
+    signal_check()
+    time.sleep(1)

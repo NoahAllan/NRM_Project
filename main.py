@@ -183,7 +183,7 @@ def signal_check():
     c = signal_data[2]
     d = signal_data[3]
     e = signal_data[4]
-    f1 = signal_data[5]
+    f = signal_data[5]
 
     if a is False:
         Sig_a = 'RED'
@@ -205,9 +205,9 @@ def signal_check():
         Sig_e = 'RED'
     elif e is True:
         Sig_e = 'GREEN'
-    if f1 is False:
+    if f is False:
         Sig_f = 'RED'
-    elif f1 is True:
+    elif f is True:
         Sig_f = 'GREEN'
     if Point_A == 0:
         Sig_c = 'RED'
