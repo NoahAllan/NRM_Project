@@ -18,19 +18,28 @@
 # #     f.close()
 # del_10000('oof.txt')
 
-data = [True, False, False, False, False, True]
+# data = [True, False, False, False, False, True]
+#
+#
+# def bool_change(bool_input):
+#     if bool_input is True:
+#         bool_input = False
+#     elif bool_input is False:
+#         bool_input = True
+#     else:
+#         print(f'{bool_input} is not valid input')
+#     return bool_input
+#
+#
+# print(bool_change(data[0]))
+
+import datetime
 
 
-def bool_change(bool_input):
-    if bool_input is True:
-        bool_input = False
-    elif bool_input is False:
-        bool_input = True
-    else:
-        print(f'{bool_input} is not valid input')
-    return bool_input
+def find_date_file_name():
+    x = datetime.datetime.today()
+    date_file = x.strftime('_%d-%m-%Y_%H:%M:%S')
+    return date_file
 
 
-print(bool_change(data[0]))
-
-
+print(find_date_file_name())

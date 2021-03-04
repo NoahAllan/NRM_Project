@@ -1173,7 +1173,7 @@ def record_data():
     find_date()
     f.write(f'Point 2 == {Point_B}° at {date}\n')
     f.close()
-    # del_lines('blackbox.txt', 500, 26000)
+    del_lines('blackbox.txt', 500, 26000)
 
 
 def signal_check():
@@ -1217,6 +1217,15 @@ def signal_check():
         Signals_SIX_DATA.configure(image=root.green)
 
 
+def del_lines(file, lines_from_top=500, when_to_del=5000):
+    with open(file, 'r') as f:
+        lines = f.readlines()
+    if len(lines) > when_to_del:
+        with open(file, 'w') as f:
+            for line in lines[lines_from_top:]:
+                f.write(line)
+
+
 def find_date_file_name():
     x = datetime.datetime.today()
     date_file = x.strftime('_%d-%m-%Y_%H-%M')
@@ -1238,10 +1247,7 @@ def download_black_box(event):
         except Exception as e:
             print('Error: %s' % str(e))
     else:
-        # ToDo
-        easter_egg = Tk()
-        Label(easter_egg, text='Easter Egg coming soon').grid()
-        Button(easter_egg, text='Exit', command=lambda: easter_egg.destroy()).grid()
+        print('Easter Egg coming soon')  # ToDo
 
 
 def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
@@ -1336,7 +1342,7 @@ Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56,
 Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
 Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
-                  font=VerdanaL).grid(row=3, column=1)
+                  font=VerdanaL).grid(row=3, column=1)  # working_on_it
 Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
 Leave_1 = Button(f2, text='RETURN', width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
