@@ -1340,9 +1340,9 @@ Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56,
 
 # Black Box
 Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
+    grid(row=3, column=0)  # Working_On_It
 Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
-                  font=VerdanaL).grid(row=3, column=1)  # working_on_it
+                  font=VerdanaL).grid(row=3, column=1)
 Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
 Leave_1 = Button(f2, text='RETURN', width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
