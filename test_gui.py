@@ -120,6 +120,16 @@ for frame in (f0, f1, f2, f3, download, sensor, point, signal):
     frame.grid(row=0, column=0, sticky='news')
 
 
+class StringTransformation(object):
+    def __init__(self, list_in):
+        self.list_in = list_in
+
+    @property
+    def list_to_string(self):
+        return self.list_in.replace('[', '').replace(']', '').replace('\\n', '').replace("'", '').replace(',', '\n').\
+            replace('*--------------------------------------------*', '')
+
+
 def find_date():
     global date
     x = datetime.datetime.today()
@@ -1247,7 +1257,9 @@ def download_black_box(event):
         except Exception as e:
             print('Error: %s' % str(e))
     else:
-        print('Easter Egg coming soon')  # ToDo
+        easter_egg = Tk()
+        Label(easter_egg, text='Easter Egg coming soon').grid()
+        Button(easter_egg, text='Exit', command=lambda: easter_egg.destroy()).grid()  # ToDo
 
 
 def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
@@ -1256,6 +1268,16 @@ def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
         pass
     else:
         raise_frame(return_to)
+
+
+def read_last_input():
+    f = open('blackbox.txt', 'r')
+    x = f.readlines()
+    info = str(x[-20:])
+    last_data_input = StringTransformation(info)
+    read_data_screen = Tk()
+    Label(read_data_screen, text=last_data_input.list_to_string, font=VerdanaL).grid()
+    Button(read_data_screen, text='Exit', command=lambda: read_data_screen.destroy()).grid()
 
 
 # Home Page

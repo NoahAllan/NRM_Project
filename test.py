@@ -33,13 +33,33 @@
 #
 # print(bool_change(data[0]))
 
-import datetime
+# from pprint import pprint
 
 
-def find_date_file_name():
-    x = datetime.datetime.today()
-    date_file = x.strftime('_%d-%m-%Y_%H:%M:%S')
-    return date_file
+class StringTransformation(object):
+    def __init__(self, list_in):
+        self.list_in = list_in
+
+    @property
+    def list_to_string(self):
+        return self.list_in.replace('[', '').replace(']', '').replace('\\n', '').replace("'", '').replace(',', '\n').\
+            replace('*--------------------------------------------*', '')
 
 
-print(find_date_file_name())
+def list_to_string(list_to_replace):
+    list_to_replace.replace('[', '')
+    list_to_replace.replace(']', '')
+    list_to_replace.replace('\n', '')
+    list_to_replace.replace("'", '')
+    list_to_replace.replace(',', '\n')
+    return list_to_replace
+
+
+f = open('blackbox.txt', 'r')
+x = f.readlines()
+info = str(x[-20:])
+
+infp_ = StringTransformation(info)
+
+print(infp_.list_to_string)
+
