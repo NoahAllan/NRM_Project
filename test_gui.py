@@ -8,16 +8,15 @@ from tkinter import *
 from PIL import Image, ImageTk
 from tkinter.font import Font
 from track import *
-# from main import sensor_data
+from tkinter import messagebox
 import threading
+import datetime
 
-pos = ''
 root = Tk()
 width = 13
 h = 8
-global end_loop
 stop_threads = False
-sensor_data: list[bool] = [True, False, False, False, False, True]
+sensor_data: list[bool] = [False, False, False, False, False, False]
 signal_data: list[bool] = [False, False, False, False, False, False]
 Point_A: int = 0
 Point_B: int = 0
@@ -27,8 +26,10 @@ Sig_c: str = ''
 Sig_d: str = ''
 Sig_e: str = ''
 Sig_f: str = ''
+date = ''
+pos = ''
 root.title('NRM GUI')
-root.geometry("400x300")
+root.geometry('400x300')
 root.resizable(0, 0)
 root.iconbitmap('C:/Users/noaha/PycharmProjects/NRM/images/StROMEROs_Logo.ico')
 NRM_1 = 'images/NRM_P1.png'
@@ -62,6 +63,8 @@ NRM_28 = 'images/NRM_P3.png'
 NRM_29 = 'images/NRM_P2.png'
 NRM_30 = 'images/NRM_P1.png'
 Error_Screen = 'images/ERROR_404.png'
+Green_Light = 'images/Green_Circle.png'
+Red_Light = 'images/Red_Circle.png'
 root.nrm1 = ImageTk.PhotoImage(Image.open(NRM_1))
 root.nrm2 = ImageTk.PhotoImage(Image.open(NRM_2))
 root.nrm3 = ImageTk.PhotoImage(Image.open(NRM_3))
@@ -93,10 +96,12 @@ root.nrm28 = ImageTk.PhotoImage(Image.open(NRM_28))
 root.nrm29 = ImageTk.PhotoImage(Image.open(NRM_29))
 root.nrm30 = ImageTk.PhotoImage(Image.open(NRM_30))
 root.error = ImageTk.PhotoImage(Image.open(Error_Screen))
+root.green = ImageTk.PhotoImage(Image.open(Green_Light))
+root.red = ImageTk.PhotoImage(Image.open(Red_Light))
 
-Verdana = Font(family="Verdana", size=12)
-VerdanaL = Font(family="Verdana", size=8)
-v = 0.2
+Verdana = Font(family='Verdana', size=12)
+VerdanaL = Font(family='Verdana', size=8)
+v = 0.5  # Should be 18 for correct timing.
 route_1 = section_a + section_c + section_d
 route_two = section_a + section_b + section_d
 
@@ -109,9 +114,17 @@ f3 = Frame(root)
 download = Frame(root)
 sensor = Frame(root)
 point = Frame(root)
+signal = Frame(root)
 
-for frame in (f0, f1, f2, f3, download, sensor, point):
+for frame in (f0, f1, f2, f3, download, sensor, point, signal):
     frame.grid(row=0, column=0, sticky='news')
+
+
+def find_date():
+    global date
+    x = datetime.datetime.today()
+    date = x.strftime('%a %b %d %Y %H:%M:%S')
+    # print(date)
 
 
 def point_change():
@@ -170,7 +183,6 @@ def place_holder():
 
 
 def constant_run():
-    end_loop = False
     emergency_stop = False
     l3: bool = True
     try:
@@ -178,12 +190,12 @@ def constant_run():
         scotsman_current_position = pos[0]
         mallard_current_position = pos[1]
         x = int(pos[0].replace('c', '').replace('b', '')) - 1
-        y = int(pos[0].replace('c', '').replace('b', '')) - 1
+        # y = int(pos[0].replace('c', '').replace('b', '')) - 1
     except:
         scotsman_current_position = 1
         mallard_current_position = 30
         x = 0
-        y = 0
+        # y = 0
     while l3 is True:
         l4 = True
         l5 = True
@@ -198,7 +210,6 @@ def constant_run():
             print(f'Scotsman is at position - {scotsman_current_position}')
             print(f'Mallard is at position - {mallard_current_position}')
             time.sleep(v)
-            time.sleep(0.2)
             x += 1
             if x != 30:
                 scotsman_current_position = route_1[x]
@@ -633,6 +644,7 @@ def constant_run():
                 f.close()
 
                 point_change()
+                signal_check()
 
                 Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
                 Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
@@ -643,12 +655,13 @@ def constant_run():
 
                 Point_A_DATA.configure(text=f'{Point_A}°')
                 Point_B_DATA.configure(text=f'{Point_B}°')
+
+                record_data()
+
                 continue
             break
         x = 0
         y = 0
-        if end_loop:
-            break
         while l5 is True and emergency_stop is False:
             sensor_data[0] = False
             sensor_data[1] = False
@@ -661,7 +674,6 @@ def constant_run():
             print(f'Mallard is at position - {mallard_current_position}')
 
             time.sleep(v)
-            time.sleep(0.2)
             y += 1
             if y == 30:
                 break
@@ -1097,6 +1109,7 @@ def constant_run():
             f.close()
 
             point_change()
+            signal_check()
 
             Sensor_ONE_DATA.configure(text=f'{sensor_data[0]}')
             Sensor_TWO_DATA.configure(text=f'{sensor_data[1]}')
@@ -1106,6 +1119,10 @@ def constant_run():
             Sensor_SIX_DATA.configure(text=f'{sensor_data[5]}')
             Point_A_DATA.configure(text=f'{Point_A}°')
             Point_B_DATA.configure(text=f'{Point_B}°')
+
+            record_data()
+
+            continue
 
 
 def run():
@@ -1118,29 +1135,147 @@ def switch():
     Start_Sim.configure(command=lambda: [close()], text='STOP')
 
 
+def record_data():
+    f = open('blackbox.txt', 'a')
+    f.write('\n\n')
+    f.write('*--------------------------------------------*\n')
+    f.write('SENSOR DATA:\n')
+    find_date()
+    f.write(f'Sensor 1 == {sensor_data[0]} at {date}\n')
+    find_date()
+    f.write(f'Sensor 2 == {sensor_data[1]} at {date}\n')
+    find_date()
+    f.write(f'Sensor 3 == {sensor_data[2]} at {date}\n')
+    find_date()
+    f.write(f'Sensor 4 == {sensor_data[3]} at {date}\n')
+    find_date()
+    f.write(f'Sensor 5 == {sensor_data[4]} at {date}\n')
+    find_date()
+    f.write(f'Sensor 6 == {sensor_data[5]} at {date}\n')
+    f.write('\n')
+    f.write('SIGNAL DATA:\n')
+    find_date()
+    f.write(f'Signal 1 == {signal_data[0]} at {date}\n')
+    find_date()
+    f.write(f'Signal 2 == {signal_data[1]} at {date}\n')
+    find_date()
+    f.write(f'Signal 3 == {signal_data[2]} at {date}\n')
+    find_date()
+    f.write(f'Signal 4 == {signal_data[3]} at {date}\n')
+    find_date()
+    f.write(f'Signal 5 == {signal_data[4]} at {date}\n')
+    find_date()
+    f.write(f'Signal 6 == {signal_data[5]} at {date}\n')
+    f.write('\n')
+    f.write('POINT DATA:\n')
+    find_date()
+    f.write(f'Point 1 == {Point_A}° at {date}\n')
+    find_date()
+    f.write(f'Point 2 == {Point_B}° at {date}\n')
+    f.close()
+    # del_lines('blackbox.txt', 500, 26000)
+
+
+def signal_check():
+    # Signals_ONE_DATA.configure(image=root.red)
+    # Signals_TWO_DATA.configure(image=root.red)
+    # Signals_THREE_DATA.configure(image=root.red)
+    # Signals_FOUR_DATA.configure(image=root.red)
+    # Signals_FIVE_DATA.configure(image=root.red)
+    # Signals_SIX_DATA.configure(image=root.red)
+    if sensor_data[0] is True:
+        signal_data[0] = True
+        Signals_ONE_DATA.configure(image=root.green)
+        signal_data[1] = False
+        Signals_TWO_DATA.configure(image=root.red)
+        signal_data[2] = False
+        Signals_THREE_DATA.configure(image=root.red)
+    if sensor_data[1] is True:
+        pass
+    if sensor_data[2] is True:
+        signal_data[0] = False
+        Signals_ONE_DATA.configure(image=root.red)
+        signal_data[1] = True
+        Signals_TWO_DATA.configure(image=root.green)
+        signal_data[2] = False
+        Signals_THREE_DATA.configure(image=root.red)
+    if sensor_data[3] is True:
+        signal_data[3] = True
+        Signals_FOUR_DATA.configure(image=root.green)
+        signal_data[4] = False
+        Signals_FIVE_DATA.configure(image=root.red)
+        signal_data[5] = False
+        Signals_SIX_DATA.configure(image=root.red)
+    if sensor_data[4] is True:
+        pass
+    if sensor_data[5] is True:
+        signal_data[3] = False
+        Signals_FOUR_DATA.configure(image=root.red)
+        signal_data[4] = False
+        Signals_FIVE_DATA.configure(image=root.red)
+        signal_data[5] = True
+        Signals_SIX_DATA.configure(image=root.green)
+
+
+def find_date_file_name():
+    x = datetime.datetime.today()
+    date_file = x.strftime('_%d-%m-%Y_%H-%M')
+    return date_file
+
+
+def download_black_box(event):
+    file_dst = event.widget.get()
+    event.widget.delete(0, len(file_dst))
+    if file_dst != 'Finland':
+        src = 'blackbox.txt'
+        dst = f'{file_dst}blackbox{find_date_file_name()}.txt'
+        check(title='Download Black Box', text=f'Are you sure you want to download the black box to {dst}',
+              icon_='warning', return_to=f2)
+        try:
+            f = open(dst, 'a')
+            f.close()
+            copyfile(src, dst)
+        except Exception as e:
+            print('Error: %s' % str(e))
+    else:
+        # ToDo
+        easter_egg = Tk()
+        Label(easter_egg, text='Easter Egg coming soon').grid()
+        Button(easter_egg, text='Exit', command=lambda: easter_egg.destroy()).grid()
+
+
+def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
+    message_box = messagebox.askquestion(title, text, icon=icon_)
+    if message_box == 'yes':
+        pass
+    else:
+        raise_frame(return_to)
+
+
+# Home Page
 w1 = 27
 h1 = 11
-Control_Panel = Button(f0, text="CONTROL\nPANEL", width=w1, height=h1, command=lambda: raise_frame(f1),
-                       font=VerdanaL).grid(row=0, column=0, sticky='nsew')
-Black_Box = Button(f0, text="BLACK\nBOX", width=w1, height=h1, command=lambda: raise_frame(f2), font=VerdanaL). \
-    grid(row=0, column=1, sticky='nsew')
-Test = Button(f0, text="TEST", width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL). \
-    grid(row=1, column=0, sticky='nsew')
-Quit = Button(f0, text="QUIT", width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='nsew')
+Control_Panel = Button(f0, text='CONTROL\nPANEL', width=w1, height=h1, command=lambda: raise_frame(f1),
+                       font=VerdanaL).grid(row=0, column=0, sticky='w')
+Black_Box = Button(f0, text='BLACK\nBOX', width=w1, height=h1, command=lambda: raise_frame(f2), font=VerdanaL). \
+    grid(row=0, column=1, sticky='e')
+Test = Button(f0, text='TEST', width=w1, height=h1, command=lambda: raise_frame(f3), font=VerdanaL). \
+    grid(row=1, column=0, sticky='w')
+Quit = Button(f0, text='QUIT', width=w1, height=h1, command=close, font=VerdanaL).grid(row=1, column=1, sticky='e')
 
+# Control Panel
 w2 = 10
 h2 = 8
-Check_Sensors = Button(f1, text="CHECK\nSENSORS", width=w2, height=h2, command=lambda: raise_frame(sensor),
-                       font=VerdanaL).grid(row=3,
-                                           column=0)
-Check_Points = Button(f1, text="CHECK\nPOINTS", width=w2, height=h2, command=lambda: raise_frame(point),
-                      font=VerdanaL).grid(row=3, column=1)  # working_on_it
-Check_Signals = Button(f1, text="CHECK\nSIGNALS", width=w2, height=h2, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=2)  # TODO: Write code to check signals and display it in the GUI
-Start_Sim = Button(f1, text="START", width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
+Check_Sensors = Button(f1, text='CHECK\nSENSORS', width=w2, height=h2, command=lambda: raise_frame(sensor),
+                       font=VerdanaL).grid(row=3, column=0)
+Check_Points = Button(f1, text='CHECK\nPOINTS', width=w2, height=h2, command=lambda: raise_frame(point),
+                      font=VerdanaL).grid(row=3, column=1)
+Check_Signals = Button(f1, text='CHECK\nSIGNALS', width=w2, height=h2, command=lambda: raise_frame(signal),
+                       font=VerdanaL).grid(row=3, column=2)
+Start_Sim = Button(f1, text='START', width=w2, height=h2, command=lambda: [run(), switch()], state=NORMAL,
                    font=VerdanaL)
 Start_Sim.grid(row=3, column=3)
-Leave = Button(f1, text="RETURN", width=w2, height=h2, command=lambda: raise_frame(f0), font=VerdanaL). \
+Leave = Button(f1, text='RETURN', width=w2, height=h2, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=4)
 photo_1 = Label(f1, image=root.error)
 photo_1.grid(row=0, column=0, columnspan=5)
@@ -1176,45 +1311,56 @@ Point_B_DATA.grid(column=1, row=1)
 Point_return = Button(point, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
                       command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
-Read_last = Button(f2, text="READ LAST\nINPUT", width=width, height=h, command=place_holder, font=VerdanaL). \
+Signals_ONE = Label(signal, text=f'Signal 1 reads ', font=Verdana, padx=0, pady=7).grid(row=0, column=0)
+Signals_ONE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_ONE_DATA.grid(row=0, column=1)
+Signals_TWO = Label(signal, text=f'Signal 2 reads ', font=Verdana, padx=0, pady=7).grid(row=1, column=0)
+Signals_TWO_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_TWO_DATA.grid(row=1, column=1)
+Signals_THREE = Label(signal, text=f'Signal 3 reads ', font=Verdana, padx=0, pady=7).grid(row=2, column=0)
+Signals_THREE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_THREE_DATA.grid(row=2, column=1)
+Signals_FOUR = Label(signal, text=f'Signal 4 reads ', font=Verdana, padx=0, pady=7).grid(row=3, column=0)
+Signals_FOUR_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_FOUR_DATA.grid(row=3, column=1)
+Signals_FIVE = Label(signal, text=f'Signal 5 reads ', font=Verdana, padx=0, pady=7).grid(row=4, column=0)
+Signals_FIVE_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_FIVE_DATA.grid(row=4, column=1)
+Signals_SIX = Label(signal, text=f'Signal 6 reads ', font=Verdana, padx=0, pady=7).grid(row=5, column=0)
+Signals_SIX_DATA = Label(signal, image=root.red, padx=0, pady=7)
+Signals_SIX_DATA.grid(row=5, column=1)
+Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                       command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
+
+# Black Box
+Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
-Download = Button(f2, text="DOWNLOAD ALL", width=width, height=h, command=lambda: raise_frame(download),
-                  font=VerdanaL).grid(row=3, column=1)  # TODO: Write code to download the black box
-Clear = Button(f2, text="CLEAR\nBLACK BOX", width=width, height=h, command=place_holder, font=VerdanaL). \
+Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
+                  font=VerdanaL).grid(row=3, column=1)
+Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=2)  # TODO: Write code to clear black box
-Leave_1 = Button(f2, text="RETURN", width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
+Leave_1 = Button(f2, text='RETURN', width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
 photo_2.grid(row=0, column=0, columnspan=4)
 
-Run_Through = Button(f3, text="Test System", width=27, height=h, command=place_holder, font=VerdanaL). \
+lab = Label(download, text='Enter Location for Download:', font=Verdana)
+lab.grid(row=0, column=0, pady=78, padx=78)
+example = Label(download, text='i.e C:/Users/johnsmith/', font=VerdanaL).grid(row=1, column=0)
+ent = Entry(download, width=66)
+ent.grid(row=2, column=0, sticky='w')
+ent.bind('<Return>', download_black_box)
+Download_return = Button(download, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
+                         command=lambda: raise_frame(f1)).grid(row=3, column=0)
+
+# System testing
+Run_Through = Button(f3, text='Test System', width=27, height=h, command=place_holder, font=VerdanaL). \
     grid(row=3, column=0)
 # TODO: Write code to test whole system and display it in the GUI (use code from constant run)
-Leave_2 = Button(f3, text="RETURN", width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
+Leave_2 = Button(f3, text='RETURN', width=27, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_3 = Label(f3, image=root.error)
 photo_3.grid(row=0, column=0, columnspan=4)
-
-
-def download_black_box(event):
-    file_dst = event.widget.get()
-    event.widget.delete(0, len(file_dst))
-    src = 't1'
-    dst = f'{file_dst}blackbox.txt'
-    try:
-        f = open(dst, 'a')
-        f.close()
-        copyfile(src, dst)
-    except Exception as e:
-        print('Error: %s' % str(e))
-
-
-lab = Label(download, text="Enter Location for Download:", font=Verdana)
-lab.grid(row=0, column=0, pady=100, padx=100)
-
-ent = Entry(download)
-ent.grid(row=1, column=0)
-ent.bind('<Return>', download_black_box)
 
 raise_frame(f0)
 root.mainloop()
