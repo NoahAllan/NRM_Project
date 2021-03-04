@@ -1361,7 +1361,7 @@ Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56,
                        command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
 # Black Box
-Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=place_holder, font=VerdanaL). \
+Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=read_last_input, font=VerdanaL). \
     grid(row=3, column=0)  # Working_On_It
 Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
                   font=VerdanaL).grid(row=3, column=1)
