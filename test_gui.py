@@ -120,6 +120,16 @@ for frame in (f0, f1, f2, f3, download, sensor, point, signal):
     frame.grid(row=0, column=0, sticky='news')
 
 
+class StringTransformation(object):
+    def __init__(self, list_in):
+        self.list_in = list_in
+
+    @property
+    def list_to_string(self):
+        return self.list_in.replace('[', '').replace(']', '').replace('\\n', '').replace("'", '').replace(',', '\n').\
+            replace('*--------------------------------------------*', '')
+
+
 def find_date():
     global date
     x = datetime.datetime.today()
@@ -1173,7 +1183,7 @@ def record_data():
     find_date()
     f.write(f'Point 2 == {Point_B}° at {date}\n')
     f.close()
-    # del_lines('blackbox.txt', 500, 26000)
+    del_lines('blackbox.txt', 500, 26000)
 
 
 def signal_check():
@@ -1217,6 +1227,15 @@ def signal_check():
         Signals_SIX_DATA.configure(image=root.green)
 
 
+def del_lines(file, lines_from_top=500, when_to_del=5000):
+    with open(file, 'r') as f:
+        lines = f.readlines()
+    if len(lines) > when_to_del:
+        with open(file, 'w') as f:
+            for line in lines[lines_from_top:]:
+                f.write(line)
+
+
 def find_date_file_name():
     x = datetime.datetime.today()
     date_file = x.strftime('_%d-%m-%Y_%H-%M')
@@ -1238,10 +1257,9 @@ def download_black_box(event):
         except Exception as e:
             print('Error: %s' % str(e))
     else:
-        # ToDo
         easter_egg = Tk()
         Label(easter_egg, text='Easter Egg coming soon').grid()
-        Button(easter_egg, text='Exit', command=lambda: easter_egg.destroy()).grid()
+        Button(easter_egg, text='Exit', command=lambda: easter_egg.destroy()).grid()  # ToDo
 
 
 def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
@@ -1250,6 +1268,21 @@ def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
         pass
     else:
         raise_frame(return_to)
+
+
+def read_last_input():
+    read_data_screen = Tk()
+    read_data_screen.iconbitmap('C:/Users/noaha/PycharmProjects/NRM/images/StROMEROs_Logo.ico')
+    read_data_screen.resizable(0, 0)
+    Label(read_data_screen, text='Black Box Last Input', font=Font(family='Verdana')).grid(row=0, column=0)
+    f = open('blackbox.txt', 'r')
+    x = f.readlines()
+    info = str(x[-20:])
+    last_data_input = StringTransformation(info)
+    display_info = str(last_data_input.list_to_string)
+    black_box_last_input = Label(read_data_screen, text=display_info)
+    black_box_last_input.grid(row=1, column=0, sticky='w')
+    Button(read_data_screen, text='Exit', width=20, command=lambda: read_data_screen.destroy()).grid(row=2, column=0)
 
 
 # Home Page
@@ -1333,8 +1366,8 @@ Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56,
                        command=lambda: raise_frame(f1)).grid(columnspan=2, sticky='s')
 
 # Black Box
-Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=0)  # TODO: Write code to read last input and display it in the GUI
+Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=read_last_input, font=VerdanaL). \
+    grid(row=3, column=0)  # Working_On_It
 Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
                   font=VerdanaL).grid(row=3, column=1)
 Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=place_holder, font=VerdanaL). \

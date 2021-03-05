@@ -33,13 +33,3 @@
 #
 # print(bool_change(data[0]))
 
-import datetime
-
-
-def find_date_file_name():
-    x = datetime.datetime.today()
-    date_file = x.strftime('_%d-%m-%Y_%H:%M:%S')
-    return date_file
-
-
-print(find_date_file_name())
