@@ -1271,13 +1271,18 @@ def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
 
 
 def read_last_input():
+    read_data_screen = Tk()
+    read_data_screen.iconbitmap('C:/Users/noaha/PycharmProjects/NRM/images/StROMEROs_Logo.ico')
+    read_data_screen.resizable(0, 0)
+    Label(read_data_screen, text='Black Box Last Input', font=Font(family='Verdana')).grid(row=0, column=0)
     f = open('blackbox.txt', 'r')
     x = f.readlines()
     info = str(x[-20:])
     last_data_input = StringTransformation(info)
-    read_data_screen = Tk()
-    Label(read_data_screen, text=last_data_input.list_to_string, font=VerdanaL).grid()
-    Button(read_data_screen, text='Exit', command=lambda: read_data_screen.destroy()).grid()
+    display_info = str(last_data_input.list_to_string)
+    black_box_last_input = Label(read_data_screen, text=display_info)
+    black_box_last_input.grid(row=1, column=0, sticky='w')
+    Button(read_data_screen, text='Exit', width=20, command=lambda: read_data_screen.destroy()).grid(row=2, column=0)
 
 
 # Home Page
