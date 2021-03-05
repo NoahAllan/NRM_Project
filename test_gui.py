@@ -1263,6 +1263,7 @@ def download_black_box(event):
 
 
 def check(title='pop up', text='text goes here', icon_='warning', return_to=f0):
+    global message_box
     message_box = messagebox.askquestion(title, text, icon=icon_)
     if message_box == 'yes':
         pass
@@ -1283,6 +1284,21 @@ def read_last_input():
     black_box_last_input = Label(read_data_screen, text=display_info)
     black_box_last_input.grid(row=1, column=0, sticky='w')
     Button(read_data_screen, text='Exit', width=20, command=lambda: read_data_screen.destroy()).grid(row=2, column=0)
+
+
+def clear_black_box(file):
+    check('Are you sure you want to continue?',
+          'By continuing you will delete ALL black box data which may be useful in the future.', return_to=f2)
+    try:
+        if message_box == 'yes':
+            f = open(file, 'w')
+            f.truncate(0)
+            f.close()
+            print(f'{file} was cleared')
+        else:
+            print(f'{file} was NOT cleared')
+    except Exception as e:
+        print('Error: %s' % str(e))
 
 
 # Home Page
@@ -1367,11 +1383,11 @@ Signal_return = Button(signal, text='RETURN', font=VerdanaL, height=5, width=56,
 
 # Black Box
 Read_last = Button(f2, text='READ LAST\nINPUT', width=width, height=h, command=read_last_input, font=VerdanaL). \
-    grid(row=3, column=0)  # Working_On_It
+    grid(row=3, column=0)
 Download = Button(f2, text='DOWNLOAD ALL', width=width, height=h, command=lambda: raise_frame(download),
                   font=VerdanaL).grid(row=3, column=1)
-Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=place_holder, font=VerdanaL). \
-    grid(row=3, column=2)  # TODO: Write code to clear black box
+Clear = Button(f2, text='CLEAR\nBLACK BOX', width=width, height=h, command=lambda: clear_black_box('train_data.txt'),
+               font=VerdanaL).grid(row=3, column=2)
 Leave_1 = Button(f2, text='RETURN', width=width, height=h, command=lambda: raise_frame(f0), font=VerdanaL). \
     grid(row=3, column=3)
 photo_2 = Label(f2, image=root.error)
