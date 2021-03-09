@@ -5,6 +5,8 @@
 import time
 from shutil import copyfile
 from tkinter import *
+# Use the command bellow to install PIL for the images. All other imports are pre installed
+# pip install Pillow
 from PIL import Image, ImageTk
 from tkinter.font import Font
 from track import *
