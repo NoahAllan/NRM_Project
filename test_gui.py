@@ -1,5 +1,6 @@
 # **NOTE**
 # This file is to test the GUI before it is put into the main program (main.py)
+# This program WILL NOT work if all packages are not installed
 
 # imports
 import time
