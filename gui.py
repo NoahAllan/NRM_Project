@@ -1,14 +1,8 @@
-# **NOTE**
-# This file is to test the GUI before it is put into the main program (main.py)
-# This program WILL NOT work if all packages are not installed
-
 # imports
 import time
 from shutil import copyfile
 from tkinter import *
-# Use the command bellow to install PIL for the images. All other imports are pre installed
-# pip install Pillow
-from PIL import Image, ImageTk
+from PIL import Image, ImageTk  # pip install Pillow
 from tkinter.font import Font
 from track import *
 from tkinter import messagebox
