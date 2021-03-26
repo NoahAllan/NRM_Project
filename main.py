@@ -2,32 +2,20 @@
 import time
 import datetime
 from shutil import copyfile
-# import itertools
-# import threading
-# import sys
-# from typing import List
+
+# Setting variables
 test: bool = False
 emergency_stop: bool = False
 sim: bool = True
 blackbox: bool = True
 # sensor_data = [Sensor 1, Sensor 2, Sensor 3, Sensor 4, Sensor 5, Sensor 6]
 sensor_data: list[bool] = [True, False, False, False, False, True]
-# Sensors 1 and 6 are set to true as when a train moves past them they just switch there input to avoid a
-# train being stuck at the end.
-# s1 = sensor_data[0]
-# s2 = sensor_data[1]
-# s3 = sensor_data[2]
-# s4 = sensor_data[3]
-# s5 = sensor_data[4]
-# s6 = sensor_data[5]
 r1: bool = False
 r2: bool = False
 signal_data: list[bool] = [False, False, False, False, False, False]
 Point_A: int = 0
 Point_B: int = 0
-# For purposes of testing the wait time is 0.5 seconds
-# However when the program is complete the time can be changed to the correct time
-wait_time: float = 0.5
+wait_time: float = 18
 date: str = ''
 date_file: str = ''
 Sig_a: str = ''
