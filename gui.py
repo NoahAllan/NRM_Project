@@ -1,21 +1,15 @@
-# **NOTE**
-# This file is to test the GUI before it is put into the main program (main.py)
-# This program WILL NOT work if all packages are not installed
-
 # imports
 import time
 from shutil import copyfile
 from tkinter import *
-# Use the command bellow to install PIL for the images. All other imports are pre installed
-# pip install Pillow
-from PIL import Image, ImageTk
+from PIL import Image, ImageTk  # pip install Pillow
 from tkinter.font import Font
 from track import *
 from tkinter import messagebox
 import threading
 import datetime
 
-root = Tk()
+# assinging all variables
 width = 13
 h = 8
 stop_threads = False
@@ -31,6 +25,15 @@ Sig_e: str = ''
 Sig_f: str = ''
 date = ''
 pos = ''
+v = 0.5  # Should be 18 for correct timing.
+
+# Creating route
+route_1 = section_a + section_c + section_d
+route_two = section_a + section_b + section_d
+route_2 = route_two[::-1]
+
+# GUI spesific assingments
+root = Tk()
 root.title('NRM GUI')
 root.geometry('400x300')
 root.resizable(0, 0)
@@ -101,15 +104,10 @@ root.nrm30 = ImageTk.PhotoImage(Image.open(NRM_30))
 root.error = ImageTk.PhotoImage(Image.open(Error_Screen))
 root.green = ImageTk.PhotoImage(Image.open(Green_Light))
 root.red = ImageTk.PhotoImage(Image.open(Red_Light))
-
 Verdana = Font(family='Verdana', size=12)
 VerdanaL = Font(family='Verdana', size=8)
-v = 0.5  # Should be 18 for correct timing.
-route_1 = section_a + section_c + section_d
-route_two = section_a + section_b + section_d
 
-route_2 = route_two[::-1]
-
+# Structure for changeing pages
 f0 = Frame(root)
 f1 = Frame(root)
 f2 = Frame(root)
@@ -123,6 +121,7 @@ for frame in (f0, f1, f2, f3, download, sensor, point, signal):
     frame.grid(row=0, column=0, sticky='news')
 
 
+    
 class StringTransformation(object):
     def __init__(self, list_in):
         self.list_in = list_in
@@ -137,7 +136,6 @@ def find_date():
     global date
     x = datetime.datetime.today()
     date = x.strftime('%a %b %d %Y %H:%M:%S')
-    # print(date)
 
 
 def point_change():
@@ -190,18 +188,12 @@ def close():
     root.destroy()
 
 
-def place_holder():
-    # This is purely to put in as a function where I haven't written yet.
-    print('Button Pressed')
-
-
 def outward_run():
     try:
         find_train_position()
         scotsman_current_position = pos[0]
         mallard_current_position = pos[1]
         x = int(pos[0].replace('c', '').replace('b', '')) - 1
-        # y = int(pos[0].replace('c', '').replace('b', '')) - 1
     except:
         scotsman_current_position = 1
         mallard_current_position = 30
@@ -444,12 +436,10 @@ def constant_run():
         scotsman_current_position = pos[0]
         mallard_current_position = pos[1]
         x = int(pos[0].replace('c', '').replace('b', '')) - 1
-        # y = int(pos[0].replace('c', '').replace('b', '')) - 1
     except:
         scotsman_current_position = 1
         mallard_current_position = 30
         x = 0
-        # y = 0
     while l3 is True:
         l4 = True
         l5 = True
@@ -1008,12 +998,6 @@ def record_data():
 
 
 def signal_check():
-    # Signals_ONE_DATA.configure(image=root.red)
-    # Signals_TWO_DATA.configure(image=root.red)
-    # Signals_THREE_DATA.configure(image=root.red)
-    # Signals_FOUR_DATA.configure(image=root.red)
-    # Signals_FIVE_DATA.configure(image=root.red)
-    # Signals_SIX_DATA.configure(image=root.red)
     if sensor_data[0] is True:
         signal_data[0] = True
         Signals_ONE_DATA.configure(image=root.green)
