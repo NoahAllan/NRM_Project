@@ -1,6 +1,9 @@
 ## NRM Project Year 10 Software Project 
 #### ‘National Railway Museum Steam Exhibition Track System’
 
+gui.py for main program.
+
+### BRIEF:
 ___
 
 Your project is to write a control Programme and simulation for a simple section of railway track shown below. The
