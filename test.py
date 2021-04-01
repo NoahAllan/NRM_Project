@@ -33,3 +33,15 @@
 #
 # print(bool_change(data[0]))
 
+# import time
+# from typing import List
+
+from track import *
+
+route_1 = section_a + section_c + section_d
+route_two = section_a + section_b + section_d
+
+route_2 = route_two[::-1]
+
+print(route_1)
+print(route_2)
