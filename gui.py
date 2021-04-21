@@ -10,8 +10,6 @@ import threading
 import datetime
 
 # assinging all variables
-width = 13
-h = 8
 stop_threads = False
 sensor_data: list[bool] = [False, False, False, False, False, False]
 signal_data: list[bool] = [False, False, False, False, False, False]
@@ -33,6 +31,8 @@ route_two = section_a + section_b + section_d
 route_2 = route_two[::-1]
 
 # GUI spesific assingments
+width = 13
+h = 8
 root = Tk()
 root.title('NRM GUI')
 root.geometry('400x300')
