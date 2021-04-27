@@ -33,4 +33,5 @@ ___
 
 PHASE 3 - Higher level to develop a graphical user interface to monitor train movement through each
 sensor sector on the Railway. Your task is to write a programme that will simulate the movement of Mallard to Section A
+
 and Scotsman to Section D in the minimal possible time.
