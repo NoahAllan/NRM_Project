@@ -5138,3 +5138,2579 @@ Signal 6 == False at Fri Mar 05 2021 10:24:22
 POINT DATA:
 Point 1 == 0° at Fri Mar 05 2021 10:24:22
 Point 2 == 30° at Fri Mar 05 2021 10:24:22
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:43:07
+Sensor 2 == True at Sat Feb 19 2022 21:43:07
+Sensor 3 == False at Sat Feb 19 2022 21:43:07
+Sensor 4 == False at Sat Feb 19 2022 21:43:07
+Sensor 5 == False at Sat Feb 19 2022 21:43:07
+Sensor 6 == True at Sat Feb 19 2022 21:43:07
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:43:07
+Signal 2 == False at Sat Feb 19 2022 21:43:07
+Signal 3 == False at Sat Feb 19 2022 21:43:07
+Signal 4 == False at Sat Feb 19 2022 21:43:07
+Signal 5 == False at Sat Feb 19 2022 21:43:07
+Signal 6 == False at Sat Feb 19 2022 21:43:07
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:43:07
+Point 2 == 0° at Sat Feb 19 2022 21:43:07
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:43:10
+Sensor 2 == True at Sat Feb 19 2022 21:43:10
+Sensor 3 == False at Sat Feb 19 2022 21:43:10
+Sensor 4 == False at Sat Feb 19 2022 21:43:10
+Sensor 5 == False at Sat Feb 19 2022 21:43:10
+Sensor 6 == True at Sat Feb 19 2022 21:43:10
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:43:10
+Signal 2 == False at Sat Feb 19 2022 21:43:10
+Signal 3 == False at Sat Feb 19 2022 21:43:10
+Signal 4 == False at Sat Feb 19 2022 21:43:10
+Signal 5 == False at Sat Feb 19 2022 21:43:10
+Signal 6 == False at Sat Feb 19 2022 21:43:10
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:43:10
+Point 2 == 0° at Sat Feb 19 2022 21:43:10
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:43:11
+Sensor 2 == True at Sat Feb 19 2022 21:43:11
+Sensor 3 == False at Sat Feb 19 2022 21:43:11
+Sensor 4 == False at Sat Feb 19 2022 21:43:11
+Sensor 5 == False at Sat Feb 19 2022 21:43:11
+Sensor 6 == True at Sat Feb 19 2022 21:43:11
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:43:11
+Signal 2 == False at Sat Feb 19 2022 21:43:11
+Signal 3 == False at Sat Feb 19 2022 21:43:11
+Signal 4 == False at Sat Feb 19 2022 21:43:11
+Signal 5 == False at Sat Feb 19 2022 21:43:11
+Signal 6 == False at Sat Feb 19 2022 21:43:11
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:43:11
+Point 2 == 0° at Sat Feb 19 2022 21:43:11
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:43:12
+Sensor 2 == True at Sat Feb 19 2022 21:43:12
+Sensor 3 == False at Sat Feb 19 2022 21:43:12
+Sensor 4 == False at Sat Feb 19 2022 21:43:12
+Sensor 5 == False at Sat Feb 19 2022 21:43:12
+Sensor 6 == True at Sat Feb 19 2022 21:43:12
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:43:12
+Signal 2 == False at Sat Feb 19 2022 21:43:12
+Signal 3 == False at Sat Feb 19 2022 21:43:12
+Signal 4 == False at Sat Feb 19 2022 21:43:12
+Signal 5 == False at Sat Feb 19 2022 21:43:12
+Signal 6 == False at Sat Feb 19 2022 21:43:12
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:43:12
+Point 2 == 0° at Sat Feb 19 2022 21:43:12
+
+
+***EMERGENCY STOP AT Sat Feb 19 2022 21:43:12***
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:51
+Sensor 2 == False at Sat Feb 19 2022 21:52:51
+Sensor 3 == False at Sat Feb 19 2022 21:52:51
+Sensor 4 == False at Sat Feb 19 2022 21:52:51
+Sensor 5 == False at Sat Feb 19 2022 21:52:51
+Sensor 6 == False at Sat Feb 19 2022 21:52:51
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:51
+Signal 2 == False at Sat Feb 19 2022 21:52:51
+Signal 3 == False at Sat Feb 19 2022 21:52:51
+Signal 4 == False at Sat Feb 19 2022 21:52:51
+Signal 5 == False at Sat Feb 19 2022 21:52:51
+Signal 6 == False at Sat Feb 19 2022 21:52:51
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:51
+Point 2 == 0° at Sat Feb 19 2022 21:52:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:51
+Sensor 2 == True at Sat Feb 19 2022 21:52:51
+Sensor 3 == False at Sat Feb 19 2022 21:52:51
+Sensor 4 == False at Sat Feb 19 2022 21:52:51
+Sensor 5 == True at Sat Feb 19 2022 21:52:51
+Sensor 6 == False at Sat Feb 19 2022 21:52:51
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:51
+Signal 2 == False at Sat Feb 19 2022 21:52:51
+Signal 3 == False at Sat Feb 19 2022 21:52:51
+Signal 4 == False at Sat Feb 19 2022 21:52:51
+Signal 5 == False at Sat Feb 19 2022 21:52:51
+Signal 6 == False at Sat Feb 19 2022 21:52:51
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:51
+Point 2 == 30° at Sat Feb 19 2022 21:52:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:51
+Sensor 2 == False at Sat Feb 19 2022 21:52:51
+Sensor 3 == False at Sat Feb 19 2022 21:52:51
+Sensor 4 == False at Sat Feb 19 2022 21:52:51
+Sensor 5 == False at Sat Feb 19 2022 21:52:51
+Sensor 6 == False at Sat Feb 19 2022 21:52:51
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:51
+Signal 2 == False at Sat Feb 19 2022 21:52:51
+Signal 3 == False at Sat Feb 19 2022 21:52:51
+Signal 4 == False at Sat Feb 19 2022 21:52:51
+Signal 5 == False at Sat Feb 19 2022 21:52:51
+Signal 6 == False at Sat Feb 19 2022 21:52:51
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:51
+Point 2 == 30° at Sat Feb 19 2022 21:52:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:51
+Sensor 2 == False at Sat Feb 19 2022 21:52:51
+Sensor 3 == False at Sat Feb 19 2022 21:52:51
+Sensor 4 == False at Sat Feb 19 2022 21:52:51
+Sensor 5 == False at Sat Feb 19 2022 21:52:51
+Sensor 6 == False at Sat Feb 19 2022 21:52:51
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:51
+Signal 2 == False at Sat Feb 19 2022 21:52:51
+Signal 3 == False at Sat Feb 19 2022 21:52:51
+Signal 4 == False at Sat Feb 19 2022 21:52:51
+Signal 5 == False at Sat Feb 19 2022 21:52:51
+Signal 6 == False at Sat Feb 19 2022 21:52:51
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:51
+Point 2 == 30° at Sat Feb 19 2022 21:52:51
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:52
+Sensor 2 == False at Sat Feb 19 2022 21:52:52
+Sensor 3 == False at Sat Feb 19 2022 21:52:52
+Sensor 4 == False at Sat Feb 19 2022 21:52:52
+Sensor 5 == False at Sat Feb 19 2022 21:52:52
+Sensor 6 == False at Sat Feb 19 2022 21:52:52
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:52
+Signal 2 == False at Sat Feb 19 2022 21:52:52
+Signal 3 == False at Sat Feb 19 2022 21:52:52
+Signal 4 == False at Sat Feb 19 2022 21:52:52
+Signal 5 == False at Sat Feb 19 2022 21:52:52
+Signal 6 == False at Sat Feb 19 2022 21:52:52
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:52
+Point 2 == 30° at Sat Feb 19 2022 21:52:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:52
+Sensor 2 == False at Sat Feb 19 2022 21:52:52
+Sensor 3 == False at Sat Feb 19 2022 21:52:52
+Sensor 4 == False at Sat Feb 19 2022 21:52:52
+Sensor 5 == False at Sat Feb 19 2022 21:52:52
+Sensor 6 == False at Sat Feb 19 2022 21:52:52
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:52
+Signal 2 == False at Sat Feb 19 2022 21:52:52
+Signal 3 == False at Sat Feb 19 2022 21:52:52
+Signal 4 == False at Sat Feb 19 2022 21:52:52
+Signal 5 == False at Sat Feb 19 2022 21:52:52
+Signal 6 == False at Sat Feb 19 2022 21:52:52
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:52
+Point 2 == 30° at Sat Feb 19 2022 21:52:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:52
+Sensor 2 == False at Sat Feb 19 2022 21:52:52
+Sensor 3 == False at Sat Feb 19 2022 21:52:52
+Sensor 4 == False at Sat Feb 19 2022 21:52:52
+Sensor 5 == False at Sat Feb 19 2022 21:52:52
+Sensor 6 == False at Sat Feb 19 2022 21:52:52
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:52
+Signal 2 == False at Sat Feb 19 2022 21:52:52
+Signal 3 == False at Sat Feb 19 2022 21:52:52
+Signal 4 == False at Sat Feb 19 2022 21:52:52
+Signal 5 == False at Sat Feb 19 2022 21:52:52
+Signal 6 == False at Sat Feb 19 2022 21:52:52
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:52
+Point 2 == 30° at Sat Feb 19 2022 21:52:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:52:52
+Sensor 2 == False at Sat Feb 19 2022 21:52:52
+Sensor 3 == False at Sat Feb 19 2022 21:52:52
+Sensor 4 == False at Sat Feb 19 2022 21:52:52
+Sensor 5 == False at Sat Feb 19 2022 21:52:52
+Sensor 6 == True at Sat Feb 19 2022 21:52:52
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:52
+Signal 2 == False at Sat Feb 19 2022 21:52:52
+Signal 3 == False at Sat Feb 19 2022 21:52:52
+Signal 4 == False at Sat Feb 19 2022 21:52:52
+Signal 5 == False at Sat Feb 19 2022 21:52:52
+Signal 6 == True at Sat Feb 19 2022 21:52:52
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:52
+Point 2 == 0° at Sat Feb 19 2022 21:52:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:52
+Sensor 2 == False at Sat Feb 19 2022 21:52:52
+Sensor 3 == False at Sat Feb 19 2022 21:52:52
+Sensor 4 == False at Sat Feb 19 2022 21:52:52
+Sensor 5 == False at Sat Feb 19 2022 21:52:52
+Sensor 6 == False at Sat Feb 19 2022 21:52:52
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:52
+Signal 2 == False at Sat Feb 19 2022 21:52:52
+Signal 3 == False at Sat Feb 19 2022 21:52:52
+Signal 4 == False at Sat Feb 19 2022 21:52:52
+Signal 5 == False at Sat Feb 19 2022 21:52:52
+Signal 6 == True at Sat Feb 19 2022 21:52:52
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:52
+Point 2 == 0° at Sat Feb 19 2022 21:52:52
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:53
+Sensor 2 == False at Sat Feb 19 2022 21:52:53
+Sensor 3 == False at Sat Feb 19 2022 21:52:53
+Sensor 4 == False at Sat Feb 19 2022 21:52:53
+Sensor 5 == False at Sat Feb 19 2022 21:52:53
+Sensor 6 == False at Sat Feb 19 2022 21:52:53
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:53
+Signal 2 == False at Sat Feb 19 2022 21:52:53
+Signal 3 == False at Sat Feb 19 2022 21:52:53
+Signal 4 == False at Sat Feb 19 2022 21:52:53
+Signal 5 == False at Sat Feb 19 2022 21:52:53
+Signal 6 == True at Sat Feb 19 2022 21:52:53
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:53
+Point 2 == 0° at Sat Feb 19 2022 21:52:53
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:53
+Sensor 2 == False at Sat Feb 19 2022 21:52:53
+Sensor 3 == False at Sat Feb 19 2022 21:52:53
+Sensor 4 == False at Sat Feb 19 2022 21:52:53
+Sensor 5 == False at Sat Feb 19 2022 21:52:53
+Sensor 6 == False at Sat Feb 19 2022 21:52:53
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:53
+Signal 2 == False at Sat Feb 19 2022 21:52:53
+Signal 3 == False at Sat Feb 19 2022 21:52:53
+Signal 4 == False at Sat Feb 19 2022 21:52:53
+Signal 5 == False at Sat Feb 19 2022 21:52:53
+Signal 6 == True at Sat Feb 19 2022 21:52:53
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:53
+Point 2 == 0° at Sat Feb 19 2022 21:52:53
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:52:53
+Sensor 2 == False at Sat Feb 19 2022 21:52:53
+Sensor 3 == False at Sat Feb 19 2022 21:52:53
+Sensor 4 == False at Sat Feb 19 2022 21:52:53
+Sensor 5 == False at Sat Feb 19 2022 21:52:53
+Sensor 6 == True at Sat Feb 19 2022 21:52:53
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:53
+Signal 2 == False at Sat Feb 19 2022 21:52:53
+Signal 3 == False at Sat Feb 19 2022 21:52:53
+Signal 4 == False at Sat Feb 19 2022 21:52:53
+Signal 5 == False at Sat Feb 19 2022 21:52:53
+Signal 6 == True at Sat Feb 19 2022 21:52:53
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:53
+Point 2 == 0° at Sat Feb 19 2022 21:52:53
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:54
+Sensor 2 == False at Sat Feb 19 2022 21:52:54
+Sensor 3 == False at Sat Feb 19 2022 21:52:54
+Sensor 4 == False at Sat Feb 19 2022 21:52:54
+Sensor 5 == False at Sat Feb 19 2022 21:52:54
+Sensor 6 == False at Sat Feb 19 2022 21:52:54
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:54
+Signal 2 == False at Sat Feb 19 2022 21:52:54
+Signal 3 == False at Sat Feb 19 2022 21:52:54
+Signal 4 == False at Sat Feb 19 2022 21:52:54
+Signal 5 == False at Sat Feb 19 2022 21:52:54
+Signal 6 == True at Sat Feb 19 2022 21:52:54
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:54
+Point 2 == 0° at Sat Feb 19 2022 21:52:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:54
+Sensor 2 == False at Sat Feb 19 2022 21:52:54
+Sensor 3 == False at Sat Feb 19 2022 21:52:54
+Sensor 4 == False at Sat Feb 19 2022 21:52:54
+Sensor 5 == False at Sat Feb 19 2022 21:52:54
+Sensor 6 == False at Sat Feb 19 2022 21:52:54
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:54
+Signal 2 == False at Sat Feb 19 2022 21:52:54
+Signal 3 == False at Sat Feb 19 2022 21:52:54
+Signal 4 == False at Sat Feb 19 2022 21:52:54
+Signal 5 == False at Sat Feb 19 2022 21:52:54
+Signal 6 == True at Sat Feb 19 2022 21:52:54
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:54
+Point 2 == 0° at Sat Feb 19 2022 21:52:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:54
+Sensor 2 == False at Sat Feb 19 2022 21:52:54
+Sensor 3 == False at Sat Feb 19 2022 21:52:54
+Sensor 4 == False at Sat Feb 19 2022 21:52:54
+Sensor 5 == False at Sat Feb 19 2022 21:52:54
+Sensor 6 == False at Sat Feb 19 2022 21:52:54
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:54
+Signal 2 == False at Sat Feb 19 2022 21:52:54
+Signal 3 == False at Sat Feb 19 2022 21:52:54
+Signal 4 == False at Sat Feb 19 2022 21:52:54
+Signal 5 == False at Sat Feb 19 2022 21:52:54
+Signal 6 == True at Sat Feb 19 2022 21:52:54
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:54
+Point 2 == 0° at Sat Feb 19 2022 21:52:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:54
+Sensor 2 == False at Sat Feb 19 2022 21:52:54
+Sensor 3 == False at Sat Feb 19 2022 21:52:54
+Sensor 4 == False at Sat Feb 19 2022 21:52:54
+Sensor 5 == False at Sat Feb 19 2022 21:52:54
+Sensor 6 == False at Sat Feb 19 2022 21:52:54
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:54
+Signal 2 == False at Sat Feb 19 2022 21:52:54
+Signal 3 == False at Sat Feb 19 2022 21:52:54
+Signal 4 == False at Sat Feb 19 2022 21:52:54
+Signal 5 == False at Sat Feb 19 2022 21:52:54
+Signal 6 == True at Sat Feb 19 2022 21:52:54
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:54
+Point 2 == 0° at Sat Feb 19 2022 21:52:54
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:55
+Sensor 2 == False at Sat Feb 19 2022 21:52:55
+Sensor 3 == False at Sat Feb 19 2022 21:52:55
+Sensor 4 == False at Sat Feb 19 2022 21:52:55
+Sensor 5 == False at Sat Feb 19 2022 21:52:55
+Sensor 6 == False at Sat Feb 19 2022 21:52:55
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:52:55
+Signal 2 == False at Sat Feb 19 2022 21:52:55
+Signal 3 == False at Sat Feb 19 2022 21:52:55
+Signal 4 == False at Sat Feb 19 2022 21:52:55
+Signal 5 == False at Sat Feb 19 2022 21:52:55
+Signal 6 == True at Sat Feb 19 2022 21:52:55
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:52:55
+Point 2 == 0° at Sat Feb 19 2022 21:52:55
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:55
+Sensor 2 == False at Sat Feb 19 2022 21:52:55
+Sensor 3 == True at Sat Feb 19 2022 21:52:55
+Sensor 4 == True at Sat Feb 19 2022 21:52:55
+Sensor 5 == False at Sat Feb 19 2022 21:52:55
+Sensor 6 == False at Sat Feb 19 2022 21:52:55
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:55
+Signal 2 == True at Sat Feb 19 2022 21:52:55
+Signal 3 == False at Sat Feb 19 2022 21:52:55
+Signal 4 == True at Sat Feb 19 2022 21:52:55
+Signal 5 == False at Sat Feb 19 2022 21:52:55
+Signal 6 == False at Sat Feb 19 2022 21:52:55
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:55
+Point 2 == 30° at Sat Feb 19 2022 21:52:55
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:55
+Sensor 2 == False at Sat Feb 19 2022 21:52:55
+Sensor 3 == False at Sat Feb 19 2022 21:52:55
+Sensor 4 == False at Sat Feb 19 2022 21:52:55
+Sensor 5 == False at Sat Feb 19 2022 21:52:55
+Sensor 6 == False at Sat Feb 19 2022 21:52:55
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:55
+Signal 2 == True at Sat Feb 19 2022 21:52:55
+Signal 3 == False at Sat Feb 19 2022 21:52:55
+Signal 4 == True at Sat Feb 19 2022 21:52:55
+Signal 5 == False at Sat Feb 19 2022 21:52:55
+Signal 6 == False at Sat Feb 19 2022 21:52:55
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:55
+Point 2 == 30° at Sat Feb 19 2022 21:52:55
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:55
+Sensor 2 == False at Sat Feb 19 2022 21:52:55
+Sensor 3 == False at Sat Feb 19 2022 21:52:55
+Sensor 4 == False at Sat Feb 19 2022 21:52:55
+Sensor 5 == False at Sat Feb 19 2022 21:52:55
+Sensor 6 == False at Sat Feb 19 2022 21:52:55
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:55
+Signal 2 == True at Sat Feb 19 2022 21:52:55
+Signal 3 == False at Sat Feb 19 2022 21:52:55
+Signal 4 == True at Sat Feb 19 2022 21:52:55
+Signal 5 == False at Sat Feb 19 2022 21:52:55
+Signal 6 == False at Sat Feb 19 2022 21:52:55
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:55
+Point 2 == 30° at Sat Feb 19 2022 21:52:55
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:56
+Sensor 2 == False at Sat Feb 19 2022 21:52:56
+Sensor 3 == False at Sat Feb 19 2022 21:52:56
+Sensor 4 == False at Sat Feb 19 2022 21:52:56
+Sensor 5 == False at Sat Feb 19 2022 21:52:56
+Sensor 6 == False at Sat Feb 19 2022 21:52:56
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:56
+Signal 2 == True at Sat Feb 19 2022 21:52:56
+Signal 3 == False at Sat Feb 19 2022 21:52:56
+Signal 4 == True at Sat Feb 19 2022 21:52:56
+Signal 5 == False at Sat Feb 19 2022 21:52:56
+Signal 6 == False at Sat Feb 19 2022 21:52:56
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:56
+Point 2 == 30° at Sat Feb 19 2022 21:52:56
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:56
+Sensor 2 == False at Sat Feb 19 2022 21:52:56
+Sensor 3 == False at Sat Feb 19 2022 21:52:56
+Sensor 4 == False at Sat Feb 19 2022 21:52:56
+Sensor 5 == False at Sat Feb 19 2022 21:52:56
+Sensor 6 == False at Sat Feb 19 2022 21:52:56
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:56
+Signal 2 == True at Sat Feb 19 2022 21:52:56
+Signal 3 == False at Sat Feb 19 2022 21:52:56
+Signal 4 == True at Sat Feb 19 2022 21:52:56
+Signal 5 == False at Sat Feb 19 2022 21:52:56
+Signal 6 == False at Sat Feb 19 2022 21:52:56
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:56
+Point 2 == 30° at Sat Feb 19 2022 21:52:56
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:56
+Sensor 2 == False at Sat Feb 19 2022 21:52:56
+Sensor 3 == False at Sat Feb 19 2022 21:52:56
+Sensor 4 == False at Sat Feb 19 2022 21:52:56
+Sensor 5 == False at Sat Feb 19 2022 21:52:56
+Sensor 6 == False at Sat Feb 19 2022 21:52:56
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:56
+Signal 2 == True at Sat Feb 19 2022 21:52:56
+Signal 3 == False at Sat Feb 19 2022 21:52:56
+Signal 4 == True at Sat Feb 19 2022 21:52:56
+Signal 5 == False at Sat Feb 19 2022 21:52:56
+Signal 6 == False at Sat Feb 19 2022 21:52:56
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:56
+Point 2 == 30° at Sat Feb 19 2022 21:52:56
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:56
+Sensor 2 == False at Sat Feb 19 2022 21:52:56
+Sensor 3 == False at Sat Feb 19 2022 21:52:56
+Sensor 4 == False at Sat Feb 19 2022 21:52:56
+Sensor 5 == False at Sat Feb 19 2022 21:52:56
+Sensor 6 == False at Sat Feb 19 2022 21:52:56
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:56
+Signal 2 == True at Sat Feb 19 2022 21:52:56
+Signal 3 == False at Sat Feb 19 2022 21:52:56
+Signal 4 == True at Sat Feb 19 2022 21:52:56
+Signal 5 == False at Sat Feb 19 2022 21:52:56
+Signal 6 == False at Sat Feb 19 2022 21:52:56
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:56
+Point 2 == 30° at Sat Feb 19 2022 21:52:56
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:57
+Sensor 2 == False at Sat Feb 19 2022 21:52:57
+Sensor 3 == False at Sat Feb 19 2022 21:52:57
+Sensor 4 == False at Sat Feb 19 2022 21:52:57
+Sensor 5 == False at Sat Feb 19 2022 21:52:57
+Sensor 6 == False at Sat Feb 19 2022 21:52:57
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:57
+Signal 2 == True at Sat Feb 19 2022 21:52:57
+Signal 3 == False at Sat Feb 19 2022 21:52:57
+Signal 4 == True at Sat Feb 19 2022 21:52:57
+Signal 5 == False at Sat Feb 19 2022 21:52:57
+Signal 6 == False at Sat Feb 19 2022 21:52:57
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:57
+Point 2 == 30° at Sat Feb 19 2022 21:52:57
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:57
+Sensor 2 == False at Sat Feb 19 2022 21:52:57
+Sensor 3 == False at Sat Feb 19 2022 21:52:57
+Sensor 4 == False at Sat Feb 19 2022 21:52:57
+Sensor 5 == False at Sat Feb 19 2022 21:52:57
+Sensor 6 == False at Sat Feb 19 2022 21:52:57
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:57
+Signal 2 == True at Sat Feb 19 2022 21:52:57
+Signal 3 == False at Sat Feb 19 2022 21:52:57
+Signal 4 == True at Sat Feb 19 2022 21:52:57
+Signal 5 == False at Sat Feb 19 2022 21:52:57
+Signal 6 == False at Sat Feb 19 2022 21:52:57
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:57
+Point 2 == 30° at Sat Feb 19 2022 21:52:57
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:57
+Sensor 2 == False at Sat Feb 19 2022 21:52:57
+Sensor 3 == False at Sat Feb 19 2022 21:52:57
+Sensor 4 == False at Sat Feb 19 2022 21:52:57
+Sensor 5 == False at Sat Feb 19 2022 21:52:57
+Sensor 6 == False at Sat Feb 19 2022 21:52:57
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:57
+Signal 2 == True at Sat Feb 19 2022 21:52:57
+Signal 3 == False at Sat Feb 19 2022 21:52:57
+Signal 4 == True at Sat Feb 19 2022 21:52:57
+Signal 5 == False at Sat Feb 19 2022 21:52:57
+Signal 6 == False at Sat Feb 19 2022 21:52:57
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:57
+Point 2 == 30° at Sat Feb 19 2022 21:52:57
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:57
+Sensor 2 == False at Sat Feb 19 2022 21:52:57
+Sensor 3 == False at Sat Feb 19 2022 21:52:57
+Sensor 4 == False at Sat Feb 19 2022 21:52:57
+Sensor 5 == False at Sat Feb 19 2022 21:52:57
+Sensor 6 == False at Sat Feb 19 2022 21:52:57
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:57
+Signal 2 == True at Sat Feb 19 2022 21:52:57
+Signal 3 == False at Sat Feb 19 2022 21:52:57
+Signal 4 == True at Sat Feb 19 2022 21:52:57
+Signal 5 == False at Sat Feb 19 2022 21:52:57
+Signal 6 == False at Sat Feb 19 2022 21:52:57
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:57
+Point 2 == 30° at Sat Feb 19 2022 21:52:57
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:58
+Sensor 2 == False at Sat Feb 19 2022 21:52:58
+Sensor 3 == False at Sat Feb 19 2022 21:52:58
+Sensor 4 == False at Sat Feb 19 2022 21:52:58
+Sensor 5 == False at Sat Feb 19 2022 21:52:58
+Sensor 6 == False at Sat Feb 19 2022 21:52:58
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:58
+Signal 2 == True at Sat Feb 19 2022 21:52:58
+Signal 3 == False at Sat Feb 19 2022 21:52:58
+Signal 4 == True at Sat Feb 19 2022 21:52:58
+Signal 5 == False at Sat Feb 19 2022 21:52:58
+Signal 6 == False at Sat Feb 19 2022 21:52:58
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:58
+Point 2 == 30° at Sat Feb 19 2022 21:52:58
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:58
+Sensor 2 == False at Sat Feb 19 2022 21:52:58
+Sensor 3 == False at Sat Feb 19 2022 21:52:58
+Sensor 4 == False at Sat Feb 19 2022 21:52:58
+Sensor 5 == False at Sat Feb 19 2022 21:52:58
+Sensor 6 == False at Sat Feb 19 2022 21:52:58
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:58
+Signal 2 == True at Sat Feb 19 2022 21:52:58
+Signal 3 == False at Sat Feb 19 2022 21:52:58
+Signal 4 == True at Sat Feb 19 2022 21:52:58
+Signal 5 == False at Sat Feb 19 2022 21:52:58
+Signal 6 == False at Sat Feb 19 2022 21:52:58
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:58
+Point 2 == 30° at Sat Feb 19 2022 21:52:58
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:58
+Sensor 2 == True at Sat Feb 19 2022 21:52:58
+Sensor 3 == False at Sat Feb 19 2022 21:52:58
+Sensor 4 == False at Sat Feb 19 2022 21:52:58
+Sensor 5 == True at Sat Feb 19 2022 21:52:58
+Sensor 6 == False at Sat Feb 19 2022 21:52:58
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:58
+Signal 2 == True at Sat Feb 19 2022 21:52:58
+Signal 3 == False at Sat Feb 19 2022 21:52:58
+Signal 4 == True at Sat Feb 19 2022 21:52:58
+Signal 5 == False at Sat Feb 19 2022 21:52:58
+Signal 6 == False at Sat Feb 19 2022 21:52:58
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:58
+Point 2 == 30° at Sat Feb 19 2022 21:52:58
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:58
+Sensor 2 == False at Sat Feb 19 2022 21:52:58
+Sensor 3 == False at Sat Feb 19 2022 21:52:58
+Sensor 4 == False at Sat Feb 19 2022 21:52:58
+Sensor 5 == False at Sat Feb 19 2022 21:52:58
+Sensor 6 == False at Sat Feb 19 2022 21:52:58
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:58
+Signal 2 == True at Sat Feb 19 2022 21:52:58
+Signal 3 == False at Sat Feb 19 2022 21:52:58
+Signal 4 == True at Sat Feb 19 2022 21:52:58
+Signal 5 == False at Sat Feb 19 2022 21:52:58
+Signal 6 == False at Sat Feb 19 2022 21:52:58
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:58
+Point 2 == 30° at Sat Feb 19 2022 21:52:58
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:59
+Sensor 2 == False at Sat Feb 19 2022 21:52:59
+Sensor 3 == False at Sat Feb 19 2022 21:52:59
+Sensor 4 == False at Sat Feb 19 2022 21:52:59
+Sensor 5 == False at Sat Feb 19 2022 21:52:59
+Sensor 6 == False at Sat Feb 19 2022 21:52:59
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:59
+Signal 2 == True at Sat Feb 19 2022 21:52:59
+Signal 3 == False at Sat Feb 19 2022 21:52:59
+Signal 4 == True at Sat Feb 19 2022 21:52:59
+Signal 5 == False at Sat Feb 19 2022 21:52:59
+Signal 6 == False at Sat Feb 19 2022 21:52:59
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:59
+Point 2 == 30° at Sat Feb 19 2022 21:52:59
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:59
+Sensor 2 == False at Sat Feb 19 2022 21:52:59
+Sensor 3 == False at Sat Feb 19 2022 21:52:59
+Sensor 4 == False at Sat Feb 19 2022 21:52:59
+Sensor 5 == False at Sat Feb 19 2022 21:52:59
+Sensor 6 == False at Sat Feb 19 2022 21:52:59
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:59
+Signal 2 == True at Sat Feb 19 2022 21:52:59
+Signal 3 == False at Sat Feb 19 2022 21:52:59
+Signal 4 == True at Sat Feb 19 2022 21:52:59
+Signal 5 == False at Sat Feb 19 2022 21:52:59
+Signal 6 == False at Sat Feb 19 2022 21:52:59
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:59
+Point 2 == 30° at Sat Feb 19 2022 21:52:59
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:59
+Sensor 2 == False at Sat Feb 19 2022 21:52:59
+Sensor 3 == False at Sat Feb 19 2022 21:52:59
+Sensor 4 == False at Sat Feb 19 2022 21:52:59
+Sensor 5 == False at Sat Feb 19 2022 21:52:59
+Sensor 6 == False at Sat Feb 19 2022 21:52:59
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:59
+Signal 2 == True at Sat Feb 19 2022 21:52:59
+Signal 3 == False at Sat Feb 19 2022 21:52:59
+Signal 4 == True at Sat Feb 19 2022 21:52:59
+Signal 5 == False at Sat Feb 19 2022 21:52:59
+Signal 6 == False at Sat Feb 19 2022 21:52:59
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:59
+Point 2 == 30° at Sat Feb 19 2022 21:52:59
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:52:59
+Sensor 2 == False at Sat Feb 19 2022 21:52:59
+Sensor 3 == False at Sat Feb 19 2022 21:52:59
+Sensor 4 == False at Sat Feb 19 2022 21:52:59
+Sensor 5 == False at Sat Feb 19 2022 21:52:59
+Sensor 6 == False at Sat Feb 19 2022 21:52:59
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:52:59
+Signal 2 == True at Sat Feb 19 2022 21:52:59
+Signal 3 == False at Sat Feb 19 2022 21:52:59
+Signal 4 == True at Sat Feb 19 2022 21:52:59
+Signal 5 == False at Sat Feb 19 2022 21:52:59
+Signal 6 == False at Sat Feb 19 2022 21:52:59
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:52:59
+Point 2 == 30° at Sat Feb 19 2022 21:52:59
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:00
+Sensor 2 == False at Sat Feb 19 2022 21:53:00
+Sensor 3 == False at Sat Feb 19 2022 21:53:00
+Sensor 4 == False at Sat Feb 19 2022 21:53:00
+Sensor 5 == False at Sat Feb 19 2022 21:53:00
+Sensor 6 == True at Sat Feb 19 2022 21:53:00
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:00
+Signal 2 == False at Sat Feb 19 2022 21:53:00
+Signal 3 == False at Sat Feb 19 2022 21:53:00
+Signal 4 == False at Sat Feb 19 2022 21:53:00
+Signal 5 == False at Sat Feb 19 2022 21:53:00
+Signal 6 == True at Sat Feb 19 2022 21:53:00
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:00
+Point 2 == 0° at Sat Feb 19 2022 21:53:00
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:00
+Sensor 2 == False at Sat Feb 19 2022 21:53:00
+Sensor 3 == False at Sat Feb 19 2022 21:53:00
+Sensor 4 == False at Sat Feb 19 2022 21:53:00
+Sensor 5 == False at Sat Feb 19 2022 21:53:00
+Sensor 6 == False at Sat Feb 19 2022 21:53:00
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:00
+Signal 2 == False at Sat Feb 19 2022 21:53:00
+Signal 3 == False at Sat Feb 19 2022 21:53:00
+Signal 4 == False at Sat Feb 19 2022 21:53:00
+Signal 5 == False at Sat Feb 19 2022 21:53:00
+Signal 6 == True at Sat Feb 19 2022 21:53:00
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:00
+Point 2 == 0° at Sat Feb 19 2022 21:53:00
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:00
+Sensor 2 == False at Sat Feb 19 2022 21:53:00
+Sensor 3 == False at Sat Feb 19 2022 21:53:00
+Sensor 4 == False at Sat Feb 19 2022 21:53:00
+Sensor 5 == False at Sat Feb 19 2022 21:53:00
+Sensor 6 == False at Sat Feb 19 2022 21:53:00
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:00
+Signal 2 == False at Sat Feb 19 2022 21:53:00
+Signal 3 == False at Sat Feb 19 2022 21:53:00
+Signal 4 == False at Sat Feb 19 2022 21:53:00
+Signal 5 == False at Sat Feb 19 2022 21:53:00
+Signal 6 == True at Sat Feb 19 2022 21:53:00
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:00
+Point 2 == 0° at Sat Feb 19 2022 21:53:00
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:00
+Sensor 2 == False at Sat Feb 19 2022 21:53:00
+Sensor 3 == False at Sat Feb 19 2022 21:53:00
+Sensor 4 == False at Sat Feb 19 2022 21:53:00
+Sensor 5 == False at Sat Feb 19 2022 21:53:00
+Sensor 6 == False at Sat Feb 19 2022 21:53:00
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:00
+Signal 2 == False at Sat Feb 19 2022 21:53:00
+Signal 3 == False at Sat Feb 19 2022 21:53:00
+Signal 4 == False at Sat Feb 19 2022 21:53:00
+Signal 5 == False at Sat Feb 19 2022 21:53:00
+Signal 6 == True at Sat Feb 19 2022 21:53:00
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:00
+Point 2 == 0° at Sat Feb 19 2022 21:53:00
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:01
+Sensor 2 == False at Sat Feb 19 2022 21:53:01
+Sensor 3 == False at Sat Feb 19 2022 21:53:01
+Sensor 4 == False at Sat Feb 19 2022 21:53:01
+Sensor 5 == False at Sat Feb 19 2022 21:53:01
+Sensor 6 == True at Sat Feb 19 2022 21:53:01
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:01
+Signal 2 == False at Sat Feb 19 2022 21:53:01
+Signal 3 == False at Sat Feb 19 2022 21:53:01
+Signal 4 == False at Sat Feb 19 2022 21:53:01
+Signal 5 == False at Sat Feb 19 2022 21:53:01
+Signal 6 == True at Sat Feb 19 2022 21:53:01
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:01
+Point 2 == 0° at Sat Feb 19 2022 21:53:01
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:01
+Sensor 2 == False at Sat Feb 19 2022 21:53:01
+Sensor 3 == False at Sat Feb 19 2022 21:53:01
+Sensor 4 == False at Sat Feb 19 2022 21:53:01
+Sensor 5 == False at Sat Feb 19 2022 21:53:01
+Sensor 6 == False at Sat Feb 19 2022 21:53:01
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:01
+Signal 2 == False at Sat Feb 19 2022 21:53:01
+Signal 3 == False at Sat Feb 19 2022 21:53:01
+Signal 4 == False at Sat Feb 19 2022 21:53:01
+Signal 5 == False at Sat Feb 19 2022 21:53:01
+Signal 6 == True at Sat Feb 19 2022 21:53:01
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:01
+Point 2 == 0° at Sat Feb 19 2022 21:53:01
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:01
+Sensor 2 == False at Sat Feb 19 2022 21:53:01
+Sensor 3 == False at Sat Feb 19 2022 21:53:01
+Sensor 4 == False at Sat Feb 19 2022 21:53:01
+Sensor 5 == False at Sat Feb 19 2022 21:53:01
+Sensor 6 == False at Sat Feb 19 2022 21:53:01
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:01
+Signal 2 == False at Sat Feb 19 2022 21:53:01
+Signal 3 == False at Sat Feb 19 2022 21:53:01
+Signal 4 == False at Sat Feb 19 2022 21:53:01
+Signal 5 == False at Sat Feb 19 2022 21:53:01
+Signal 6 == True at Sat Feb 19 2022 21:53:01
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:01
+Point 2 == 0° at Sat Feb 19 2022 21:53:01
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:01
+Sensor 2 == False at Sat Feb 19 2022 21:53:01
+Sensor 3 == False at Sat Feb 19 2022 21:53:01
+Sensor 4 == False at Sat Feb 19 2022 21:53:01
+Sensor 5 == False at Sat Feb 19 2022 21:53:01
+Sensor 6 == False at Sat Feb 19 2022 21:53:01
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:01
+Signal 2 == False at Sat Feb 19 2022 21:53:01
+Signal 3 == False at Sat Feb 19 2022 21:53:01
+Signal 4 == False at Sat Feb 19 2022 21:53:01
+Signal 5 == False at Sat Feb 19 2022 21:53:01
+Signal 6 == True at Sat Feb 19 2022 21:53:01
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:01
+Point 2 == 0° at Sat Feb 19 2022 21:53:01
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:02
+Sensor 2 == False at Sat Feb 19 2022 21:53:02
+Sensor 3 == False at Sat Feb 19 2022 21:53:02
+Sensor 4 == False at Sat Feb 19 2022 21:53:02
+Sensor 5 == False at Sat Feb 19 2022 21:53:02
+Sensor 6 == False at Sat Feb 19 2022 21:53:02
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:02
+Signal 2 == False at Sat Feb 19 2022 21:53:02
+Signal 3 == False at Sat Feb 19 2022 21:53:02
+Signal 4 == False at Sat Feb 19 2022 21:53:02
+Signal 5 == False at Sat Feb 19 2022 21:53:02
+Signal 6 == True at Sat Feb 19 2022 21:53:02
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:02
+Point 2 == 0° at Sat Feb 19 2022 21:53:02
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:02
+Sensor 2 == False at Sat Feb 19 2022 21:53:02
+Sensor 3 == False at Sat Feb 19 2022 21:53:02
+Sensor 4 == False at Sat Feb 19 2022 21:53:02
+Sensor 5 == False at Sat Feb 19 2022 21:53:02
+Sensor 6 == False at Sat Feb 19 2022 21:53:02
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:02
+Signal 2 == False at Sat Feb 19 2022 21:53:02
+Signal 3 == False at Sat Feb 19 2022 21:53:02
+Signal 4 == False at Sat Feb 19 2022 21:53:02
+Signal 5 == False at Sat Feb 19 2022 21:53:02
+Signal 6 == True at Sat Feb 19 2022 21:53:02
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:02
+Point 2 == 0° at Sat Feb 19 2022 21:53:02
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:02
+Sensor 2 == False at Sat Feb 19 2022 21:53:02
+Sensor 3 == True at Sat Feb 19 2022 21:53:02
+Sensor 4 == True at Sat Feb 19 2022 21:53:02
+Sensor 5 == False at Sat Feb 19 2022 21:53:02
+Sensor 6 == False at Sat Feb 19 2022 21:53:02
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:02
+Signal 2 == True at Sat Feb 19 2022 21:53:02
+Signal 3 == False at Sat Feb 19 2022 21:53:02
+Signal 4 == True at Sat Feb 19 2022 21:53:02
+Signal 5 == False at Sat Feb 19 2022 21:53:02
+Signal 6 == False at Sat Feb 19 2022 21:53:02
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:02
+Point 2 == 30° at Sat Feb 19 2022 21:53:02
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:02
+Sensor 2 == False at Sat Feb 19 2022 21:53:02
+Sensor 3 == False at Sat Feb 19 2022 21:53:02
+Sensor 4 == False at Sat Feb 19 2022 21:53:02
+Sensor 5 == False at Sat Feb 19 2022 21:53:02
+Sensor 6 == False at Sat Feb 19 2022 21:53:02
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:02
+Signal 2 == True at Sat Feb 19 2022 21:53:02
+Signal 3 == False at Sat Feb 19 2022 21:53:02
+Signal 4 == True at Sat Feb 19 2022 21:53:02
+Signal 5 == False at Sat Feb 19 2022 21:53:02
+Signal 6 == False at Sat Feb 19 2022 21:53:02
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:02
+Point 2 == 30° at Sat Feb 19 2022 21:53:02
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:03
+Sensor 2 == False at Sat Feb 19 2022 21:53:03
+Sensor 3 == False at Sat Feb 19 2022 21:53:03
+Sensor 4 == False at Sat Feb 19 2022 21:53:03
+Sensor 5 == False at Sat Feb 19 2022 21:53:03
+Sensor 6 == False at Sat Feb 19 2022 21:53:03
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:03
+Signal 2 == True at Sat Feb 19 2022 21:53:03
+Signal 3 == False at Sat Feb 19 2022 21:53:03
+Signal 4 == True at Sat Feb 19 2022 21:53:03
+Signal 5 == False at Sat Feb 19 2022 21:53:03
+Signal 6 == False at Sat Feb 19 2022 21:53:03
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:03
+Point 2 == 30° at Sat Feb 19 2022 21:53:03
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:03
+Sensor 2 == False at Sat Feb 19 2022 21:53:03
+Sensor 3 == False at Sat Feb 19 2022 21:53:03
+Sensor 4 == False at Sat Feb 19 2022 21:53:03
+Sensor 5 == False at Sat Feb 19 2022 21:53:03
+Sensor 6 == False at Sat Feb 19 2022 21:53:03
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:03
+Signal 2 == True at Sat Feb 19 2022 21:53:03
+Signal 3 == False at Sat Feb 19 2022 21:53:03
+Signal 4 == True at Sat Feb 19 2022 21:53:03
+Signal 5 == False at Sat Feb 19 2022 21:53:03
+Signal 6 == False at Sat Feb 19 2022 21:53:03
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:03
+Point 2 == 30° at Sat Feb 19 2022 21:53:03
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:03
+Sensor 2 == False at Sat Feb 19 2022 21:53:03
+Sensor 3 == False at Sat Feb 19 2022 21:53:03
+Sensor 4 == False at Sat Feb 19 2022 21:53:03
+Sensor 5 == False at Sat Feb 19 2022 21:53:03
+Sensor 6 == False at Sat Feb 19 2022 21:53:03
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:03
+Signal 2 == True at Sat Feb 19 2022 21:53:03
+Signal 3 == False at Sat Feb 19 2022 21:53:03
+Signal 4 == True at Sat Feb 19 2022 21:53:03
+Signal 5 == False at Sat Feb 19 2022 21:53:03
+Signal 6 == False at Sat Feb 19 2022 21:53:03
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:03
+Point 2 == 30° at Sat Feb 19 2022 21:53:03
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:03
+Sensor 2 == False at Sat Feb 19 2022 21:53:03
+Sensor 3 == False at Sat Feb 19 2022 21:53:03
+Sensor 4 == False at Sat Feb 19 2022 21:53:03
+Sensor 5 == False at Sat Feb 19 2022 21:53:03
+Sensor 6 == False at Sat Feb 19 2022 21:53:03
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:03
+Signal 2 == True at Sat Feb 19 2022 21:53:03
+Signal 3 == False at Sat Feb 19 2022 21:53:03
+Signal 4 == True at Sat Feb 19 2022 21:53:03
+Signal 5 == False at Sat Feb 19 2022 21:53:03
+Signal 6 == False at Sat Feb 19 2022 21:53:03
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:03
+Point 2 == 30° at Sat Feb 19 2022 21:53:03
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:04
+Sensor 2 == False at Sat Feb 19 2022 21:53:04
+Sensor 3 == False at Sat Feb 19 2022 21:53:04
+Sensor 4 == False at Sat Feb 19 2022 21:53:04
+Sensor 5 == False at Sat Feb 19 2022 21:53:04
+Sensor 6 == False at Sat Feb 19 2022 21:53:04
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:04
+Signal 2 == True at Sat Feb 19 2022 21:53:04
+Signal 3 == False at Sat Feb 19 2022 21:53:04
+Signal 4 == True at Sat Feb 19 2022 21:53:04
+Signal 5 == False at Sat Feb 19 2022 21:53:04
+Signal 6 == False at Sat Feb 19 2022 21:53:04
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:04
+Point 2 == 30° at Sat Feb 19 2022 21:53:04
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:04
+Sensor 2 == False at Sat Feb 19 2022 21:53:04
+Sensor 3 == False at Sat Feb 19 2022 21:53:04
+Sensor 4 == False at Sat Feb 19 2022 21:53:04
+Sensor 5 == False at Sat Feb 19 2022 21:53:04
+Sensor 6 == False at Sat Feb 19 2022 21:53:04
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:04
+Signal 2 == True at Sat Feb 19 2022 21:53:04
+Signal 3 == False at Sat Feb 19 2022 21:53:04
+Signal 4 == True at Sat Feb 19 2022 21:53:04
+Signal 5 == False at Sat Feb 19 2022 21:53:04
+Signal 6 == False at Sat Feb 19 2022 21:53:04
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:04
+Point 2 == 30° at Sat Feb 19 2022 21:53:04
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:04
+Sensor 2 == False at Sat Feb 19 2022 21:53:04
+Sensor 3 == False at Sat Feb 19 2022 21:53:04
+Sensor 4 == False at Sat Feb 19 2022 21:53:04
+Sensor 5 == False at Sat Feb 19 2022 21:53:04
+Sensor 6 == False at Sat Feb 19 2022 21:53:04
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:04
+Signal 2 == True at Sat Feb 19 2022 21:53:04
+Signal 3 == False at Sat Feb 19 2022 21:53:04
+Signal 4 == True at Sat Feb 19 2022 21:53:04
+Signal 5 == False at Sat Feb 19 2022 21:53:04
+Signal 6 == False at Sat Feb 19 2022 21:53:04
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:04
+Point 2 == 30° at Sat Feb 19 2022 21:53:04
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:11
+Sensor 2 == False at Sat Feb 19 2022 21:53:11
+Sensor 3 == False at Sat Feb 19 2022 21:53:11
+Sensor 4 == False at Sat Feb 19 2022 21:53:11
+Sensor 5 == False at Sat Feb 19 2022 21:53:11
+Sensor 6 == False at Sat Feb 19 2022 21:53:11
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:11
+Signal 2 == False at Sat Feb 19 2022 21:53:11
+Signal 3 == False at Sat Feb 19 2022 21:53:11
+Signal 4 == False at Sat Feb 19 2022 21:53:11
+Signal 5 == False at Sat Feb 19 2022 21:53:11
+Signal 6 == False at Sat Feb 19 2022 21:53:11
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:11
+Point 2 == 0° at Sat Feb 19 2022 21:53:11
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:11
+Sensor 2 == False at Sat Feb 19 2022 21:53:11
+Sensor 3 == False at Sat Feb 19 2022 21:53:11
+Sensor 4 == False at Sat Feb 19 2022 21:53:11
+Sensor 5 == False at Sat Feb 19 2022 21:53:11
+Sensor 6 == False at Sat Feb 19 2022 21:53:11
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:11
+Signal 2 == False at Sat Feb 19 2022 21:53:11
+Signal 3 == False at Sat Feb 19 2022 21:53:11
+Signal 4 == False at Sat Feb 19 2022 21:53:11
+Signal 5 == False at Sat Feb 19 2022 21:53:11
+Signal 6 == False at Sat Feb 19 2022 21:53:11
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:11
+Point 2 == 0° at Sat Feb 19 2022 21:53:11
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:11
+Sensor 2 == False at Sat Feb 19 2022 21:53:11
+Sensor 3 == False at Sat Feb 19 2022 21:53:11
+Sensor 4 == False at Sat Feb 19 2022 21:53:11
+Sensor 5 == False at Sat Feb 19 2022 21:53:11
+Sensor 6 == False at Sat Feb 19 2022 21:53:11
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:11
+Signal 2 == False at Sat Feb 19 2022 21:53:11
+Signal 3 == False at Sat Feb 19 2022 21:53:11
+Signal 4 == False at Sat Feb 19 2022 21:53:11
+Signal 5 == False at Sat Feb 19 2022 21:53:11
+Signal 6 == False at Sat Feb 19 2022 21:53:11
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:11
+Point 2 == 0° at Sat Feb 19 2022 21:53:11
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:11
+Sensor 2 == False at Sat Feb 19 2022 21:53:11
+Sensor 3 == False at Sat Feb 19 2022 21:53:11
+Sensor 4 == False at Sat Feb 19 2022 21:53:11
+Sensor 5 == False at Sat Feb 19 2022 21:53:11
+Sensor 6 == False at Sat Feb 19 2022 21:53:11
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:11
+Signal 2 == False at Sat Feb 19 2022 21:53:11
+Signal 3 == False at Sat Feb 19 2022 21:53:11
+Signal 4 == False at Sat Feb 19 2022 21:53:11
+Signal 5 == False at Sat Feb 19 2022 21:53:11
+Signal 6 == False at Sat Feb 19 2022 21:53:11
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:11
+Point 2 == 0° at Sat Feb 19 2022 21:53:11
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:12
+Sensor 2 == True at Sat Feb 19 2022 21:53:12
+Sensor 3 == False at Sat Feb 19 2022 21:53:12
+Sensor 4 == False at Sat Feb 19 2022 21:53:12
+Sensor 5 == True at Sat Feb 19 2022 21:53:12
+Sensor 6 == False at Sat Feb 19 2022 21:53:12
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:12
+Signal 2 == False at Sat Feb 19 2022 21:53:12
+Signal 3 == False at Sat Feb 19 2022 21:53:12
+Signal 4 == False at Sat Feb 19 2022 21:53:12
+Signal 5 == False at Sat Feb 19 2022 21:53:12
+Signal 6 == False at Sat Feb 19 2022 21:53:12
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:12
+Point 2 == 30° at Sat Feb 19 2022 21:53:12
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:12
+Sensor 2 == False at Sat Feb 19 2022 21:53:12
+Sensor 3 == False at Sat Feb 19 2022 21:53:12
+Sensor 4 == False at Sat Feb 19 2022 21:53:12
+Sensor 5 == False at Sat Feb 19 2022 21:53:12
+Sensor 6 == False at Sat Feb 19 2022 21:53:12
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:12
+Signal 2 == False at Sat Feb 19 2022 21:53:12
+Signal 3 == False at Sat Feb 19 2022 21:53:12
+Signal 4 == False at Sat Feb 19 2022 21:53:12
+Signal 5 == False at Sat Feb 19 2022 21:53:12
+Signal 6 == False at Sat Feb 19 2022 21:53:12
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:12
+Point 2 == 30° at Sat Feb 19 2022 21:53:12
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:12
+Sensor 2 == False at Sat Feb 19 2022 21:53:12
+Sensor 3 == False at Sat Feb 19 2022 21:53:12
+Sensor 4 == False at Sat Feb 19 2022 21:53:12
+Sensor 5 == False at Sat Feb 19 2022 21:53:12
+Sensor 6 == False at Sat Feb 19 2022 21:53:12
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:12
+Signal 2 == False at Sat Feb 19 2022 21:53:12
+Signal 3 == False at Sat Feb 19 2022 21:53:12
+Signal 4 == False at Sat Feb 19 2022 21:53:12
+Signal 5 == False at Sat Feb 19 2022 21:53:12
+Signal 6 == False at Sat Feb 19 2022 21:53:12
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:12
+Point 2 == 30° at Sat Feb 19 2022 21:53:12
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:12
+Sensor 2 == False at Sat Feb 19 2022 21:53:12
+Sensor 3 == False at Sat Feb 19 2022 21:53:12
+Sensor 4 == False at Sat Feb 19 2022 21:53:12
+Sensor 5 == False at Sat Feb 19 2022 21:53:12
+Sensor 6 == False at Sat Feb 19 2022 21:53:12
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:12
+Signal 2 == False at Sat Feb 19 2022 21:53:12
+Signal 3 == False at Sat Feb 19 2022 21:53:12
+Signal 4 == False at Sat Feb 19 2022 21:53:12
+Signal 5 == False at Sat Feb 19 2022 21:53:12
+Signal 6 == False at Sat Feb 19 2022 21:53:12
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:12
+Point 2 == 30° at Sat Feb 19 2022 21:53:12
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:13
+Sensor 2 == False at Sat Feb 19 2022 21:53:13
+Sensor 3 == False at Sat Feb 19 2022 21:53:13
+Sensor 4 == False at Sat Feb 19 2022 21:53:13
+Sensor 5 == False at Sat Feb 19 2022 21:53:13
+Sensor 6 == False at Sat Feb 19 2022 21:53:13
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:13
+Signal 2 == False at Sat Feb 19 2022 21:53:13
+Signal 3 == False at Sat Feb 19 2022 21:53:13
+Signal 4 == False at Sat Feb 19 2022 21:53:13
+Signal 5 == False at Sat Feb 19 2022 21:53:13
+Signal 6 == False at Sat Feb 19 2022 21:53:13
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:13
+Point 2 == 30° at Sat Feb 19 2022 21:53:13
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:13
+Sensor 2 == False at Sat Feb 19 2022 21:53:13
+Sensor 3 == False at Sat Feb 19 2022 21:53:13
+Sensor 4 == False at Sat Feb 19 2022 21:53:13
+Sensor 5 == False at Sat Feb 19 2022 21:53:13
+Sensor 6 == False at Sat Feb 19 2022 21:53:13
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:13
+Signal 2 == False at Sat Feb 19 2022 21:53:13
+Signal 3 == False at Sat Feb 19 2022 21:53:13
+Signal 4 == False at Sat Feb 19 2022 21:53:13
+Signal 5 == False at Sat Feb 19 2022 21:53:13
+Signal 6 == False at Sat Feb 19 2022 21:53:13
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:13
+Point 2 == 30° at Sat Feb 19 2022 21:53:13
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:13
+Sensor 2 == False at Sat Feb 19 2022 21:53:13
+Sensor 3 == False at Sat Feb 19 2022 21:53:13
+Sensor 4 == False at Sat Feb 19 2022 21:53:13
+Sensor 5 == False at Sat Feb 19 2022 21:53:13
+Sensor 6 == True at Sat Feb 19 2022 21:53:13
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:13
+Signal 2 == False at Sat Feb 19 2022 21:53:13
+Signal 3 == False at Sat Feb 19 2022 21:53:13
+Signal 4 == False at Sat Feb 19 2022 21:53:13
+Signal 5 == False at Sat Feb 19 2022 21:53:13
+Signal 6 == True at Sat Feb 19 2022 21:53:13
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:13
+Point 2 == 0° at Sat Feb 19 2022 21:53:13
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:13
+Sensor 2 == False at Sat Feb 19 2022 21:53:13
+Sensor 3 == False at Sat Feb 19 2022 21:53:13
+Sensor 4 == False at Sat Feb 19 2022 21:53:13
+Sensor 5 == False at Sat Feb 19 2022 21:53:13
+Sensor 6 == False at Sat Feb 19 2022 21:53:13
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:13
+Signal 2 == False at Sat Feb 19 2022 21:53:13
+Signal 3 == False at Sat Feb 19 2022 21:53:13
+Signal 4 == False at Sat Feb 19 2022 21:53:13
+Signal 5 == False at Sat Feb 19 2022 21:53:13
+Signal 6 == True at Sat Feb 19 2022 21:53:13
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:13
+Point 2 == 0° at Sat Feb 19 2022 21:53:13
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:14
+Sensor 2 == False at Sat Feb 19 2022 21:53:14
+Sensor 3 == False at Sat Feb 19 2022 21:53:14
+Sensor 4 == False at Sat Feb 19 2022 21:53:14
+Sensor 5 == False at Sat Feb 19 2022 21:53:14
+Sensor 6 == False at Sat Feb 19 2022 21:53:14
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:14
+Signal 2 == False at Sat Feb 19 2022 21:53:14
+Signal 3 == False at Sat Feb 19 2022 21:53:14
+Signal 4 == False at Sat Feb 19 2022 21:53:14
+Signal 5 == False at Sat Feb 19 2022 21:53:14
+Signal 6 == True at Sat Feb 19 2022 21:53:14
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:14
+Point 2 == 0° at Sat Feb 19 2022 21:53:14
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:14
+Sensor 2 == False at Sat Feb 19 2022 21:53:14
+Sensor 3 == False at Sat Feb 19 2022 21:53:14
+Sensor 4 == False at Sat Feb 19 2022 21:53:14
+Sensor 5 == False at Sat Feb 19 2022 21:53:14
+Sensor 6 == False at Sat Feb 19 2022 21:53:14
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:14
+Signal 2 == False at Sat Feb 19 2022 21:53:14
+Signal 3 == False at Sat Feb 19 2022 21:53:14
+Signal 4 == False at Sat Feb 19 2022 21:53:14
+Signal 5 == False at Sat Feb 19 2022 21:53:14
+Signal 6 == True at Sat Feb 19 2022 21:53:14
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:14
+Point 2 == 0° at Sat Feb 19 2022 21:53:14
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:14
+Sensor 2 == False at Sat Feb 19 2022 21:53:14
+Sensor 3 == False at Sat Feb 19 2022 21:53:14
+Sensor 4 == False at Sat Feb 19 2022 21:53:14
+Sensor 5 == False at Sat Feb 19 2022 21:53:14
+Sensor 6 == True at Sat Feb 19 2022 21:53:14
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:14
+Signal 2 == False at Sat Feb 19 2022 21:53:14
+Signal 3 == False at Sat Feb 19 2022 21:53:14
+Signal 4 == False at Sat Feb 19 2022 21:53:14
+Signal 5 == False at Sat Feb 19 2022 21:53:14
+Signal 6 == True at Sat Feb 19 2022 21:53:14
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:14
+Point 2 == 0° at Sat Feb 19 2022 21:53:14
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:14
+Sensor 2 == False at Sat Feb 19 2022 21:53:14
+Sensor 3 == False at Sat Feb 19 2022 21:53:14
+Sensor 4 == False at Sat Feb 19 2022 21:53:14
+Sensor 5 == False at Sat Feb 19 2022 21:53:14
+Sensor 6 == False at Sat Feb 19 2022 21:53:14
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:14
+Signal 2 == False at Sat Feb 19 2022 21:53:14
+Signal 3 == False at Sat Feb 19 2022 21:53:14
+Signal 4 == False at Sat Feb 19 2022 21:53:14
+Signal 5 == False at Sat Feb 19 2022 21:53:14
+Signal 6 == True at Sat Feb 19 2022 21:53:14
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:14
+Point 2 == 0° at Sat Feb 19 2022 21:53:14
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:15
+Sensor 2 == False at Sat Feb 19 2022 21:53:15
+Sensor 3 == False at Sat Feb 19 2022 21:53:15
+Sensor 4 == False at Sat Feb 19 2022 21:53:15
+Sensor 5 == False at Sat Feb 19 2022 21:53:15
+Sensor 6 == False at Sat Feb 19 2022 21:53:15
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:15
+Signal 2 == False at Sat Feb 19 2022 21:53:15
+Signal 3 == False at Sat Feb 19 2022 21:53:15
+Signal 4 == False at Sat Feb 19 2022 21:53:15
+Signal 5 == False at Sat Feb 19 2022 21:53:15
+Signal 6 == True at Sat Feb 19 2022 21:53:15
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:15
+Point 2 == 0° at Sat Feb 19 2022 21:53:15
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:15
+Sensor 2 == False at Sat Feb 19 2022 21:53:15
+Sensor 3 == False at Sat Feb 19 2022 21:53:15
+Sensor 4 == False at Sat Feb 19 2022 21:53:15
+Sensor 5 == False at Sat Feb 19 2022 21:53:15
+Sensor 6 == False at Sat Feb 19 2022 21:53:15
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:15
+Signal 2 == False at Sat Feb 19 2022 21:53:15
+Signal 3 == False at Sat Feb 19 2022 21:53:15
+Signal 4 == False at Sat Feb 19 2022 21:53:15
+Signal 5 == False at Sat Feb 19 2022 21:53:15
+Signal 6 == True at Sat Feb 19 2022 21:53:15
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:15
+Point 2 == 0° at Sat Feb 19 2022 21:53:15
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:15
+Sensor 2 == False at Sat Feb 19 2022 21:53:15
+Sensor 3 == False at Sat Feb 19 2022 21:53:15
+Sensor 4 == False at Sat Feb 19 2022 21:53:15
+Sensor 5 == False at Sat Feb 19 2022 21:53:15
+Sensor 6 == False at Sat Feb 19 2022 21:53:15
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:15
+Signal 2 == False at Sat Feb 19 2022 21:53:15
+Signal 3 == False at Sat Feb 19 2022 21:53:15
+Signal 4 == False at Sat Feb 19 2022 21:53:15
+Signal 5 == False at Sat Feb 19 2022 21:53:15
+Signal 6 == True at Sat Feb 19 2022 21:53:15
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:15
+Point 2 == 0° at Sat Feb 19 2022 21:53:15
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:15
+Sensor 2 == False at Sat Feb 19 2022 21:53:15
+Sensor 3 == False at Sat Feb 19 2022 21:53:15
+Sensor 4 == False at Sat Feb 19 2022 21:53:15
+Sensor 5 == False at Sat Feb 19 2022 21:53:15
+Sensor 6 == False at Sat Feb 19 2022 21:53:15
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:15
+Signal 2 == False at Sat Feb 19 2022 21:53:15
+Signal 3 == False at Sat Feb 19 2022 21:53:15
+Signal 4 == False at Sat Feb 19 2022 21:53:15
+Signal 5 == False at Sat Feb 19 2022 21:53:15
+Signal 6 == True at Sat Feb 19 2022 21:53:15
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:15
+Point 2 == 0° at Sat Feb 19 2022 21:53:15
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:16
+Sensor 2 == False at Sat Feb 19 2022 21:53:16
+Sensor 3 == True at Sat Feb 19 2022 21:53:16
+Sensor 4 == True at Sat Feb 19 2022 21:53:16
+Sensor 5 == False at Sat Feb 19 2022 21:53:16
+Sensor 6 == False at Sat Feb 19 2022 21:53:16
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:16
+Signal 2 == True at Sat Feb 19 2022 21:53:16
+Signal 3 == False at Sat Feb 19 2022 21:53:16
+Signal 4 == True at Sat Feb 19 2022 21:53:16
+Signal 5 == False at Sat Feb 19 2022 21:53:16
+Signal 6 == False at Sat Feb 19 2022 21:53:16
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:16
+Point 2 == 30° at Sat Feb 19 2022 21:53:16
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:16
+Sensor 2 == False at Sat Feb 19 2022 21:53:16
+Sensor 3 == False at Sat Feb 19 2022 21:53:16
+Sensor 4 == False at Sat Feb 19 2022 21:53:16
+Sensor 5 == False at Sat Feb 19 2022 21:53:16
+Sensor 6 == False at Sat Feb 19 2022 21:53:16
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:16
+Signal 2 == True at Sat Feb 19 2022 21:53:16
+Signal 3 == False at Sat Feb 19 2022 21:53:16
+Signal 4 == True at Sat Feb 19 2022 21:53:16
+Signal 5 == False at Sat Feb 19 2022 21:53:16
+Signal 6 == False at Sat Feb 19 2022 21:53:16
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:16
+Point 2 == 30° at Sat Feb 19 2022 21:53:16
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:16
+Sensor 2 == False at Sat Feb 19 2022 21:53:16
+Sensor 3 == False at Sat Feb 19 2022 21:53:16
+Sensor 4 == False at Sat Feb 19 2022 21:53:16
+Sensor 5 == False at Sat Feb 19 2022 21:53:16
+Sensor 6 == False at Sat Feb 19 2022 21:53:16
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:16
+Signal 2 == True at Sat Feb 19 2022 21:53:16
+Signal 3 == False at Sat Feb 19 2022 21:53:16
+Signal 4 == True at Sat Feb 19 2022 21:53:16
+Signal 5 == False at Sat Feb 19 2022 21:53:16
+Signal 6 == False at Sat Feb 19 2022 21:53:16
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:16
+Point 2 == 30° at Sat Feb 19 2022 21:53:16
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:16
+Sensor 2 == False at Sat Feb 19 2022 21:53:16
+Sensor 3 == False at Sat Feb 19 2022 21:53:16
+Sensor 4 == False at Sat Feb 19 2022 21:53:16
+Sensor 5 == False at Sat Feb 19 2022 21:53:16
+Sensor 6 == False at Sat Feb 19 2022 21:53:16
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:16
+Signal 2 == True at Sat Feb 19 2022 21:53:16
+Signal 3 == False at Sat Feb 19 2022 21:53:16
+Signal 4 == True at Sat Feb 19 2022 21:53:16
+Signal 5 == False at Sat Feb 19 2022 21:53:16
+Signal 6 == False at Sat Feb 19 2022 21:53:16
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:16
+Point 2 == 30° at Sat Feb 19 2022 21:53:16
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:17
+Sensor 2 == False at Sat Feb 19 2022 21:53:17
+Sensor 3 == False at Sat Feb 19 2022 21:53:17
+Sensor 4 == False at Sat Feb 19 2022 21:53:17
+Sensor 5 == False at Sat Feb 19 2022 21:53:17
+Sensor 6 == False at Sat Feb 19 2022 21:53:17
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:17
+Signal 2 == True at Sat Feb 19 2022 21:53:17
+Signal 3 == False at Sat Feb 19 2022 21:53:17
+Signal 4 == True at Sat Feb 19 2022 21:53:17
+Signal 5 == False at Sat Feb 19 2022 21:53:17
+Signal 6 == False at Sat Feb 19 2022 21:53:17
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:17
+Point 2 == 30° at Sat Feb 19 2022 21:53:17
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:17
+Sensor 2 == False at Sat Feb 19 2022 21:53:17
+Sensor 3 == False at Sat Feb 19 2022 21:53:17
+Sensor 4 == False at Sat Feb 19 2022 21:53:17
+Sensor 5 == False at Sat Feb 19 2022 21:53:17
+Sensor 6 == False at Sat Feb 19 2022 21:53:17
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:17
+Signal 2 == True at Sat Feb 19 2022 21:53:17
+Signal 3 == False at Sat Feb 19 2022 21:53:17
+Signal 4 == True at Sat Feb 19 2022 21:53:17
+Signal 5 == False at Sat Feb 19 2022 21:53:17
+Signal 6 == False at Sat Feb 19 2022 21:53:17
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:17
+Point 2 == 30° at Sat Feb 19 2022 21:53:17
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:17
+Sensor 2 == False at Sat Feb 19 2022 21:53:17
+Sensor 3 == False at Sat Feb 19 2022 21:53:17
+Sensor 4 == False at Sat Feb 19 2022 21:53:17
+Sensor 5 == False at Sat Feb 19 2022 21:53:17
+Sensor 6 == False at Sat Feb 19 2022 21:53:17
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:17
+Signal 2 == True at Sat Feb 19 2022 21:53:17
+Signal 3 == False at Sat Feb 19 2022 21:53:17
+Signal 4 == True at Sat Feb 19 2022 21:53:17
+Signal 5 == False at Sat Feb 19 2022 21:53:17
+Signal 6 == False at Sat Feb 19 2022 21:53:17
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:17
+Point 2 == 30° at Sat Feb 19 2022 21:53:17
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:17
+Sensor 2 == False at Sat Feb 19 2022 21:53:17
+Sensor 3 == False at Sat Feb 19 2022 21:53:17
+Sensor 4 == False at Sat Feb 19 2022 21:53:17
+Sensor 5 == False at Sat Feb 19 2022 21:53:17
+Sensor 6 == False at Sat Feb 19 2022 21:53:17
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:17
+Signal 2 == True at Sat Feb 19 2022 21:53:17
+Signal 3 == False at Sat Feb 19 2022 21:53:17
+Signal 4 == True at Sat Feb 19 2022 21:53:17
+Signal 5 == False at Sat Feb 19 2022 21:53:17
+Signal 6 == False at Sat Feb 19 2022 21:53:17
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:17
+Point 2 == 30° at Sat Feb 19 2022 21:53:17
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:18
+Sensor 2 == False at Sat Feb 19 2022 21:53:18
+Sensor 3 == False at Sat Feb 19 2022 21:53:18
+Sensor 4 == False at Sat Feb 19 2022 21:53:18
+Sensor 5 == False at Sat Feb 19 2022 21:53:18
+Sensor 6 == False at Sat Feb 19 2022 21:53:18
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:18
+Signal 2 == True at Sat Feb 19 2022 21:53:18
+Signal 3 == False at Sat Feb 19 2022 21:53:18
+Signal 4 == True at Sat Feb 19 2022 21:53:18
+Signal 5 == False at Sat Feb 19 2022 21:53:18
+Signal 6 == False at Sat Feb 19 2022 21:53:18
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:18
+Point 2 == 30° at Sat Feb 19 2022 21:53:18
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:18
+Sensor 2 == False at Sat Feb 19 2022 21:53:18
+Sensor 3 == False at Sat Feb 19 2022 21:53:18
+Sensor 4 == False at Sat Feb 19 2022 21:53:18
+Sensor 5 == False at Sat Feb 19 2022 21:53:18
+Sensor 6 == False at Sat Feb 19 2022 21:53:18
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:18
+Signal 2 == True at Sat Feb 19 2022 21:53:18
+Signal 3 == False at Sat Feb 19 2022 21:53:18
+Signal 4 == True at Sat Feb 19 2022 21:53:18
+Signal 5 == False at Sat Feb 19 2022 21:53:18
+Signal 6 == False at Sat Feb 19 2022 21:53:18
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:18
+Point 2 == 30° at Sat Feb 19 2022 21:53:18
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:18
+Sensor 2 == False at Sat Feb 19 2022 21:53:18
+Sensor 3 == False at Sat Feb 19 2022 21:53:18
+Sensor 4 == False at Sat Feb 19 2022 21:53:18
+Sensor 5 == False at Sat Feb 19 2022 21:53:18
+Sensor 6 == False at Sat Feb 19 2022 21:53:18
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:18
+Signal 2 == True at Sat Feb 19 2022 21:53:18
+Signal 3 == False at Sat Feb 19 2022 21:53:18
+Signal 4 == True at Sat Feb 19 2022 21:53:18
+Signal 5 == False at Sat Feb 19 2022 21:53:18
+Signal 6 == False at Sat Feb 19 2022 21:53:18
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:18
+Point 2 == 30° at Sat Feb 19 2022 21:53:18
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:18
+Sensor 2 == False at Sat Feb 19 2022 21:53:18
+Sensor 3 == False at Sat Feb 19 2022 21:53:18
+Sensor 4 == False at Sat Feb 19 2022 21:53:18
+Sensor 5 == False at Sat Feb 19 2022 21:53:18
+Sensor 6 == False at Sat Feb 19 2022 21:53:18
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:18
+Signal 2 == True at Sat Feb 19 2022 21:53:18
+Signal 3 == False at Sat Feb 19 2022 21:53:18
+Signal 4 == True at Sat Feb 19 2022 21:53:18
+Signal 5 == False at Sat Feb 19 2022 21:53:18
+Signal 6 == False at Sat Feb 19 2022 21:53:18
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:18
+Point 2 == 30° at Sat Feb 19 2022 21:53:18
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:19
+Sensor 2 == False at Sat Feb 19 2022 21:53:19
+Sensor 3 == False at Sat Feb 19 2022 21:53:19
+Sensor 4 == False at Sat Feb 19 2022 21:53:19
+Sensor 5 == False at Sat Feb 19 2022 21:53:19
+Sensor 6 == False at Sat Feb 19 2022 21:53:19
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:19
+Signal 2 == True at Sat Feb 19 2022 21:53:19
+Signal 3 == False at Sat Feb 19 2022 21:53:19
+Signal 4 == True at Sat Feb 19 2022 21:53:19
+Signal 5 == False at Sat Feb 19 2022 21:53:19
+Signal 6 == False at Sat Feb 19 2022 21:53:19
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:19
+Point 2 == 30° at Sat Feb 19 2022 21:53:19
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:19
+Sensor 2 == True at Sat Feb 19 2022 21:53:19
+Sensor 3 == False at Sat Feb 19 2022 21:53:19
+Sensor 4 == False at Sat Feb 19 2022 21:53:19
+Sensor 5 == True at Sat Feb 19 2022 21:53:19
+Sensor 6 == False at Sat Feb 19 2022 21:53:19
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:19
+Signal 2 == True at Sat Feb 19 2022 21:53:19
+Signal 3 == False at Sat Feb 19 2022 21:53:19
+Signal 4 == True at Sat Feb 19 2022 21:53:19
+Signal 5 == False at Sat Feb 19 2022 21:53:19
+Signal 6 == False at Sat Feb 19 2022 21:53:19
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:19
+Point 2 == 30° at Sat Feb 19 2022 21:53:19
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:19
+Sensor 2 == False at Sat Feb 19 2022 21:53:19
+Sensor 3 == False at Sat Feb 19 2022 21:53:19
+Sensor 4 == False at Sat Feb 19 2022 21:53:19
+Sensor 5 == False at Sat Feb 19 2022 21:53:19
+Sensor 6 == False at Sat Feb 19 2022 21:53:19
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:19
+Signal 2 == True at Sat Feb 19 2022 21:53:19
+Signal 3 == False at Sat Feb 19 2022 21:53:19
+Signal 4 == True at Sat Feb 19 2022 21:53:19
+Signal 5 == False at Sat Feb 19 2022 21:53:19
+Signal 6 == False at Sat Feb 19 2022 21:53:19
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:19
+Point 2 == 30° at Sat Feb 19 2022 21:53:19
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:19
+Sensor 2 == False at Sat Feb 19 2022 21:53:19
+Sensor 3 == False at Sat Feb 19 2022 21:53:19
+Sensor 4 == False at Sat Feb 19 2022 21:53:19
+Sensor 5 == False at Sat Feb 19 2022 21:53:19
+Sensor 6 == False at Sat Feb 19 2022 21:53:19
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:19
+Signal 2 == True at Sat Feb 19 2022 21:53:19
+Signal 3 == False at Sat Feb 19 2022 21:53:19
+Signal 4 == True at Sat Feb 19 2022 21:53:19
+Signal 5 == False at Sat Feb 19 2022 21:53:19
+Signal 6 == False at Sat Feb 19 2022 21:53:19
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:19
+Point 2 == 30° at Sat Feb 19 2022 21:53:19
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:20
+Sensor 2 == False at Sat Feb 19 2022 21:53:20
+Sensor 3 == False at Sat Feb 19 2022 21:53:20
+Sensor 4 == False at Sat Feb 19 2022 21:53:20
+Sensor 5 == False at Sat Feb 19 2022 21:53:20
+Sensor 6 == False at Sat Feb 19 2022 21:53:20
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:20
+Signal 2 == True at Sat Feb 19 2022 21:53:20
+Signal 3 == False at Sat Feb 19 2022 21:53:20
+Signal 4 == True at Sat Feb 19 2022 21:53:20
+Signal 5 == False at Sat Feb 19 2022 21:53:20
+Signal 6 == False at Sat Feb 19 2022 21:53:20
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:20
+Point 2 == 30° at Sat Feb 19 2022 21:53:20
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:20
+Sensor 2 == False at Sat Feb 19 2022 21:53:20
+Sensor 3 == False at Sat Feb 19 2022 21:53:20
+Sensor 4 == False at Sat Feb 19 2022 21:53:20
+Sensor 5 == False at Sat Feb 19 2022 21:53:20
+Sensor 6 == False at Sat Feb 19 2022 21:53:20
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:20
+Signal 2 == True at Sat Feb 19 2022 21:53:20
+Signal 3 == False at Sat Feb 19 2022 21:53:20
+Signal 4 == True at Sat Feb 19 2022 21:53:20
+Signal 5 == False at Sat Feb 19 2022 21:53:20
+Signal 6 == False at Sat Feb 19 2022 21:53:20
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:20
+Point 2 == 30° at Sat Feb 19 2022 21:53:20
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:20
+Sensor 2 == False at Sat Feb 19 2022 21:53:20
+Sensor 3 == False at Sat Feb 19 2022 21:53:20
+Sensor 4 == False at Sat Feb 19 2022 21:53:20
+Sensor 5 == False at Sat Feb 19 2022 21:53:20
+Sensor 6 == False at Sat Feb 19 2022 21:53:20
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:20
+Signal 2 == True at Sat Feb 19 2022 21:53:20
+Signal 3 == False at Sat Feb 19 2022 21:53:20
+Signal 4 == True at Sat Feb 19 2022 21:53:20
+Signal 5 == False at Sat Feb 19 2022 21:53:20
+Signal 6 == False at Sat Feb 19 2022 21:53:20
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:20
+Point 2 == 30° at Sat Feb 19 2022 21:53:20
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:20
+Sensor 2 == False at Sat Feb 19 2022 21:53:20
+Sensor 3 == False at Sat Feb 19 2022 21:53:20
+Sensor 4 == False at Sat Feb 19 2022 21:53:20
+Sensor 5 == False at Sat Feb 19 2022 21:53:20
+Sensor 6 == True at Sat Feb 19 2022 21:53:20
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:20
+Signal 2 == False at Sat Feb 19 2022 21:53:20
+Signal 3 == False at Sat Feb 19 2022 21:53:20
+Signal 4 == False at Sat Feb 19 2022 21:53:20
+Signal 5 == False at Sat Feb 19 2022 21:53:20
+Signal 6 == True at Sat Feb 19 2022 21:53:20
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:20
+Point 2 == 0° at Sat Feb 19 2022 21:53:20
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:21
+Sensor 2 == False at Sat Feb 19 2022 21:53:21
+Sensor 3 == False at Sat Feb 19 2022 21:53:21
+Sensor 4 == False at Sat Feb 19 2022 21:53:21
+Sensor 5 == False at Sat Feb 19 2022 21:53:21
+Sensor 6 == False at Sat Feb 19 2022 21:53:21
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:21
+Signal 2 == False at Sat Feb 19 2022 21:53:21
+Signal 3 == False at Sat Feb 19 2022 21:53:21
+Signal 4 == False at Sat Feb 19 2022 21:53:21
+Signal 5 == False at Sat Feb 19 2022 21:53:21
+Signal 6 == True at Sat Feb 19 2022 21:53:21
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:21
+Point 2 == 0° at Sat Feb 19 2022 21:53:21
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:21
+Sensor 2 == False at Sat Feb 19 2022 21:53:21
+Sensor 3 == False at Sat Feb 19 2022 21:53:21
+Sensor 4 == False at Sat Feb 19 2022 21:53:21
+Sensor 5 == False at Sat Feb 19 2022 21:53:21
+Sensor 6 == False at Sat Feb 19 2022 21:53:21
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:21
+Signal 2 == False at Sat Feb 19 2022 21:53:21
+Signal 3 == False at Sat Feb 19 2022 21:53:21
+Signal 4 == False at Sat Feb 19 2022 21:53:21
+Signal 5 == False at Sat Feb 19 2022 21:53:21
+Signal 6 == True at Sat Feb 19 2022 21:53:21
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:21
+Point 2 == 0° at Sat Feb 19 2022 21:53:21
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:21
+Sensor 2 == False at Sat Feb 19 2022 21:53:21
+Sensor 3 == False at Sat Feb 19 2022 21:53:21
+Sensor 4 == False at Sat Feb 19 2022 21:53:21
+Sensor 5 == False at Sat Feb 19 2022 21:53:21
+Sensor 6 == False at Sat Feb 19 2022 21:53:21
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:21
+Signal 2 == False at Sat Feb 19 2022 21:53:21
+Signal 3 == False at Sat Feb 19 2022 21:53:21
+Signal 4 == False at Sat Feb 19 2022 21:53:21
+Signal 5 == False at Sat Feb 19 2022 21:53:21
+Signal 6 == True at Sat Feb 19 2022 21:53:21
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:21
+Point 2 == 0° at Sat Feb 19 2022 21:53:21
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == True at Sat Feb 19 2022 21:53:22
+Sensor 2 == False at Sat Feb 19 2022 21:53:22
+Sensor 3 == False at Sat Feb 19 2022 21:53:22
+Sensor 4 == False at Sat Feb 19 2022 21:53:22
+Sensor 5 == False at Sat Feb 19 2022 21:53:22
+Sensor 6 == True at Sat Feb 19 2022 21:53:22
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:22
+Signal 2 == False at Sat Feb 19 2022 21:53:22
+Signal 3 == False at Sat Feb 19 2022 21:53:22
+Signal 4 == False at Sat Feb 19 2022 21:53:22
+Signal 5 == False at Sat Feb 19 2022 21:53:22
+Signal 6 == True at Sat Feb 19 2022 21:53:22
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:22
+Point 2 == 0° at Sat Feb 19 2022 21:53:22
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:22
+Sensor 2 == False at Sat Feb 19 2022 21:53:22
+Sensor 3 == False at Sat Feb 19 2022 21:53:22
+Sensor 4 == False at Sat Feb 19 2022 21:53:22
+Sensor 5 == False at Sat Feb 19 2022 21:53:22
+Sensor 6 == False at Sat Feb 19 2022 21:53:22
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:22
+Signal 2 == False at Sat Feb 19 2022 21:53:22
+Signal 3 == False at Sat Feb 19 2022 21:53:22
+Signal 4 == False at Sat Feb 19 2022 21:53:22
+Signal 5 == False at Sat Feb 19 2022 21:53:22
+Signal 6 == True at Sat Feb 19 2022 21:53:22
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:22
+Point 2 == 0° at Sat Feb 19 2022 21:53:22
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:22
+Sensor 2 == False at Sat Feb 19 2022 21:53:22
+Sensor 3 == False at Sat Feb 19 2022 21:53:22
+Sensor 4 == False at Sat Feb 19 2022 21:53:22
+Sensor 5 == False at Sat Feb 19 2022 21:53:22
+Sensor 6 == False at Sat Feb 19 2022 21:53:22
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:22
+Signal 2 == False at Sat Feb 19 2022 21:53:22
+Signal 3 == False at Sat Feb 19 2022 21:53:22
+Signal 4 == False at Sat Feb 19 2022 21:53:22
+Signal 5 == False at Sat Feb 19 2022 21:53:22
+Signal 6 == True at Sat Feb 19 2022 21:53:22
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:22
+Point 2 == 0° at Sat Feb 19 2022 21:53:22
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:22
+Sensor 2 == False at Sat Feb 19 2022 21:53:22
+Sensor 3 == False at Sat Feb 19 2022 21:53:22
+Sensor 4 == False at Sat Feb 19 2022 21:53:22
+Sensor 5 == False at Sat Feb 19 2022 21:53:22
+Sensor 6 == False at Sat Feb 19 2022 21:53:22
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:22
+Signal 2 == False at Sat Feb 19 2022 21:53:22
+Signal 3 == False at Sat Feb 19 2022 21:53:22
+Signal 4 == False at Sat Feb 19 2022 21:53:22
+Signal 5 == False at Sat Feb 19 2022 21:53:22
+Signal 6 == True at Sat Feb 19 2022 21:53:22
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:22
+Point 2 == 0° at Sat Feb 19 2022 21:53:22
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:23
+Sensor 2 == False at Sat Feb 19 2022 21:53:23
+Sensor 3 == False at Sat Feb 19 2022 21:53:23
+Sensor 4 == False at Sat Feb 19 2022 21:53:23
+Sensor 5 == False at Sat Feb 19 2022 21:53:23
+Sensor 6 == False at Sat Feb 19 2022 21:53:23
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:23
+Signal 2 == False at Sat Feb 19 2022 21:53:23
+Signal 3 == False at Sat Feb 19 2022 21:53:23
+Signal 4 == False at Sat Feb 19 2022 21:53:23
+Signal 5 == False at Sat Feb 19 2022 21:53:23
+Signal 6 == True at Sat Feb 19 2022 21:53:23
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:23
+Point 2 == 0° at Sat Feb 19 2022 21:53:23
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:23
+Sensor 2 == False at Sat Feb 19 2022 21:53:23
+Sensor 3 == False at Sat Feb 19 2022 21:53:23
+Sensor 4 == False at Sat Feb 19 2022 21:53:23
+Sensor 5 == False at Sat Feb 19 2022 21:53:23
+Sensor 6 == False at Sat Feb 19 2022 21:53:23
+
+SIGNAL DATA:
+Signal 1 == True at Sat Feb 19 2022 21:53:23
+Signal 2 == False at Sat Feb 19 2022 21:53:23
+Signal 3 == False at Sat Feb 19 2022 21:53:23
+Signal 4 == False at Sat Feb 19 2022 21:53:23
+Signal 5 == False at Sat Feb 19 2022 21:53:23
+Signal 6 == True at Sat Feb 19 2022 21:53:23
+
+POINT DATA:
+Point 1 == 30° at Sat Feb 19 2022 21:53:23
+Point 2 == 0° at Sat Feb 19 2022 21:53:23
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:23
+Sensor 2 == False at Sat Feb 19 2022 21:53:23
+Sensor 3 == True at Sat Feb 19 2022 21:53:23
+Sensor 4 == True at Sat Feb 19 2022 21:53:23
+Sensor 5 == False at Sat Feb 19 2022 21:53:23
+Sensor 6 == False at Sat Feb 19 2022 21:53:23
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:23
+Signal 2 == True at Sat Feb 19 2022 21:53:23
+Signal 3 == False at Sat Feb 19 2022 21:53:23
+Signal 4 == True at Sat Feb 19 2022 21:53:23
+Signal 5 == False at Sat Feb 19 2022 21:53:23
+Signal 6 == False at Sat Feb 19 2022 21:53:23
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:23
+Point 2 == 30° at Sat Feb 19 2022 21:53:23
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:23
+Sensor 2 == False at Sat Feb 19 2022 21:53:23
+Sensor 3 == False at Sat Feb 19 2022 21:53:23
+Sensor 4 == False at Sat Feb 19 2022 21:53:23
+Sensor 5 == False at Sat Feb 19 2022 21:53:23
+Sensor 6 == False at Sat Feb 19 2022 21:53:23
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:23
+Signal 2 == True at Sat Feb 19 2022 21:53:23
+Signal 3 == False at Sat Feb 19 2022 21:53:23
+Signal 4 == True at Sat Feb 19 2022 21:53:23
+Signal 5 == False at Sat Feb 19 2022 21:53:23
+Signal 6 == False at Sat Feb 19 2022 21:53:23
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:23
+Point 2 == 30° at Sat Feb 19 2022 21:53:23
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:24
+Sensor 2 == False at Sat Feb 19 2022 21:53:24
+Sensor 3 == False at Sat Feb 19 2022 21:53:24
+Sensor 4 == False at Sat Feb 19 2022 21:53:24
+Sensor 5 == False at Sat Feb 19 2022 21:53:24
+Sensor 6 == False at Sat Feb 19 2022 21:53:24
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:24
+Signal 2 == True at Sat Feb 19 2022 21:53:24
+Signal 3 == False at Sat Feb 19 2022 21:53:24
+Signal 4 == True at Sat Feb 19 2022 21:53:24
+Signal 5 == False at Sat Feb 19 2022 21:53:24
+Signal 6 == False at Sat Feb 19 2022 21:53:24
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:24
+Point 2 == 30° at Sat Feb 19 2022 21:53:24
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:24
+Sensor 2 == False at Sat Feb 19 2022 21:53:24
+Sensor 3 == False at Sat Feb 19 2022 21:53:24
+Sensor 4 == False at Sat Feb 19 2022 21:53:24
+Sensor 5 == False at Sat Feb 19 2022 21:53:24
+Sensor 6 == False at Sat Feb 19 2022 21:53:24
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:24
+Signal 2 == True at Sat Feb 19 2022 21:53:24
+Signal 3 == False at Sat Feb 19 2022 21:53:24
+Signal 4 == True at Sat Feb 19 2022 21:53:24
+Signal 5 == False at Sat Feb 19 2022 21:53:24
+Signal 6 == False at Sat Feb 19 2022 21:53:24
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:24
+Point 2 == 30° at Sat Feb 19 2022 21:53:24
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:24
+Sensor 2 == False at Sat Feb 19 2022 21:53:24
+Sensor 3 == False at Sat Feb 19 2022 21:53:24
+Sensor 4 == False at Sat Feb 19 2022 21:53:24
+Sensor 5 == False at Sat Feb 19 2022 21:53:24
+Sensor 6 == False at Sat Feb 19 2022 21:53:24
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:24
+Signal 2 == True at Sat Feb 19 2022 21:53:24
+Signal 3 == False at Sat Feb 19 2022 21:53:24
+Signal 4 == True at Sat Feb 19 2022 21:53:24
+Signal 5 == False at Sat Feb 19 2022 21:53:24
+Signal 6 == False at Sat Feb 19 2022 21:53:24
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:24
+Point 2 == 30° at Sat Feb 19 2022 21:53:24
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:24
+Sensor 2 == False at Sat Feb 19 2022 21:53:24
+Sensor 3 == False at Sat Feb 19 2022 21:53:24
+Sensor 4 == False at Sat Feb 19 2022 21:53:24
+Sensor 5 == False at Sat Feb 19 2022 21:53:24
+Sensor 6 == False at Sat Feb 19 2022 21:53:24
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:24
+Signal 2 == True at Sat Feb 19 2022 21:53:24
+Signal 3 == False at Sat Feb 19 2022 21:53:24
+Signal 4 == True at Sat Feb 19 2022 21:53:24
+Signal 5 == False at Sat Feb 19 2022 21:53:24
+Signal 6 == False at Sat Feb 19 2022 21:53:24
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:24
+Point 2 == 30° at Sat Feb 19 2022 21:53:24
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:25
+Sensor 2 == False at Sat Feb 19 2022 21:53:25
+Sensor 3 == False at Sat Feb 19 2022 21:53:25
+Sensor 4 == False at Sat Feb 19 2022 21:53:25
+Sensor 5 == False at Sat Feb 19 2022 21:53:25
+Sensor 6 == False at Sat Feb 19 2022 21:53:25
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:25
+Signal 2 == True at Sat Feb 19 2022 21:53:25
+Signal 3 == False at Sat Feb 19 2022 21:53:25
+Signal 4 == True at Sat Feb 19 2022 21:53:25
+Signal 5 == False at Sat Feb 19 2022 21:53:25
+Signal 6 == False at Sat Feb 19 2022 21:53:25
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:25
+Point 2 == 30° at Sat Feb 19 2022 21:53:25
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:25
+Sensor 2 == False at Sat Feb 19 2022 21:53:25
+Sensor 3 == False at Sat Feb 19 2022 21:53:25
+Sensor 4 == False at Sat Feb 19 2022 21:53:25
+Sensor 5 == False at Sat Feb 19 2022 21:53:25
+Sensor 6 == False at Sat Feb 19 2022 21:53:25
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:25
+Signal 2 == True at Sat Feb 19 2022 21:53:25
+Signal 3 == False at Sat Feb 19 2022 21:53:25
+Signal 4 == True at Sat Feb 19 2022 21:53:25
+Signal 5 == False at Sat Feb 19 2022 21:53:25
+Signal 6 == False at Sat Feb 19 2022 21:53:25
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:25
+Point 2 == 30° at Sat Feb 19 2022 21:53:25
+
+
+*--------------------------------------------*
+SENSOR DATA:
+Sensor 1 == False at Sat Feb 19 2022 21:53:25
+Sensor 2 == False at Sat Feb 19 2022 21:53:25
+Sensor 3 == False at Sat Feb 19 2022 21:53:25
+Sensor 4 == False at Sat Feb 19 2022 21:53:25
+Sensor 5 == False at Sat Feb 19 2022 21:53:25
+Sensor 6 == False at Sat Feb 19 2022 21:53:25
+
+SIGNAL DATA:
+Signal 1 == False at Sat Feb 19 2022 21:53:25
+Signal 2 == True at Sat Feb 19 2022 21:53:25
+Signal 3 == False at Sat Feb 19 2022 21:53:25
+Signal 4 == True at Sat Feb 19 2022 21:53:25
+Signal 5 == False at Sat Feb 19 2022 21:53:25
+Signal 6 == False at Sat Feb 19 2022 21:53:25
+
+POINT DATA:
+Point 1 == 0° at Sat Feb 19 2022 21:53:25
+Point 2 == 30° at Sat Feb 19 2022 21:53:25
