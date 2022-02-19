@@ -25,7 +25,7 @@ Sig_e: str = ''
 Sig_f: str = ''
 date = ''
 pos = ''
-v = 0.5  # Should be 18 for correct timing.
+v = 0.2  # Should be 18 for correct timing.
 
 # Creating route
 route_1 = section_a + section_c + section_d
@@ -1205,7 +1205,7 @@ ent = Entry(download, width=66)
 ent.grid(row=2, column=0, sticky='w')
 ent.bind('<Return>', download_black_box)
 Download_return = Button(download, text='RETURN', font=VerdanaL, height=5, width=56, padx=8, pady=7,
-                         command=lambda: raise_frame(f1)).grid(row=3, column=0)
+                         command=lambda: raise_frame(f2)).grid(row=3, column=0)
 
 # System testing
 Run_Through = Button(f3, text='Test System', width=27, height=h, command=outward_run, font=VerdanaL). \
